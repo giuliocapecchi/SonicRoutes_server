@@ -8,11 +8,12 @@ import csv
 import requests
 import googlemaps
 from flask import Flask, request, jsonify
+import config
 
 app = Flask(__name__)
 GOOGLE_MAPS_API_URL = 'https://roads.googleapis.com/v1/snapToRoads'
 GOOGLE_MAPS_DIRECTIONS_API_URL = 'https://maps.googleapis.com/maps/api/directions/json'
-GOOGLE_MAPS_API_KEY = 'api key here'
+GOOGLE_MAPS_API_KEY = config.api_key
 
 
 # ROBA VECCHIA MESSA ORA
