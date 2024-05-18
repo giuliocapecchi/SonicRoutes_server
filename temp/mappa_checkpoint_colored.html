@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5fbe0ff62bdc54a91d3a97d5b216168e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5fbe0ff62bdc54a91d3a97d5b216168e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5fbe0ff62bdc54a91d3a97d5b216168e = L.map(
+                "map_5fbe0ff62bdc54a91d3a97d5b216168e",
+                {
+                    center: [43.7175, 10.3942],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d4af71d570b08ade8b6f59b082461bbf = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d4af71d570b08ade8b6f59b082461bbf.addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+            var marker_ca835f51b624368dfd8dbc176df4e6ed = L.marker(
+                [43.7211779, 10.3914214],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_3b58f4df54a32fdbf9a57dd1809caea8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3623372309a28339225b81d2a7f972f = $(`<div id="html_b3623372309a28339225b81d2a7f972f" style="width: 100.0%; height: 100.0%;">Via Giunta Pisano; Via Bonanno Pisano</div>`)[0];
+                popup_3b58f4df54a32fdbf9a57dd1809caea8.setContent(html_b3623372309a28339225b81d2a7f972f);
+            
+        
+
+        marker_ca835f51b624368dfd8dbc176df4e6ed.bindPopup(popup_3b58f4df54a32fdbf9a57dd1809caea8)
+        ;
+
+        
+    
+    
+            var marker_cb6c2a9730b6b7f36689f6402d9f247d = L.marker(
+                [43.7221479, 10.3882131],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_fddbe50bcd095b6e16f3a63502181d68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc6eea9d41e781b8f88da055ea70abed = $(`<div id="html_dc6eea9d41e781b8f88da055ea70abed" style="width: 100.0%; height: 100.0%;">Via Giunta Pisano; Via Diotisalvi; Via Andrea Pisano</div>`)[0];
+                popup_fddbe50bcd095b6e16f3a63502181d68.setContent(html_dc6eea9d41e781b8f88da055ea70abed);
+            
+        
+
+        marker_cb6c2a9730b6b7f36689f6402d9f247d.bindPopup(popup_fddbe50bcd095b6e16f3a63502181d68)
+        ;
+
+        
+    
+    
+            var marker_36527a87012c3bb50b5289b53be728eb = L.marker(
+                [43.7229513, 10.3982212],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_9a02bd39f24c09f38594cf0ae6d2d208 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_139322bce0640415b4a1730c4a41e0af = $(`<div id="html_139322bce0640415b4a1730c4a41e0af" style="width: 100.0%; height: 100.0%;">Via Ugo Camozzo; Via Cardinale Pietro Maffi; Via San Ranierino</div>`)[0];
+                popup_9a02bd39f24c09f38594cf0ae6d2d208.setContent(html_139322bce0640415b4a1730c4a41e0af);
+            
+        
+
+        marker_36527a87012c3bb50b5289b53be728eb.bindPopup(popup_9a02bd39f24c09f38594cf0ae6d2d208)
+        ;
+
+        
+    
+    
+            var marker_426d579c5daa48daf1f74b5df87676e3 = L.marker(
+                [43.7164088, 10.3882581],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_c4b94d28a36d916066b60ff110208654 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04d5ea683dc20b2a2a1ad4a659657bea = $(`<div id="html_04d5ea683dc20b2a2a1ad4a659657bea" style="width: 100.0%; height: 100.0%;">Via Bonanno Pisano; Via dei Macelli</div>`)[0];
+                popup_c4b94d28a36d916066b60ff110208654.setContent(html_04d5ea683dc20b2a2a1ad4a659657bea);
+            
+        
+
+        marker_426d579c5daa48daf1f74b5df87676e3.bindPopup(popup_c4b94d28a36d916066b60ff110208654)
+        ;
+
+        
+    
+    
+            var marker_b30c0cec8a9cd2a2668497e6c76542d7 = L.marker(
+                [43.7181759, 10.3894504],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_72ef6927d19f66caf35276c7eb5ad469 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac1435a7c79f3a53281446551b079749 = $(`<div id="html_ac1435a7c79f3a53281446551b079749" style="width: 100.0%; height: 100.0%;">Via Turino Vanni; Via Bonanno Pisano; Via Rustichello da Pisa; Via Pietro da Pisa</div>`)[0];
+                popup_72ef6927d19f66caf35276c7eb5ad469.setContent(html_ac1435a7c79f3a53281446551b079749);
+            
+        
+
+        marker_b30c0cec8a9cd2a2668497e6c76542d7.bindPopup(popup_72ef6927d19f66caf35276c7eb5ad469)
+        ;
+
+        
+    
+    
+            var marker_3c774ff0138025617dc4735a5e84f379 = L.marker(
+                [43.7228292, 10.3922295],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_d05e4fdf204907f25e7f5c38cc0fb0a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51154b947a2354e9ab2de087d2fd0c02 = $(`<div id="html_51154b947a2354e9ab2de087d2fd0c02" style="width: 100.0%; height: 100.0%;">Via Andrea Pisano; Via Bonanno Pisano; Via G. Battista Niccolini</div>`)[0];
+                popup_d05e4fdf204907f25e7f5c38cc0fb0a8.setContent(html_51154b947a2354e9ab2de087d2fd0c02);
+            
+        
+
+        marker_3c774ff0138025617dc4735a5e84f379.bindPopup(popup_d05e4fdf204907f25e7f5c38cc0fb0a8)
+        ;
+
+        
+    
+    
+            var marker_2ff0f5a838dd92b8f77ea9e82231c9f5 = L.marker(
+                [43.722951, 10.3897496],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_55487109dd90ddf5fff4447930cf6383 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c2a658d5dbe015a749aac2912ee203d = $(`<div id="html_9c2a658d5dbe015a749aac2912ee203d" style="width: 100.0%; height: 100.0%;">N/A; Via Andrea Pisano; Via Vecchia Barbaricina</div>`)[0];
+                popup_55487109dd90ddf5fff4447930cf6383.setContent(html_9c2a658d5dbe015a749aac2912ee203d);
+            
+        
+
+        marker_2ff0f5a838dd92b8f77ea9e82231c9f5.bindPopup(popup_55487109dd90ddf5fff4447930cf6383)
+        ;
+
+        
+    
+    
+            var marker_5111853c2f6deee60d0ea899bba92ae4 = L.marker(
+                [43.7225026, 10.3984423],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_e2f1a3dc6eace3bd5b284b47dc5c5a63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b28a427881a7103b6bf110c52e4495d9 = $(`<div id="html_b28a427881a7103b6bf110c52e4495d9" style="width: 100.0%; height: 100.0%;">Via Ugo Camozzo; Piazza dell'Arcivescovado</div>`)[0];
+                popup_e2f1a3dc6eace3bd5b284b47dc5c5a63.setContent(html_b28a427881a7103b6bf110c52e4495d9);
+            
+        
+
+        marker_5111853c2f6deee60d0ea899bba92ae4.bindPopup(popup_e2f1a3dc6eace3bd5b284b47dc5c5a63)
+        ;
+
+        
+    
+    
+            var marker_12f3398dfa69c3957b4c865b2a55fae1 = L.marker(
+                [43.721923, 10.399224],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_ccecd34633394befbe79138a0d58d575 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa63dc923347311075cb77d9a4d3e7c5 = $(`<div id="html_aa63dc923347311075cb77d9a4d3e7c5" style="width: 100.0%; height: 100.0%;">Via San Tommaso; Via Ferdinando Capponi; Via Uguccione della Faggiola</div>`)[0];
+                popup_ccecd34633394befbe79138a0d58d575.setContent(html_aa63dc923347311075cb77d9a4d3e7c5);
+            
+        
+
+        marker_12f3398dfa69c3957b4c865b2a55fae1.bindPopup(popup_ccecd34633394befbe79138a0d58d575)
+        ;
+
+        
+    
+    
+            var marker_55d39b906ac1303e771400dcf1998de5 = L.marker(
+                [43.7212777, 10.4003564],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_8e7f2c2cef255eda7861efbf8e199a50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11bbe73163f1887bfc782b4f39b4c1a3 = $(`<div id="html_11bbe73163f1887bfc782b4f39b4c1a3" style="width: 100.0%; height: 100.0%;">Via dei Martiri; Via Ferdinando Capponi</div>`)[0];
+                popup_8e7f2c2cef255eda7861efbf8e199a50.setContent(html_11bbe73163f1887bfc782b4f39b4c1a3);
+            
+        
+
+        marker_55d39b906ac1303e771400dcf1998de5.bindPopup(popup_8e7f2c2cef255eda7861efbf8e199a50)
+        ;
+
+        
+    
+    
+            var marker_88b3a0bb39fbfecac4062c6080786710 = L.marker(
+                [43.7198717, 10.3996002],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_91a9b2a5e6f0d41c9241f2d07c849a6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d47df0948952187af1ea2da1f9d95ec6 = $(`<div id="html_d47df0948952187af1ea2da1f9d95ec6" style="width: 100.0%; height: 100.0%;">Via dei Martiri; Via Dalmazia; Piazza dei Cavalieri; Via Corsica</div>`)[0];
+                popup_91a9b2a5e6f0d41c9241f2d07c849a6b.setContent(html_d47df0948952187af1ea2da1f9d95ec6);
+            
+        
+
+        marker_88b3a0bb39fbfecac4062c6080786710.bindPopup(popup_91a9b2a5e6f0d41c9241f2d07c849a6b)
+        ;
+
+        
+    
+    
+            var marker_81ed90b56b9275f8108507fa57d2386e = L.marker(
+                [43.7177108, 10.3998677],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_3607d6234b6c68bd6c11daeb3cfa9643 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f78ced293c502a489a43a9c2d9219224 = $(`<div id="html_f78ced293c502a489a43a9c2d9219224" style="width: 100.0%; height: 100.0%;">Via Tavoleria; Piazza San Frediano; Via Domenico Cavalca; Via San Frediano; Via Curtatone e Montanara</div>`)[0];
+                popup_3607d6234b6c68bd6c11daeb3cfa9643.setContent(html_f78ced293c502a489a43a9c2d9219224);
+            
+        
+
+        marker_81ed90b56b9275f8108507fa57d2386e.bindPopup(popup_3607d6234b6c68bd6c11daeb3cfa9643)
+        ;
+
+        
+    
+    
+            var marker_09f15f0c86537d63b80fb9738c309f1c = L.marker(
+                [43.7170206, 10.3916516],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_113de0fea8a0025f1041526e795acf8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b95f8dc5565b1e11378945a3b9286406 = $(`<div id="html_b95f8dc5565b1e11378945a3b9286406" style="width: 100.0%; height: 100.0%;">Via Nicola Pisano; Via Enrico Fermi; Via Rustichello da Pisa</div>`)[0];
+                popup_113de0fea8a0025f1041526e795acf8e.setContent(html_b95f8dc5565b1e11378945a3b9286406);
+            
+        
+
+        marker_09f15f0c86537d63b80fb9738c309f1c.bindPopup(popup_113de0fea8a0025f1041526e795acf8e)
+        ;
+
+        
+    
+    
+            var marker_378c7c052b8e3c3e7dd7dfd17a0c04a0 = L.marker(
+                [43.7165557, 10.3915297],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_c26b2fdce94b8eb40fccf17c661bd2ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19d868631a67fd493fa5af10dbb3a2c4 = $(`<div id="html_19d868631a67fd493fa5af10dbb3a2c4" style="width: 100.0%; height: 100.0%;">Via Nicola Pisano; Via Volturno</div>`)[0];
+                popup_c26b2fdce94b8eb40fccf17c661bd2ba.setContent(html_19d868631a67fd493fa5af10dbb3a2c4);
+            
+        
+
+        marker_378c7c052b8e3c3e7dd7dfd17a0c04a0.bindPopup(popup_c26b2fdce94b8eb40fccf17c661bd2ba)
+        ;
+
+        
+    
+    
+            var marker_f4abd4ebecdd208217471e29a33205f1 = L.marker(
+                [43.7197737, 10.3956139],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_1e5d76df81ecc45d958137e8a8a2f505 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3575eba2416789b834c5abc0acf66fda = $(`<div id="html_3575eba2416789b834c5abc0acf66fda" style="width: 100.0%; height: 100.0%;">Via Roma; Via Paolo Savi</div>`)[0];
+                popup_1e5d76df81ecc45d958137e8a8a2f505.setContent(html_3575eba2416789b834c5abc0acf66fda);
+            
+        
+
+        marker_f4abd4ebecdd208217471e29a33205f1.bindPopup(popup_1e5d76df81ecc45d958137e8a8a2f505)
+        ;
+
+        
+    
+    
+            var marker_8bcd470c116a21be9c7ec0b720b80b36 = L.marker(
+                [43.7198919, 10.3929772],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_77c1a560d68361ae09e35fa3fae42427 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32ba79f84629400b5776e53fa890a5aa = $(`<div id="html_32ba79f84629400b5776e53fa890a5aa" style="width: 100.0%; height: 100.0%;">Via Nicola Pisano; Via Paolo Savi</div>`)[0];
+                popup_77c1a560d68361ae09e35fa3fae42427.setContent(html_32ba79f84629400b5776e53fa890a5aa);
+            
+        
+
+        marker_8bcd470c116a21be9c7ec0b720b80b36.bindPopup(popup_77c1a560d68361ae09e35fa3fae42427)
+        ;
+
+        
+    
+    
+            var marker_52e73c504bb20828c5b90041c8ebb22f = L.marker(
+                [43.7181988, 10.3925435],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_35e373cd05d8f90b4e380ac362eed708 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26a69a7c044acaaee06e05a3ead8621d = $(`<div id="html_26a69a7c044acaaee06e05a3ead8621d" style="width: 100.0%; height: 100.0%;">Via Nicola Pisano; Via Risorgimento</div>`)[0];
+                popup_35e373cd05d8f90b4e380ac362eed708.setContent(html_26a69a7c044acaaee06e05a3ead8621d);
+            
+        
+
+        marker_52e73c504bb20828c5b90041c8ebb22f.bindPopup(popup_35e373cd05d8f90b4e380ac362eed708)
+        ;
+
+        
+    
+    
+            var marker_7a39a717c50e39cf539e2239051ee7a8 = L.marker(
+                [43.720987, 10.3886822],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_e49c4eddf7db3afcafff3135dcb7cfc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf1957c4c1f913560dc0d0098fe9885a = $(`<div id="html_cf1957c4c1f913560dc0d0098fe9885a" style="width: 100.0%; height: 100.0%;">Via Cimabue; Via Diotisalvi</div>`)[0];
+                popup_e49c4eddf7db3afcafff3135dcb7cfc6.setContent(html_cf1957c4c1f913560dc0d0098fe9885a);
+            
+        
+
+        marker_7a39a717c50e39cf539e2239051ee7a8.bindPopup(popup_e49c4eddf7db3afcafff3135dcb7cfc6)
+        ;
+
+        
+    
+    
+            var marker_02007792390485e82dbcbcba8346c8c6 = L.marker(
+                [43.7196471, 10.3879154],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_702ea1a0ba908d71ce2d70fa1600561b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed8d96a356c279272506f9009da29ead = $(`<div id="html_ed8d96a356c279272506f9009da29ead" style="width: 100.0%; height: 100.0%;">Via Cimabue; Via Carlo Francesco Gabba</div>`)[0];
+                popup_702ea1a0ba908d71ce2d70fa1600561b.setContent(html_ed8d96a356c279272506f9009da29ead);
+            
+        
+
+        marker_02007792390485e82dbcbcba8346c8c6.bindPopup(popup_702ea1a0ba908d71ce2d70fa1600561b)
+        ;
+
+        
+    
+    
+            var marker_6c2c9120ce327058ea42c0453774dc96 = L.marker(
+                [43.7198206, 10.3989136],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_c9aa149c84b1acae01ec0a33828aab0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e158685c6332c907c02a12d78d5466ae = $(`<div id="html_e158685c6332c907c02a12d78d5466ae" style="width: 100.0%; height: 100.0%;">Via Pasquale Paoli; Piazza Francesco Buonamici; Via Uguccione della Faggiola; Via Dalmazia; Via Corsica; Via dei Mille</div>`)[0];
+                popup_c9aa149c84b1acae01ec0a33828aab0a.setContent(html_e158685c6332c907c02a12d78d5466ae);
+            
+        
+
+        marker_6c2c9120ce327058ea42c0453774dc96.bindPopup(popup_c9aa149c84b1acae01ec0a33828aab0a)
+        ;
+
+        
+    
+    
+            var marker_1a5acfe238dff5ab0a093465a6e60551 = L.marker(
+                [43.7198819, 10.3973556],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_c9ebc3c66a87820e81b9d72842a90dee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12cf9ade38445ddae3d24ea210dd16e0 = $(`<div id="html_12cf9ade38445ddae3d24ea210dd16e0" style="width: 100.0%; height: 100.0%;">Via Luca Ghini; Via Don Gaetano Boschi; Piazza Felice Cavallotti; Via Santa Maria; Via dei Mille</div>`)[0];
+                popup_c9ebc3c66a87820e81b9d72842a90dee.setContent(html_12cf9ade38445ddae3d24ea210dd16e0);
+            
+        
+
+        marker_1a5acfe238dff5ab0a093465a6e60551.bindPopup(popup_c9ebc3c66a87820e81b9d72842a90dee)
+        ;
+
+        
+    
+    
+            var marker_f6ca89d3932fe48ff758958f0773ad2a = L.marker(
+                [43.7166398, 10.3998939],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_2e06ffc87edf60b6518d4e4815da8c85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e951b98b9e1e0edb4b4c7536675fe87e = $(`<div id="html_e951b98b9e1e0edb4b4c7536675fe87e" style="width: 100.0%; height: 100.0%;">Via Curtatone e Montanara; Lungarno Antonio Pacinotti</div>`)[0];
+                popup_2e06ffc87edf60b6518d4e4815da8c85.setContent(html_e951b98b9e1e0edb4b4c7536675fe87e);
+            
+        
+
+        marker_f6ca89d3932fe48ff758958f0773ad2a.bindPopup(popup_2e06ffc87edf60b6518d4e4815da8c85)
+        ;
+
+        
+    
+    
+            var marker_906d6f5452426402c690e08141cc666b = L.marker(
+                [43.7205101, 10.3895106],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_ae74cdb6f697251e3acb2a36cf028c36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd240f90f3add5d7222ed0ad429c5794 = $(`<div id="html_cd240f90f3add5d7222ed0ad429c5794" style="width: 100.0%; height: 100.0%;">Via Diotisalvi; Via Francesco Traini; Largo Lucio Lazzarino</div>`)[0];
+                popup_ae74cdb6f697251e3acb2a36cf028c36.setContent(html_cd240f90f3add5d7222ed0ad429c5794);
+            
+        
+
+        marker_906d6f5452426402c690e08141cc666b.bindPopup(popup_ae74cdb6f697251e3acb2a36cf028c36)
+        ;
+
+        
+    
+    
+            var marker_f6f3bb5502dca8e87202a79733d3a5b4 = L.marker(
+                [43.718127, 10.3969295],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_bcf0a231ff5bcbc591912e2dec0a36ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4e7c4c2e90e7902d709366da6f7b048 = $(`<div id="html_d4e7c4c2e90e7902d709366da6f7b048" style="width: 100.0%; height: 100.0%;">Via Santa Maria; Via Alessandro Volta</div>`)[0];
+                popup_bcf0a231ff5bcbc591912e2dec0a36ba.setContent(html_d4e7c4c2e90e7902d709366da6f7b048);
+            
+        
+
+        marker_f6f3bb5502dca8e87202a79733d3a5b4.bindPopup(popup_bcf0a231ff5bcbc591912e2dec0a36ba)
+        ;
+
+        
+    
+    
+            var marker_55303e47fc3e3b137a325ab0a51fda55 = L.marker(
+                [43.7185764, 10.3954069],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_a16a42faa6c37c8d9d7c4e6a356442e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47e04a0d695040da9044b7bc3175955b = $(`<div id="html_47e04a0d695040da9044b7bc3175955b" style="width: 100.0%; height: 100.0%;">Via Roma; Via Derna; Via Alessandro Volta</div>`)[0];
+                popup_a16a42faa6c37c8d9d7c4e6a356442e2.setContent(html_47e04a0d695040da9044b7bc3175955b);
+            
+        
+
+        marker_55303e47fc3e3b137a325ab0a51fda55.bindPopup(popup_a16a42faa6c37c8d9d7c4e6a356442e2)
+        ;
+
+        
+    
+    
+            var marker_1aa6998e91aa96766458a341c58d4dd1 = L.marker(
+                [43.7193247, 10.3929429],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_8a28a33297a4881e2b1b34af6b751ef4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c47893996e219270966f883ae6e49f53 = $(`<div id="html_c47893996e219270966f883ae6e49f53" style="width: 100.0%; height: 100.0%;">Via Derna; Via Nicola Pisano</div>`)[0];
+                popup_8a28a33297a4881e2b1b34af6b751ef4.setContent(html_c47893996e219270966f883ae6e49f53);
+            
+        
+
+        marker_1aa6998e91aa96766458a341c58d4dd1.bindPopup(popup_8a28a33297a4881e2b1b34af6b751ef4)
+        ;
+
+        
+    
+    
+            var marker_6ba395c518a4f5400c9c098309163f75 = L.marker(
+                [43.7184888, 10.3882776],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_9d22db1ae3fbeb82d81e0eebaed168dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98a4ee2673432c9a952ee0d77d93eb4a = $(`<div id="html_98a4ee2673432c9a952ee0d77d93eb4a" style="width: 100.0%; height: 100.0%;">Via Turino Vanni; Via Spinello Aretino</div>`)[0];
+                popup_9d22db1ae3fbeb82d81e0eebaed168dc.setContent(html_98a4ee2673432c9a952ee0d77d93eb4a);
+            
+        
+
+        marker_6ba395c518a4f5400c9c098309163f75.bindPopup(popup_9d22db1ae3fbeb82d81e0eebaed168dc)
+        ;
+
+        
+    
+    
+            var marker_f93267e3cd50fab1ce77700b7306ff68 = L.marker(
+                [43.7166748, 10.3970962],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_bfb53ded7b21e063f2058ce8b2ad189e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab957a23dc82fcfc9f72c3069e53461c = $(`<div id="html_ab957a23dc82fcfc9f72c3069e53461c" style="width: 100.0%; height: 100.0%;">Piazza Francesco Carrara; Lungarno Antonio Pacinotti; N/A; Via San Niccola; Via San Nicola</div>`)[0];
+                popup_bfb53ded7b21e063f2058ce8b2ad189e.setContent(html_ab957a23dc82fcfc9f72c3069e53461c);
+            
+        
+
+        marker_f93267e3cd50fab1ce77700b7306ff68.bindPopup(popup_bfb53ded7b21e063f2058ce8b2ad189e)
+        ;
+
+        
+    
+    
+            var marker_b93d971cd19ec74d5c7053b025b2f165 = L.marker(
+                [43.7215349, 10.3957813],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_e82d765aa651264a0dcaa451749097ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ba2225a7e4607c090099413c4d0ff7d = $(`<div id="html_0ba2225a7e4607c090099413c4d0ff7d" style="width: 100.0%; height: 100.0%;">Via Roma; Via Angelo Galli Tassi</div>`)[0];
+                popup_e82d765aa651264a0dcaa451749097ed.setContent(html_0ba2225a7e4607c090099413c4d0ff7d);
+            
+        
+
+        marker_b93d971cd19ec74d5c7053b025b2f165.bindPopup(popup_e82d765aa651264a0dcaa451749097ed)
+        ;
+
+        
+    
+    
+            var marker_af0897173198fe4e6e652b610e7e965d = L.marker(
+                [43.7215057, 10.3966777],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_d4ab1674f8c26e2e4fa5a8753b8bbdb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_304b00f082431bcb283f482701c75fb0 = $(`<div id="html_304b00f082431bcb283f482701c75fb0" style="width: 100.0%; height: 100.0%;">Via Porta Buozzi; Via Angelo Galli Tassi</div>`)[0];
+                popup_d4ab1674f8c26e2e4fa5a8753b8bbdb4.setContent(html_304b00f082431bcb283f482701c75fb0);
+            
+        
+
+        marker_af0897173198fe4e6e652b610e7e965d.bindPopup(popup_d4ab1674f8c26e2e4fa5a8753b8bbdb4)
+        ;
+
+        
+    
+    
+            var marker_ef95b206139441c7c3b67a0637dd9386 = L.marker(
+                [43.7198467, 10.396716],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_1acbbce42dd9a631546264e7ac6491ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96a952517090bb375c892f5b9effd5f8 = $(`<div id="html_96a952517090bb375c892f5b9effd5f8" style="width: 100.0%; height: 100.0%;">Via Porta Buozzi; Via Luca Ghini</div>`)[0];
+                popup_1acbbce42dd9a631546264e7ac6491ca.setContent(html_96a952517090bb375c892f5b9effd5f8);
+            
+        
+
+        marker_ef95b206139441c7c3b67a0637dd9386.bindPopup(popup_1acbbce42dd9a631546264e7ac6491ca)
+        ;
+
+        
+    
+    
+            var marker_619d167e6b1583b7522ee8e909db4924 = L.marker(
+                [43.7180247, 10.39365],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_f7ffc13e609ef2ff7fa1ce39b25fbc61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_955063e1407bcfba21ca0a7c50dc02da = $(`<div id="html_955063e1407bcfba21ca0a7c50dc02da" style="width: 100.0%; height: 100.0%;">Via Risorgimento; Via Magenta</div>`)[0];
+                popup_f7ffc13e609ef2ff7fa1ce39b25fbc61.setContent(html_955063e1407bcfba21ca0a7c50dc02da);
+            
+        
+
+        marker_619d167e6b1583b7522ee8e909db4924.bindPopup(popup_f7ffc13e609ef2ff7fa1ce39b25fbc61)
+        ;
+
+        
+    
+    
+            var marker_97bcc481720ddfaff8670c476e097e20 = L.marker(
+                [43.71779, 10.3951959],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_e6bed0c98f42f5831ccf7d5850c26e1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1a941caa9ffd055ae1351c14e23a8fa = $(`<div id="html_d1a941caa9ffd055ae1351c14e23a8fa" style="width: 100.0%; height: 100.0%;">Via Roma; Via Risorgimento</div>`)[0];
+                popup_e6bed0c98f42f5831ccf7d5850c26e1f.setContent(html_d1a941caa9ffd055ae1351c14e23a8fa);
+            
+        
+
+        marker_97bcc481720ddfaff8670c476e097e20.bindPopup(popup_e6bed0c98f42f5831ccf7d5850c26e1f)
+        ;
+
+        
+    
+    
+            var marker_9201486a2796f54bd2e74683a3133523 = L.marker(
+                [43.7170109, 10.3933401],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_da811ee28fc64bff9df4bfbd2f34af9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e4f72afdea60e45fb44f14606dc6726 = $(`<div id="html_9e4f72afdea60e45fb44f14606dc6726" style="width: 100.0%; height: 100.0%;">Via Trieste; Via Magenta</div>`)[0];
+                popup_da811ee28fc64bff9df4bfbd2f34af9d.setContent(html_9e4f72afdea60e45fb44f14606dc6726);
+            
+        
+
+        marker_9201486a2796f54bd2e74683a3133523.bindPopup(popup_da811ee28fc64bff9df4bfbd2f34af9d)
+        ;
+
+        
+    
+    
+            var marker_c65a3afd0f83906438a7b6d702d5ac18 = L.marker(
+                [43.7166791, 10.3963901],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_ccecd47f69a697652c7f5bb055ecdda9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51a85d4c01e496922d12d8bc7b41134d = $(`<div id="html_51a85d4c01e496922d12d8bc7b41134d" style="width: 100.0%; height: 100.0%;">Via Trento; Via San Niccola; Via Santa Maria</div>`)[0];
+                popup_ccecd47f69a697652c7f5bb055ecdda9.setContent(html_51a85d4c01e496922d12d8bc7b41134d);
+            
+        
+
+        marker_c65a3afd0f83906438a7b6d702d5ac18.bindPopup(popup_ccecd47f69a697652c7f5bb055ecdda9)
+        ;
+
+        
+    
+    
+            var marker_0201157873bbe72157a0f2a107bdc775 = L.marker(
+                [43.7168523, 10.39526],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_fade1138bde3e317b0a00c3f273f8890 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18af7903da74d39fab5214f4e8618f4e = $(`<div id="html_18af7903da74d39fab5214f4e8618f4e" style="width: 100.0%; height: 100.0%;">Via Santa Lucia; Via Trento; Via Ricucchi</div>`)[0];
+                popup_fade1138bde3e317b0a00c3f273f8890.setContent(html_18af7903da74d39fab5214f4e8618f4e);
+            
+        
+
+        marker_0201157873bbe72157a0f2a107bdc775.bindPopup(popup_fade1138bde3e317b0a00c3f273f8890)
+        ;
+
+        
+    
+    
+            var marker_031bc22f4add72722b3f03c7a5e6e7f7 = L.marker(
+                [43.7169278, 10.3949365],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_6e8a90b47d155aa0ce5c6be6b1ed3478 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c67a6e247c82a7ce287a4cfcd2f95d25 = $(`<div id="html_c67a6e247c82a7ce287a4cfcd2f95d25" style="width: 100.0%; height: 100.0%;">Via Trieste; Via Trento; Via Roma</div>`)[0];
+                popup_6e8a90b47d155aa0ce5c6be6b1ed3478.setContent(html_c67a6e247c82a7ce287a4cfcd2f95d25);
+            
+        
+
+        marker_031bc22f4add72722b3f03c7a5e6e7f7.bindPopup(popup_6e8a90b47d155aa0ce5c6be6b1ed3478)
+        ;
+
+        
+    
+    
+            var marker_370f9690b7637c3fea7273665a647b79 = L.marker(
+                [43.717472, 10.3919227],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_6bfb42bae0e423aba48171480cb1ff02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9fd1b765939ab547056ed3e200e81b1 = $(`<div id="html_d9fd1b765939ab547056ed3e200e81b1" style="width: 100.0%; height: 100.0%;">Via Trieste; Via Nicola Pisano</div>`)[0];
+                popup_6bfb42bae0e423aba48171480cb1ff02.setContent(html_d9fd1b765939ab547056ed3e200e81b1);
+            
+        
+
+        marker_370f9690b7637c3fea7273665a647b79.bindPopup(popup_6bfb42bae0e423aba48171480cb1ff02)
+        ;
+
+        
+    
+    
+            var marker_b5b0022165849f6bbcaa7ac2fe30fca6 = L.marker(
+                [43.7163698, 10.3945476],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_0441fd08e7fed9834d4db142eca6b1ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8abec0d62cddf11d347cadce66da68a1 = $(`<div id="html_8abec0d62cddf11d347cadce66da68a1" style="width: 100.0%; height: 100.0%;">Via Roma; Via Enrico Fermi</div>`)[0];
+                popup_0441fd08e7fed9834d4db142eca6b1ff.setContent(html_8abec0d62cddf11d347cadce66da68a1);
+            
+        
+
+        marker_b5b0022165849f6bbcaa7ac2fe30fca6.bindPopup(popup_0441fd08e7fed9834d4db142eca6b1ff)
+        ;
+
+        
+    
+    
+            var marker_8c4460528f021c54efcd8075a8abeea2 = L.marker(
+                [43.7176731, 10.3978318],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_e664b77e3bedc910b853f4d8182064b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d30aaa8bbd1cdc4d1c1a477ee6f6a27d = $(`<div id="html_d30aaa8bbd1cdc4d1c1a477ee6f6a27d" style="width: 100.0%; height: 100.0%;">Piazza San Giorgio; Via del Collegio Ricci; Via La Pergola</div>`)[0];
+                popup_e664b77e3bedc910b853f4d8182064b2.setContent(html_d30aaa8bbd1cdc4d1c1a477ee6f6a27d);
+            
+        
+
+        marker_8c4460528f021c54efcd8075a8abeea2.bindPopup(popup_e664b77e3bedc910b853f4d8182064b2)
+        ;
+
+        
+    
+    
+            var marker_61657c9f8db7986a413c70f9d0e054c2 = L.marker(
+                [43.722343, 10.401046],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_77f3b048b4fb56b87f35dcb523e50f92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70216e3b47e535acdec2b9c7c4f0d6b5 = $(`<div id="html_70216e3b47e535acdec2b9c7c4f0d6b5" style="width: 100.0%; height: 100.0%;">Via San Tommaso; Via Cardinale Pietro Maffi</div>`)[0];
+                popup_77f3b048b4fb56b87f35dcb523e50f92.setContent(html_70216e3b47e535acdec2b9c7c4f0d6b5);
+            
+        
+
+        marker_61657c9f8db7986a413c70f9d0e054c2.bindPopup(popup_77f3b048b4fb56b87f35dcb523e50f92)
+        ;
+
+        
+    
+    
+            var marker_bc5f77690c8b5dd0eacc3da0d0a0aaf8 = L.marker(
+                [43.7193253, 10.388812],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_6f907c17cbb487687fb4a8d21d5421a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0eef0887fe2d8a7f1354fe5f4175dc1 = $(`<div id="html_e0eef0887fe2d8a7f1354fe5f4175dc1" style="width: 100.0%; height: 100.0%;">Via Francesco Traini; Via Carlo Francesco Gabba</div>`)[0];
+                popup_6f907c17cbb487687fb4a8d21d5421a5.setContent(html_e0eef0887fe2d8a7f1354fe5f4175dc1);
+            
+        
+
+        marker_bc5f77690c8b5dd0eacc3da0d0a0aaf8.bindPopup(popup_6f907c17cbb487687fb4a8d21d5421a5)
+        ;
+
+        
+    
+    
+            var marker_b54659fa196f53e7f3c9d73af444c768 = L.marker(
+                [43.7189718, 10.3899712],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_de32ef2ba3c5868c0dd52542a5ae4e5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c8c1fd3e830d669778b5cfec8b92812 = $(`<div id="html_2c8c1fd3e830d669778b5cfec8b92812" style="width: 100.0%; height: 100.0%;">Via Bonanno Pisano; Via Risorgimento; Via Carlo Francesco Gabba</div>`)[0];
+                popup_de32ef2ba3c5868c0dd52542a5ae4e5e.setContent(html_2c8c1fd3e830d669778b5cfec8b92812);
+            
+        
+
+        marker_b54659fa196f53e7f3c9d73af444c768.bindPopup(popup_de32ef2ba3c5868c0dd52542a5ae4e5e)
+        ;
+
+        
+    
+    
+            var marker_2d6fb7572368166f50db03430836f0e5 = L.marker(
+                [43.7203357, 10.3908775],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_4c159432e41a8e2b0b33c9132a4059ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05504abd342cf61e4e46b7b2be51d6db = $(`<div id="html_05504abd342cf61e4e46b7b2be51d6db" style="width: 100.0%; height: 100.0%;">Via Diotisalvi; Via Bonanno Pisano</div>`)[0];
+                popup_4c159432e41a8e2b0b33c9132a4059ff.setContent(html_05504abd342cf61e4e46b7b2be51d6db);
+            
+        
+
+        marker_2d6fb7572368166f50db03430836f0e5.bindPopup(popup_4c159432e41a8e2b0b33c9132a4059ff)
+        ;
+
+        
+    
+    
+            var marker_bd6ecabeb407aa2d886b1b0d88667768 = L.marker(
+                [43.7161352, 10.3966029],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_4f409835ce628324d08f6b9c279a8635 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc55d991bab0c0a2a21dc1f09558fc4d = $(`<div id="html_bc55d991bab0c0a2a21dc1f09558fc4d" style="width: 100.0%; height: 100.0%;">Via Santa Maria; Lungarno Antonio Pacinotti</div>`)[0];
+                popup_4f409835ce628324d08f6b9c279a8635.setContent(html_bc55d991bab0c0a2a21dc1f09558fc4d);
+            
+        
+
+        marker_bd6ecabeb407aa2d886b1b0d88667768.bindPopup(popup_4f409835ce628324d08f6b9c279a8635)
+        ;
+
+        
+    
+    
+            var marker_663de3109c87c58b864f7981b8995de6 = L.marker(
+                [43.7190682, 10.3999712],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_80ea309cd25fc80f0cf8c267105fb8ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eca7dea9a52f9f0be7e71730778549a7 = $(`<div id="html_eca7dea9a52f9f0be7e71730778549a7" style="width: 100.0%; height: 100.0%;">Piazza dei Cavalieri; Via San Frediano</div>`)[0];
+                popup_80ea309cd25fc80f0cf8c267105fb8ac.setContent(html_eca7dea9a52f9f0be7e71730778549a7);
+            
+        
+
+        marker_663de3109c87c58b864f7981b8995de6.bindPopup(popup_80ea309cd25fc80f0cf8c267105fb8ac)
+        ;
+
+        
+    
+    
+            var marker_a0711497a90d01145d58e00398c2dcb4 = L.marker(
+                [43.7220093, 10.3983839],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_b6d31f1d3e7198589ad7ada0f68befc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbbb2a103559d799b1064436f73e00c6 = $(`<div id="html_dbbb2a103559d799b1064436f73e00c6" style="width: 100.0%; height: 100.0%;">Piazza dell'Arcivescovado; Via Ferdinando Capponi</div>`)[0];
+                popup_b6d31f1d3e7198589ad7ada0f68befc6.setContent(html_dbbb2a103559d799b1064436f73e00c6);
+            
+        
+
+        marker_a0711497a90d01145d58e00398c2dcb4.bindPopup(popup_b6d31f1d3e7198589ad7ada0f68befc6)
+        ;
+
+        
+    
+    
+            var marker_605756ad715fb260002fa66f6f9113b4 = L.marker(
+                [43.7222385, 10.3977108],
+                {}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+        var popup_42a93abd3134157a592bfd5c971ad415 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4aac110c4b00f5fc65f64b9fc76bd3b = $(`<div id="html_c4aac110c4b00f5fc65f64b9fc76bd3b" style="width: 100.0%; height: 100.0%;">Piazza dell'Arcivescovado; Via Don Gaetano Boschi</div>`)[0];
+                popup_42a93abd3134157a592bfd5c971ad415.setContent(html_c4aac110c4b00f5fc65f64b9fc76bd3b);
+            
+        
+
+        marker_605756ad715fb260002fa66f6f9113b4.bindPopup(popup_42a93abd3134157a592bfd5c971ad415)
+        ;
+
+        
+    
+    
+            var poly_line_554bd7ab4ca712144656c6ad6c593c4f = L.polyline(
+                [[43.7203357, 10.3908775], [43.7189718, 10.3899712]],
+                {"bubblingMouseEvents": true, "color": "#ffa500ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffa500ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+            var poly_line_cd2c39d23e3f84122f874655631e1a0f = L.polyline(
+                [[43.7189718, 10.3899712], [43.7181759, 10.3894504]],
+                {"bubblingMouseEvents": true, "color": "#ff4600ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff4600ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+            var poly_line_92f54e7a23066bd97f2b11627920f0ee = L.polyline(
+                [[43.7181759, 10.3894504], [43.7164088, 10.3882581]],
+                {"bubblingMouseEvents": true, "color": "#ffee00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffee00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+            var poly_line_c83542b56e5c906c7285af11573a964f = L.polyline(
+                [[43.7205101, 10.3895106], [43.7203357, 10.3908775]],
+                {"bubblingMouseEvents": true, "color": "#cae500ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#cae500ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+            var poly_line_bdf5bb964546aaec47dc8670b4faa9df = L.polyline(
+                [[43.7189718, 10.3899712], [43.7181988, 10.3925435]],
+                {"bubblingMouseEvents": true, "color": "#ffe200ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffe200ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+            var poly_line_0b291797bd9c17f8cf9ac1f62678bbcf = L.polyline(
+                [[43.7181988, 10.3925435], [43.7180247, 10.39365]],
+                {"bubblingMouseEvents": true, "color": "#b7db00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#b7db00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+            var poly_line_8f4f30e78ab09b7f8cc054308a5a52c8 = L.polyline(
+                [[43.7180247, 10.39365], [43.71779, 10.3951959]],
+                {"bubblingMouseEvents": true, "color": "#b3da00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#b3da00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+            var poly_line_45f6a362ac560021e2037d5996476aeb = L.polyline(
+                [[43.71779, 10.3951959], [43.7185764, 10.3954069]],
+                {"bubblingMouseEvents": true, "color": "#b3da00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#b3da00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+            var poly_line_37b35d46b25ed50ddf8773e3028b6ab2 = L.polyline(
+                [[43.7185764, 10.3954069], [43.7197737, 10.3956139]],
+                {"bubblingMouseEvents": true, "color": "#d3e900ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d3e900ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+        
+    
+    var color_map_6f59614398f070e186b1ef9b01a4ac29 = {};
+
+    
+    color_map_6f59614398f070e186b1ef9b01a4ac29.color = d3.scale.threshold()
+              .domain([-3.0, -2.987975951903808, -2.975951903807615, -2.963927855711423, -2.9519038076152304, -2.9398797595190382, -2.9278557114228456, -2.9158316633266534, -2.903807615230461, -2.8917835671342687, -2.879759519038076, -2.867735470941884, -2.8557114228456912, -2.843687374749499, -2.8316633266533064, -2.8196392785571143, -2.8076152304609217, -2.7955911823647295, -2.7835671342685373, -2.7715430861723447, -2.7595190380761525, -2.74749498997996, -2.7354709418837677, -2.723446893787575, -2.711422845691383, -2.6993987975951903, -2.687374749498998, -2.6753507014028055, -2.6633266533066133, -2.6513026052104207, -2.6392785571142285, -2.627254509018036, -2.6152304609218437, -2.603206412825651, -2.591182364729459, -2.579158316633267, -2.567134268537074, -2.5551102204408815, -2.5430861723446894, -2.531062124248497, -2.5190380761523046, -2.5070140280561124, -2.49498997995992, -2.4829659318637276, -2.470941883767535, -2.458917835671343, -2.44689378757515, -2.434869739478958, -2.4228456913827654, -2.4108216432865732, -2.3987975951903806, -2.3867735470941884, -2.3747494989979963, -2.3627254509018036, -2.350701402805611, -2.338677354709419, -2.3266533066132267, -2.314629258517034, -2.3026052104208414, -2.2905811623246493, -2.278557114228457, -2.2665330661322645, -2.2545090180360723, -2.2424849699398797, -2.2304609218436875, -2.218436873747495, -2.2064128256513027, -2.19438877755511, -2.182364729458918, -2.1703406813627253, -2.158316633266533, -2.1462925851703405, -2.1342685370741483, -2.122244488977956, -2.1102204408817635, -2.098196392785571, -2.0861723446893787, -2.0741482965931866, -2.062124248496994, -2.0501002004008018, -2.038076152304609, -2.026052104208417, -2.0140280561122244, -2.002004008016032, -1.9899799599198398, -1.9779559118236474, -1.965931863727455, -1.9539078156312626, -1.9418837675350702, -1.9298597194388778, -1.9178356713426854, -1.905811623246493, -1.8937875751503006, -1.8817635270541082, -1.8697394789579158, -1.8577154308617234, -1.845691382765531, -1.8336673346693386, -1.8216432865731462, -1.8096192384769538, -1.7975951903807614, -1.785571142284569, -1.7735470941883769, -1.7615230460921845, -1.749498997995992, -1.7374749498997997, -1.7254509018036073, -1.7134268537074149, -1.7014028056112225, -1.68937875751503, -1.6773547094188377, -1.6653306613226453, -1.653306613226453, -1.6412825651302605, -1.629258517034068, -1.6172344689378757, -1.6052104208416833, -1.593186372745491, -1.5811623246492985, -1.5691382765531061, -1.5571142284569137, -1.5450901803607215, -1.5330661322645291, -1.5210420841683367, -1.5090180360721444, -1.496993987975952, -1.4849699398797596, -1.4729458917835672, -1.4609218436873748, -1.4488977955911824, -1.43687374749499, -1.4248496993987976, -1.4128256513026052, -1.4008016032064128, -1.3887775551102204, -1.376753507014028, -1.3647294589178356, -1.3527054108216432, -1.3406813627254508, -1.3286573146292586, -1.3166332665330662, -1.3046092184368738, -1.2925851703406814, -1.280561122244489, -1.2685370741482966, -1.2565130260521042, -1.2444889779559118, -1.2324649298597194, -1.220440881763527, -1.2084168336673347, -1.1963927855711423, -1.1843687374749499, -1.1723446893787575, -1.160320641282565, -1.1482965931863727, -1.1362725450901803, -1.1242484969939879, -1.1122244488977955, -1.1002004008016033, -1.088176352705411, -1.0761523046092185, -1.0641282565130261, -1.0521042084168337, -1.0400801603206413, -1.028056112224449, -1.0160320641282565, -1.0040080160320641, -0.9919839679358717, -0.9799599198396796, -0.9679358717434869, -0.9559118236472948, -0.9438877755511021, -0.93186372745491, -0.9198396793587174, -0.9078156312625252, -0.8957915831663326, -0.8837675350701404, -0.8717434869739478, -0.8597194388777556, -0.847695390781563, -0.8356713426853708, -0.8236472945891782, -0.811623246492986, -0.7995991983967934, -0.7875751503006012, -0.775551102204409, -0.7635270541082164, -0.7515030060120242, -0.7394789579158316, -0.7274549098196395, -0.7154308617234468, -0.7034068136272547, -0.691382765531062, -0.6793587174348699, -0.6673346693386772, -0.6553106212424851, -0.6432865731462925, -0.6312625250501003, -0.6192384769539077, -0.6072144288577155, -0.5951903807615229, -0.5831663326653307, -0.5711422845691381, -0.5591182364729459, -0.5470941883767537, -0.5350701402805611, -0.5230460921843689, -0.5110220440881763, -0.49899799599198413, -0.4869739478957915, -0.47494989979959934, -0.4629258517034067, -0.45090180360721455, -0.4388777555110219, -0.42685370741482975, -0.41482965931863713, -0.40280561122244496, -0.39078156312625234, -0.37875751503006017, -0.36673346693386755, -0.35470941883767537, -0.34268537074148275, -0.3306613226452906, -0.3186372745490984, -0.3066132264529058, -0.2945891783567136, -0.282565130260521, -0.2705410821643288, -0.2585170340681362, -0.24649298597194402, -0.2344689378757514, -0.22244488977955923, -0.2104208416833666, -0.19839679358717444, -0.18637274549098182, -0.17434869739478964, -0.16232464929859702, -0.15030060120240485, -0.13827655310621223, -0.12625250501002006, -0.11422845691382744, -0.10220440881763526, -0.09018036072144309, -0.07815631262525047, -0.0661322645290583, -0.054108216432865675, -0.0420841683366735, -0.03006012024048088, -0.018036072144288706, -0.006012024048096087, 0.006012024048096087, 0.018036072144288706, 0.03006012024048088, 0.0420841683366735, 0.054108216432865675, 0.0661322645290583, 0.07815631262525047, 0.09018036072144309, 0.10220440881763526, 0.11422845691382744, 0.12625250501002006, 0.13827655310621223, 0.15030060120240485, 0.16232464929859702, 0.17434869739478964, 0.18637274549098182, 0.19839679358717444, 0.2104208416833666, 0.22244488977955923, 0.2344689378757514, 0.24649298597194402, 0.2585170340681362, 0.2705410821643288, 0.282565130260521, 0.2945891783567136, 0.3066132264529058, 0.3186372745490984, 0.3306613226452906, 0.34268537074148275, 0.35470941883767537, 0.36673346693386755, 0.37875751503006017, 0.39078156312625234, 0.40280561122244496, 0.41482965931863713, 0.42685370741482975, 0.4388777555110219, 0.45090180360721455, 0.4629258517034067, 0.47494989979959934, 0.4869739478957915, 0.49899799599198413, 0.5110220440881763, 0.5230460921843689, 0.5350701402805611, 0.5470941883767537, 0.5591182364729459, 0.5711422845691381, 0.5831663326653307, 0.5951903807615229, 0.6072144288577155, 0.6192384769539077, 0.6312625250501003, 0.6432865731462925, 0.6553106212424851, 0.6673346693386772, 0.6793587174348699, 0.691382765531062, 0.7034068136272547, 0.7154308617234468, 0.7274549098196395, 0.7394789579158316, 0.7515030060120242, 0.7635270541082164, 0.775551102204409, 0.7875751503006012, 0.7995991983967934, 0.811623246492986, 0.8236472945891782, 0.8356713426853708, 0.847695390781563, 0.8597194388777556, 0.8717434869739478, 0.8837675350701404, 0.8957915831663326, 0.9078156312625252, 0.9198396793587174, 0.93186372745491, 0.9438877755511021, 0.9559118236472948, 0.9679358717434869, 0.9799599198396796, 0.9919839679358717, 1.0040080160320644, 1.0160320641282565, 1.0280561122244487, 1.0400801603206409, 1.052104208416834, 1.0641282565130261, 1.0761523046092183, 1.0881763527054105, 1.1002004008016035, 1.1122244488977957, 1.1242484969939879, 1.13627254509018, 1.1482965931863731, 1.1603206412825653, 1.1723446893787575, 1.1843687374749496, 1.1963927855711427, 1.2084168336673349, 1.220440881763527, 1.2324649298597192, 1.2444889779559114, 1.2565130260521045, 1.2685370741482966, 1.2805611222444888, 1.292585170340681, 1.304609218436874, 1.3166332665330662, 1.3286573146292584, 1.3406813627254506, 1.3527054108216436, 1.3647294589178358, 1.376753507014028, 1.3887775551102202, 1.4008016032064132, 1.4128256513026054, 1.4248496993987976, 1.4368737474949898, 1.448897795591182, 1.460921843687375, 1.4729458917835672, 1.4849699398797593, 1.4969939879759515, 1.5090180360721446, 1.5210420841683367, 1.533066132264529, 1.545090180360721, 1.5571142284569142, 1.5691382765531063, 1.5811623246492985, 1.5931863727454907, 1.6052104208416837, 1.617234468937876, 1.629258517034068, 1.6412825651302603, 1.6533066132264533, 1.6653306613226455, 1.6773547094188377, 1.6893787575150299, 1.701402805611222, 1.713426853707415, 1.7254509018036073, 1.7374749498997994, 1.7494989979959916, 1.7615230460921847, 1.7735470941883769, 1.785571142284569, 1.7975951903807612, 1.8096192384769543, 1.8216432865731464, 1.8336673346693386, 1.8456913827655308, 1.8577154308617239, 1.869739478957916, 1.8817635270541082, 1.8937875751503004, 1.9058116232464926, 1.9178356713426856, 1.9298597194388778, 1.94188376753507, 1.9539078156312621, 1.9659318637274552, 1.9779559118236474, 1.9899799599198396, 2.0020040080160317, 2.014028056112225, 2.026052104208417, 2.038076152304609, 2.0501002004008013, 2.0621242484969944, 2.0741482965931866, 2.0861723446893787, 2.098196392785571, 2.110220440881764, 2.122244488977956, 2.1342685370741483, 2.1462925851703405, 2.1583166332665327, 2.1703406813627257, 2.182364729458918, 2.19438877755511, 2.2064128256513023, 2.2184368737474953, 2.2304609218436875, 2.2424849699398797, 2.254509018036072, 2.266533066132265, 2.278557114228457, 2.2905811623246493, 2.3026052104208414, 2.3146292585170345, 2.3266533066132267, 2.338677354709419, 2.350701402805611, 2.362725450901803, 2.3747494989979963, 2.3867735470941884, 2.3987975951903806, 2.410821643286573, 2.422845691382766, 2.434869739478958, 2.44689378757515, 2.4589178356713424, 2.4709418837675354, 2.4829659318637276, 2.49498997995992, 2.507014028056112, 2.519038076152305, 2.531062124248497, 2.5430861723446894, 2.5551102204408815, 2.5671342685370737, 2.579158316633267, 2.591182364729459, 2.603206412825651, 2.6152304609218433, 2.6272545090180364, 2.6392785571142285, 2.6513026052104207, 2.663326653306613, 2.675350701402806, 2.687374749498998, 2.6993987975951903, 2.7114228456913825, 2.7234468937875755, 2.7354709418837677, 2.74749498997996, 2.759519038076152, 2.771543086172345, 2.7835671342685373, 2.7955911823647295, 2.8076152304609217, 2.819639278557114, 2.831663326653307, 2.843687374749499, 2.8557114228456912, 2.8677354709418834, 2.8797595190380765, 2.8917835671342687, 2.903807615230461, 2.915831663326653, 2.927855711422846, 2.9398797595190382, 2.9519038076152304, 2.9639278557114226, 2.9759519038076157, 2.987975951903808, 3.0])
+              .range(['#008000ff', '#018100ff', '#028100ff', '#038200ff', '#048200ff', '#058300ff', '#068300ff', '#078400ff', '#088400ff', '#098500ff', '#0a8500ff', '#0b8600ff', '#0c8600ff', '#0d8700ff', '#0e8700ff', '#0f8800ff', '#108800ff', '#118900ff', '#128900ff', '#138a00ff', '#148a00ff', '#158b00ff', '#168b00ff', '#178c00ff', '#188c00ff', '#198d00ff', '#1a8d00ff', '#1b8e00ff', '#1c8e00ff', '#1d8f00ff', '#1e8f00ff', '#1f9000ff', '#209000ff', '#219100ff', '#229100ff', '#239200ff', '#249200ff', '#259300ff', '#269300ff', '#289400ff', '#299400ff', '#2a9500ff', '#2b9500ff', '#2c9600ff', '#2d9600ff', '#2e9700ff', '#2f9800ff', '#309800ff', '#319900ff', '#329900ff', '#339a00ff', '#349a00ff', '#359b00ff', '#369b00ff', '#379c00ff', '#389c00ff', '#399d00ff', '#3a9d00ff', '#3b9e00ff', '#3c9e00ff', '#3d9f00ff', '#3e9f00ff', '#3fa000ff', '#40a000ff', '#41a100ff', '#42a100ff', '#43a200ff', '#44a200ff', '#45a300ff', '#46a300ff', '#47a400ff', '#48a400ff', '#49a500ff', '#4aa500ff', '#4ba600ff', '#4ca600ff', '#4da700ff', '#4fa700ff', '#50a800ff', '#51a800ff', '#52a900ff', '#53a900ff', '#54aa00ff', '#55aa00ff', '#56ab00ff', '#57ab00ff', '#58ac00ff', '#59ac00ff', '#5aad00ff', '#5bad00ff', '#5cae00ff', '#5daf00ff', '#5eaf00ff', '#5fb000ff', '#60b000ff', '#61b100ff', '#62b100ff', '#63b200ff', '#64b200ff', '#65b300ff', '#66b300ff', '#67b400ff', '#68b400ff', '#69b500ff', '#6ab500ff', '#6bb600ff', '#6cb600ff', '#6db700ff', '#6eb700ff', '#6fb800ff', '#70b800ff', '#71b900ff', '#72b900ff', '#73ba00ff', '#74ba00ff', '#75bb00ff', '#77bb00ff', '#78bc00ff', '#79bc00ff', '#7abd00ff', '#7bbd00ff', '#7cbe00ff', '#7dbe00ff', '#7ebf00ff', '#7fbf00ff', '#80c000ff', '#81c000ff', '#82c100ff', '#83c100ff', '#84c200ff', '#85c200ff', '#86c300ff', '#87c300ff', '#88c400ff', '#89c400ff', '#8ac500ff', '#8bc500ff', '#8cc600ff', '#8dc700ff', '#8ec700ff', '#8fc800ff', '#90c800ff', '#91c900ff', '#92c900ff', '#93ca00ff', '#94ca00ff', '#95cb00ff', '#96cb00ff', '#97cc00ff', '#98cc00ff', '#99cd00ff', '#9acd00ff', '#9bce00ff', '#9cce00ff', '#9ecf00ff', '#9fcf00ff', '#a0d000ff', '#a1d000ff', '#a2d100ff', '#a3d100ff', '#a4d200ff', '#a5d200ff', '#a6d300ff', '#a7d300ff', '#a8d400ff', '#a9d400ff', '#aad500ff', '#abd500ff', '#acd600ff', '#add600ff', '#aed700ff', '#afd700ff', '#b0d800ff', '#b1d800ff', '#b2d900ff', '#b3d900ff', '#b4da00ff', '#b5da00ff', '#b6db00ff', '#b7db00ff', '#b8dc00ff', '#b9dc00ff', '#badd00ff', '#bbde00ff', '#bcde00ff', '#bddf00ff', '#bedf00ff', '#bfe000ff', '#c0e000ff', '#c1e100ff', '#c2e100ff', '#c3e200ff', '#c5e200ff', '#c6e300ff', '#c7e300ff', '#c8e400ff', '#c9e400ff', '#cae500ff', '#cbe500ff', '#cce600ff', '#cde600ff', '#cee700ff', '#cfe700ff', '#d0e800ff', '#d1e800ff', '#d2e900ff', '#d3e900ff', '#d4ea00ff', '#d5ea00ff', '#d6eb00ff', '#d7eb00ff', '#d8ec00ff', '#d9ec00ff', '#daed00ff', '#dbed00ff', '#dcee00ff', '#ddee00ff', '#deef00ff', '#dfef00ff', '#e0f000ff', '#e1f000ff', '#e2f100ff', '#e3f100ff', '#e4f200ff', '#e5f200ff', '#e6f300ff', '#e7f300ff', '#e8f400ff', '#e9f500ff', '#eaf500ff', '#ebf600ff', '#edf600ff', '#eef700ff', '#eff700ff', '#f0f800ff', '#f1f800ff', '#f2f900ff', '#f3f900ff', '#f4fa00ff', '#f5fa00ff', '#f6fb00ff', '#f7fb00ff', '#f8fc00ff', '#f9fc00ff', '#fafd00ff', '#fbfd00ff', '#fcfe00ff', '#fdfe00ff', '#feff00ff', '#ffff00ff', '#ffff00ff', '#fffe00ff', '#fffd00ff', '#fffc00ff', '#fffb00ff', '#fffa00ff', '#fff900ff', '#fff800ff', '#fff700ff', '#fff600ff', '#fff500ff', '#fff400ff', '#fff300ff', '#fff200ff', '#fff100ff', '#fff000ff', '#ffef00ff', '#ffee00ff', '#ffed00ff', '#ffeb00ff', '#ffea00ff', '#ffe900ff', '#ffe800ff', '#ffe700ff', '#ffe600ff', '#ffe500ff', '#ffe400ff', '#ffe300ff', '#ffe200ff', '#ffe100ff', '#ffe000ff', '#ffdf00ff', '#ffde00ff', '#ffdd00ff', '#ffdc00ff', '#ffdb00ff', '#ffda00ff', '#ffd900ff', '#ffd800ff', '#ffd700ff', '#ffd600ff', '#ffd500ff', '#ffd400ff', '#ffd300ff', '#ffd200ff', '#ffd100ff', '#ffd000ff', '#ffcf00ff', '#ffce00ff', '#ffcd00ff', '#ffcc00ff', '#ffcb00ff', '#ffca00ff', '#ffc900ff', '#ffc800ff', '#ffc700ff', '#ffc600ff', '#ffc500ff', '#ffc300ff', '#ffc200ff', '#ffc100ff', '#ffc000ff', '#ffbf00ff', '#ffbe00ff', '#ffbd00ff', '#ffbc00ff', '#ffbb00ff', '#ffba00ff', '#ffb900ff', '#ffb800ff', '#ffb700ff', '#ffb600ff', '#ffb500ff', '#ffb400ff', '#ffb300ff', '#ffb200ff', '#ffb100ff', '#ffb000ff', '#ffaf00ff', '#ffae00ff', '#ffad00ff', '#ffac00ff', '#ffab00ff', '#ffaa00ff', '#ffa900ff', '#ffa800ff', '#ffa700ff', '#ffa600ff', '#ffa500ff', '#ffa400ff', '#ffa300ff', '#ffa200ff', '#ffa100ff', '#ffa000ff', '#ff9f00ff', '#ff9e00ff', '#ff9c00ff', '#ff9b00ff', '#ff9a00ff', '#ff9900ff', '#ff9800ff', '#ff9700ff', '#ff9600ff', '#ff9500ff', '#ff9400ff', '#ff9300ff', '#ff9200ff', '#ff9100ff', '#ff9000ff', '#ff8f00ff', '#ff8e00ff', '#ff8d00ff', '#ff8c00ff', '#ff8b00ff', '#ff8a00ff', '#ff8900ff', '#ff8800ff', '#ff8700ff', '#ff8600ff', '#ff8500ff', '#ff8400ff', '#ff8300ff', '#ff8200ff', '#ff8100ff', '#ff8000ff', '#ff7f00ff', '#ff7e00ff', '#ff7d00ff', '#ff7c00ff', '#ff7b00ff', '#ff7a00ff', '#ff7900ff', '#ff7800ff', '#ff7700ff', '#ff7500ff', '#ff7400ff', '#ff7300ff', '#ff7200ff', '#ff7100ff', '#ff7000ff', '#ff6f00ff', '#ff6e00ff', '#ff6d00ff', '#ff6c00ff', '#ff6b00ff', '#ff6a00ff', '#ff6900ff', '#ff6800ff', '#ff6700ff', '#ff6600ff', '#ff6500ff', '#ff6400ff', '#ff6300ff', '#ff6200ff', '#ff6100ff', '#ff6000ff', '#ff5f00ff', '#ff5e00ff', '#ff5d00ff', '#ff5c00ff', '#ff5b00ff', '#ff5a00ff', '#ff5900ff', '#ff5800ff', '#ff5700ff', '#ff5600ff', '#ff5500ff', '#ff5400ff', '#ff5300ff', '#ff5200ff', '#ff5100ff', '#ff5000ff', '#ff4f00ff', '#ff4d00ff', '#ff4c00ff', '#ff4b00ff', '#ff4a00ff', '#ff4900ff', '#ff4800ff', '#ff4700ff', '#ff4600ff', '#ff4500ff', '#ff4400ff', '#ff4300ff', '#ff4200ff', '#ff4100ff', '#ff4000ff', '#ff3f00ff', '#ff3e00ff', '#ff3d00ff', '#ff3c00ff', '#ff3b00ff', '#ff3a00ff', '#ff3900ff', '#ff3800ff', '#ff3700ff', '#ff3600ff', '#ff3500ff', '#ff3400ff', '#ff3300ff', '#ff3200ff', '#ff3100ff', '#ff3000ff', '#ff2f00ff', '#ff2e00ff', '#ff2d00ff', '#ff2c00ff', '#ff2b00ff', '#ff2a00ff', '#ff2900ff', '#ff2800ff', '#ff2600ff', '#ff2500ff', '#ff2400ff', '#ff2300ff', '#ff2200ff', '#ff2100ff', '#ff2000ff', '#ff1f00ff', '#ff1e00ff', '#ff1d00ff', '#ff1c00ff', '#ff1b00ff', '#ff1a00ff', '#ff1900ff', '#ff1800ff', '#ff1700ff', '#ff1600ff', '#ff1500ff', '#ff1400ff', '#ff1300ff', '#ff1200ff', '#ff1100ff', '#ff1000ff', '#ff0f00ff', '#ff0e00ff', '#ff0d00ff', '#ff0c00ff', '#ff0b00ff', '#ff0a00ff', '#ff0900ff', '#ff0800ff', '#ff0700ff', '#ff0600ff', '#ff0500ff', '#ff0400ff', '#ff0300ff', '#ff0200ff', '#ff0100ff', '#ff0000ff']);
+    
+
+    color_map_6f59614398f070e186b1ef9b01a4ac29.x = d3.scale.linear()
+              .domain([-3.0, 3.0])
+              .range([0, 450 - 50]);
+
+    color_map_6f59614398f070e186b1ef9b01a4ac29.legend = L.control({position: 'topright'});
+    color_map_6f59614398f070e186b1ef9b01a4ac29.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_6f59614398f070e186b1ef9b01a4ac29.legend.addTo(map_5fbe0ff62bdc54a91d3a97d5b216168e);
+
+    color_map_6f59614398f070e186b1ef9b01a4ac29.xAxis = d3.svg.axis()
+        .scale(color_map_6f59614398f070e186b1ef9b01a4ac29.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([-3.0, 0.0, 3.0]);
+
+    color_map_6f59614398f070e186b1ef9b01a4ac29.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_6f59614398f070e186b1ef9b01a4ac29.g = color_map_6f59614398f070e186b1ef9b01a4ac29.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_6f59614398f070e186b1ef9b01a4ac29.g.selectAll("rect")
+        .data(color_map_6f59614398f070e186b1ef9b01a4ac29.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_6f59614398f070e186b1ef9b01a4ac29.x(color_map_6f59614398f070e186b1ef9b01a4ac29.color.domain()[i - 1]) : color_map_6f59614398f070e186b1ef9b01a4ac29.x.range()[0],
+            x1: i < color_map_6f59614398f070e186b1ef9b01a4ac29.color.domain().length ? color_map_6f59614398f070e186b1ef9b01a4ac29.x(color_map_6f59614398f070e186b1ef9b01a4ac29.color.domain()[i]) : color_map_6f59614398f070e186b1ef9b01a4ac29.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_6f59614398f070e186b1ef9b01a4ac29.g.call(color_map_6f59614398f070e186b1ef9b01a4ac29.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("Z-Score dei Rumori");
+</script>
+</html>

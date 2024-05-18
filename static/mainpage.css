@@ -1,0 +1,57 @@
+/* main_page.css */
+
+/* Resetting default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting background color and text color */
+body {
+    background-image: url('/static/mainpage_background.png');    
+    background-color: #f0f0f0; /* Light grey */
+    color: #333; /* Dark grey */
+    font-family: Arial, sans-serif; /* Setting a common font family */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Styling the main header */
+h1 {
+    text-align: center;
+    margin-top: calc(10vh + 50px);
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Adding a subtle shadow */
+}
+
+/* Styling the links */
+a {
+    display: block;
+    width: 60vh; 
+    height: auto;
+    margin: 20px auto;
+    padding: 15px; 
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease;
+    font-size: 2em;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Adding a subtle shadow */
+
+}
+
+a:hover {
+    background-color: #0056b3; 
+}
+
+/* Centering links container */
+.links-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 55vh;
+    flex-direction: column; /* Stack items vertically */
+}

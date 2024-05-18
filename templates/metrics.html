@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graph Metrics</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='metrics.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Graph Metrics</h1>
+        <p>Number of nodes: {{ num_nodes }}</p>
+        <p>Number of edges: {{ num_edges }}</p>
+        <p>Density: {{ density }}</p>
+        <p>Average degree: {{ avg_degree }}</p>
+        <p>Median degree: {{ median_degree }}</p>
+        <p>Degree assortativity: {{ assortativity_degree }}</p>
+        <p>Average local clustering coefficient: {{ avg_clustering_coeff }}</p>
+        <p>Median local clustering coefficient: {{ median_clustering_coeff }}</p>
+        <p>Average strength: {{ avg_strength }}</p>
+        <p>Median strength: {{ median_strength }}</p>
+        <p>Strength assortativity: {{ assortativity_strength }}</p>
+        <p>Average local clustering coefficient (weighted): {{ avg_clustering_coeff_weighted }}</p>
+        <p>Median local clustering coefficient (weighted): {{ median_clustering_coeff_weighted }}</p>
+        <a href="/" class="btn">Back to Homepage</a>
+    </div>
+</body>
+</html>

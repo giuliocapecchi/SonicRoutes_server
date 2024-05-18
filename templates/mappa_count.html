@@ -1,0 +1,3929 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bc7f124e8e724e02188124d15e77aab4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+        <div id="button-container" style="position: absolute; bottom: 20px; right: 20px; z-index: 1000;">
+            <button style="display: block; width: 40vh; height: auto; margin: 20px auto; padding: 15px; text-align: center; text-decoration: none; color: #fff; background-color: #007bff; border-radius: 8px; transition: background-color 0.3s ease; font-size: 2em; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);" onclick="window.location.href='/'">Go back</button>
+        </div>
+    
+    
+            <div class="folium-map" id="map_bc7f124e8e724e02188124d15e77aab4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bc7f124e8e724e02188124d15e77aab4 = L.map(
+                "map_bc7f124e8e724e02188124d15e77aab4",
+                {
+                    center: [43.7175, 10.3942],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_800825e743837706a010138363de4b4b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_800825e743837706a010138363de4b4b.addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+            var poly_line_46b974ccbc102710e5f60ba8ace48756 = L.polyline(
+                [[43.71338, 10.3888137], [43.7136976, 10.3899272]],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_dc0aa851716ed0031f3064c57f8822b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f69254a61a7868fd242559655237b8b = $(`<div id="html_8f69254a61a7868fd242559655237b8b" style="width: 100.0%; height: 100.0%;">Count: 2</div>`)[0];
+                popup_dc0aa851716ed0031f3064c57f8822b5.setContent(html_8f69254a61a7868fd242559655237b8b);
+            
+        
+
+        poly_line_46b974ccbc102710e5f60ba8ace48756.bindPopup(popup_dc0aa851716ed0031f3064c57f8822b5)
+        ;
+
+        
+    
+    
+            var poly_line_349e2743c66d441de2b96d8e99fb796b = L.polyline(
+                [[43.714059, 10.391151], [43.7136976, 10.3899272]],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_7d41c4dc03897bf94c330c230b23c2ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9363caa2db21c29ecf0b22c7cf041cf = $(`<div id="html_b9363caa2db21c29ecf0b22c7cf041cf" style="width: 100.0%; height: 100.0%;">Count: 2</div>`)[0];
+                popup_7d41c4dc03897bf94c330c230b23c2ee.setContent(html_b9363caa2db21c29ecf0b22c7cf041cf);
+            
+        
+
+        poly_line_349e2743c66d441de2b96d8e99fb796b.bindPopup(popup_7d41c4dc03897bf94c330c230b23c2ee)
+        ;
+
+        
+    
+    
+            var poly_line_5266b7cb75235e5699ff53d4c4b9f69c = L.polyline(
+                [[43.714059, 10.391151], [43.7149487, 10.3936246]],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_549c1100bb0f4d804579317bae321ef5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6ca569a1988b4ad6f49d080370a42e0 = $(`<div id="html_a6ca569a1988b4ad6f49d080370a42e0" style="width: 100.0%; height: 100.0%;">Count: 2</div>`)[0];
+                popup_549c1100bb0f4d804579317bae321ef5.setContent(html_a6ca569a1988b4ad6f49d080370a42e0);
+            
+        
+
+        poly_line_5266b7cb75235e5699ff53d4c4b9f69c.bindPopup(popup_549c1100bb0f4d804579317bae321ef5)
+        ;
+
+        
+    
+    
+            var poly_line_9fbc40f306d1e7cbe8b386a84fdac739 = L.polyline(
+                [[43.7154022, 10.3945081], [43.7149487, 10.3936246]],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_8adc9d46f39126370705df7e9a39578f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e44142dd8ac2e8d345d72655aeab367e = $(`<div id="html_e44142dd8ac2e8d345d72655aeab367e" style="width: 100.0%; height: 100.0%;">Count: 2</div>`)[0];
+                popup_8adc9d46f39126370705df7e9a39578f.setContent(html_e44142dd8ac2e8d345d72655aeab367e);
+            
+        
+
+        poly_line_9fbc40f306d1e7cbe8b386a84fdac739.bindPopup(popup_8adc9d46f39126370705df7e9a39578f)
+        ;
+
+        
+    
+    
+            var poly_line_6fb7631b0b9cb26b8470d3e456675073 = L.polyline(
+                [[43.71338, 10.3888137], [43.715621, 10.387824]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_7eb80f9f1163f5405cf3f5576c5db8b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_920176c881ed3e12485652e7d3eb6821 = $(`<div id="html_920176c881ed3e12485652e7d3eb6821" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_7eb80f9f1163f5405cf3f5576c5db8b0.setContent(html_920176c881ed3e12485652e7d3eb6821);
+            
+        
+
+        poly_line_6fb7631b0b9cb26b8470d3e456675073.bindPopup(popup_7eb80f9f1163f5405cf3f5576c5db8b0)
+        ;
+
+        
+    
+    
+            var poly_line_e8a211febef2a73a11d933c052d4fbc9 = L.polyline(
+                [[43.7156025, 10.3949766], [43.7154022, 10.3945081]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_cc7b8b65691bac07b0ce6a6017b4c85a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e87a9bbdc147a82b6997a25fb6c90508 = $(`<div id="html_e87a9bbdc147a82b6997a25fb6c90508" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_cc7b8b65691bac07b0ce6a6017b4c85a.setContent(html_e87a9bbdc147a82b6997a25fb6c90508);
+            
+        
+
+        poly_line_e8a211febef2a73a11d933c052d4fbc9.bindPopup(popup_cc7b8b65691bac07b0ce6a6017b4c85a)
+        ;
+
+        
+    
+    
+            var poly_line_1887e45d62372e63347ee05d54956ec3 = L.polyline(
+                [[43.7156025, 10.3949766], [43.7158105, 10.3955213]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_201dfe10a1ecf5f5d971bb9e729e867d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_124fe6f1634b6a991e7835848d160758 = $(`<div id="html_124fe6f1634b6a991e7835848d160758" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_201dfe10a1ecf5f5d971bb9e729e867d.setContent(html_124fe6f1634b6a991e7835848d160758);
+            
+        
+
+        poly_line_1887e45d62372e63347ee05d54956ec3.bindPopup(popup_201dfe10a1ecf5f5d971bb9e729e867d)
+        ;
+
+        
+    
+    
+            var poly_line_8a8dd094823f9cfb763cf4ebac5ec093 = L.polyline(
+                [[43.7158105, 10.3955213], [43.7161352, 10.3966029]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a8856141fbf2d3c501aae68c239654b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c668ddf349b13f8f7bfb06c8c6b3819 = $(`<div id="html_8c668ddf349b13f8f7bfb06c8c6b3819" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_a8856141fbf2d3c501aae68c239654b6.setContent(html_8c668ddf349b13f8f7bfb06c8c6b3819);
+            
+        
+
+        poly_line_8a8dd094823f9cfb763cf4ebac5ec093.bindPopup(popup_a8856141fbf2d3c501aae68c239654b6)
+        ;
+
+        
+    
+    
+            var poly_line_4438af288844bdc07fa6d60e2a4cc358 = L.polyline(
+                [[43.7163187, 10.3974748], [43.7161352, 10.3966029]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_43b46a085afab34bca490ee575c75d79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06585c396c2cfa162800b85073556823 = $(`<div id="html_06585c396c2cfa162800b85073556823" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_43b46a085afab34bca490ee575c75d79.setContent(html_06585c396c2cfa162800b85073556823);
+            
+        
+
+        poly_line_4438af288844bdc07fa6d60e2a4cc358.bindPopup(popup_43b46a085afab34bca490ee575c75d79)
+        ;
+
+        
+    
+    
+            var poly_line_51ba465c009d5312a1bda430c346dc4d = L.polyline(
+                [[43.7166398, 10.3998939], [43.7163187, 10.3974748]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_e02f72d302f4b1fd5c24319d3aa8a8dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_036fe00c03f4f7a6ef131e5332ec11d3 = $(`<div id="html_036fe00c03f4f7a6ef131e5332ec11d3" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_e02f72d302f4b1fd5c24319d3aa8a8dd.setContent(html_036fe00c03f4f7a6ef131e5332ec11d3);
+            
+        
+
+        poly_line_51ba465c009d5312a1bda430c346dc4d.bindPopup(popup_e02f72d302f4b1fd5c24319d3aa8a8dd)
+        ;
+
+        
+    
+    
+            var poly_line_890269e0030a5488d5a88153ed9af0d2 = L.polyline(
+                [[43.7166398, 10.3998939], [43.7166222, 10.4002481]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_48f71f0f846e24aed5fd29220d620b92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ef688e7f91e5fac152e181b4b175692 = $(`<div id="html_6ef688e7f91e5fac152e181b4b175692" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_48f71f0f846e24aed5fd29220d620b92.setContent(html_6ef688e7f91e5fac152e181b4b175692);
+            
+        
+
+        poly_line_890269e0030a5488d5a88153ed9af0d2.bindPopup(popup_48f71f0f846e24aed5fd29220d620b92)
+        ;
+
+        
+    
+    
+            var poly_line_9ad92d8ed0a243ee2081f649ac87f123 = L.polyline(
+                [[43.7162818, 10.4021489], [43.7166222, 10.4002481]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_858fffad9a6d9df96e8fe8978dd31358 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9207ad362eaf1e5e2ef402fc0048bdf = $(`<div id="html_b9207ad362eaf1e5e2ef402fc0048bdf" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_858fffad9a6d9df96e8fe8978dd31358.setContent(html_b9207ad362eaf1e5e2ef402fc0048bdf);
+            
+        
+
+        poly_line_9ad92d8ed0a243ee2081f649ac87f123.bindPopup(popup_858fffad9a6d9df96e8fe8978dd31358)
+        ;
+
+        
+    
+    
+            var poly_line_73e66b9c0b242ec7488da7f7de3ab31d = L.polyline(
+                [[43.7155503, 10.4016837], [43.7162818, 10.4021489]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_637a8446c9be6fba9c5b19d333d5a0be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_083f473fb0557882a9589392600ea967 = $(`<div id="html_083f473fb0557882a9589392600ea967" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_637a8446c9be6fba9c5b19d333d5a0be.setContent(html_083f473fb0557882a9589392600ea967);
+            
+        
+
+        poly_line_73e66b9c0b242ec7488da7f7de3ab31d.bindPopup(popup_637a8446c9be6fba9c5b19d333d5a0be)
+        ;
+
+        
+    
+    
+            var poly_line_c66e48b827cac7fceec15ae32a6a5457 = L.polyline(
+                [[43.7164088, 10.3882581], [43.7181759, 10.3894504]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_86881f949a0a8977fff9e2bdc7190c21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e40dad8db36573cca351935a323ef120 = $(`<div id="html_e40dad8db36573cca351935a323ef120" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_86881f949a0a8977fff9e2bdc7190c21.setContent(html_e40dad8db36573cca351935a323ef120);
+            
+        
+
+        poly_line_c66e48b827cac7fceec15ae32a6a5457.bindPopup(popup_86881f949a0a8977fff9e2bdc7190c21)
+        ;
+
+        
+    
+    
+            var poly_line_7bce20d3ecfd53fa636e93ceff2922bd = L.polyline(
+                [[43.7181759, 10.3894504], [43.7189718, 10.3899712]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_7b154e20cbd84c6b9b40a574acc200c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d61d96c91ca97e06088f80ee32ab222d = $(`<div id="html_d61d96c91ca97e06088f80ee32ab222d" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_7b154e20cbd84c6b9b40a574acc200c6.setContent(html_d61d96c91ca97e06088f80ee32ab222d);
+            
+        
+
+        poly_line_7bce20d3ecfd53fa636e93ceff2922bd.bindPopup(popup_7b154e20cbd84c6b9b40a574acc200c6)
+        ;
+
+        
+    
+    
+            var poly_line_649b5c17598e5a8066452835ff5200f9 = L.polyline(
+                [[43.7181988, 10.3925435], [43.7189718, 10.3899712]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_9248bccbfe4c1741cada374bc086a15a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b360fc9e0cf2c04c45d3ed92f192e2b3 = $(`<div id="html_b360fc9e0cf2c04c45d3ed92f192e2b3" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_9248bccbfe4c1741cada374bc086a15a.setContent(html_b360fc9e0cf2c04c45d3ed92f192e2b3);
+            
+        
+
+        poly_line_649b5c17598e5a8066452835ff5200f9.bindPopup(popup_9248bccbfe4c1741cada374bc086a15a)
+        ;
+
+        
+    
+    
+            var poly_line_9ad2eb7d10b13b0574f75d10bb9e5fa1 = L.polyline(
+                [[43.7181988, 10.3925435], [43.7180247, 10.39365]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_be09af76f2ca650f2c1781e5615f4249 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_842c7c91143d92dd5b9a0d01ab87100b = $(`<div id="html_842c7c91143d92dd5b9a0d01ab87100b" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_be09af76f2ca650f2c1781e5615f4249.setContent(html_842c7c91143d92dd5b9a0d01ab87100b);
+            
+        
+
+        poly_line_9ad2eb7d10b13b0574f75d10bb9e5fa1.bindPopup(popup_be09af76f2ca650f2c1781e5615f4249)
+        ;
+
+        
+    
+    
+            var poly_line_e2d951ac5d310d101c522bdf7ad630c0 = L.polyline(
+                [[43.7180247, 10.39365], [43.71779, 10.3951959]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_fae5cbc66880778d61e65021eaf2af7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13e60489c330b972b78806e9315358ef = $(`<div id="html_13e60489c330b972b78806e9315358ef" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_fae5cbc66880778d61e65021eaf2af7b.setContent(html_13e60489c330b972b78806e9315358ef);
+            
+        
+
+        poly_line_e2d951ac5d310d101c522bdf7ad630c0.bindPopup(popup_fae5cbc66880778d61e65021eaf2af7b)
+        ;
+
+        
+    
+    
+            var poly_line_1204f438cea21830b17f200925723ffc = L.polyline(
+                [[43.7185764, 10.3954069], [43.71779, 10.3951959]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_229318d06c80d8bdf49f3cc6bb85191a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee718f4bd4f5e50b11aac2e5436f993f = $(`<div id="html_ee718f4bd4f5e50b11aac2e5436f993f" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_229318d06c80d8bdf49f3cc6bb85191a.setContent(html_ee718f4bd4f5e50b11aac2e5436f993f);
+            
+        
+
+        poly_line_1204f438cea21830b17f200925723ffc.bindPopup(popup_229318d06c80d8bdf49f3cc6bb85191a)
+        ;
+
+        
+    
+    
+            var poly_line_f406f4afd8efbfe0b02c1bfe6e981ea6 = L.polyline(
+                [[43.7197737, 10.3956139], [43.7185764, 10.3954069]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_c34f0e31b84c5de7b1e273ca1ebf3232 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b473092b65c83c607c306d7366b55cad = $(`<div id="html_b473092b65c83c607c306d7366b55cad" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_c34f0e31b84c5de7b1e273ca1ebf3232.setContent(html_b473092b65c83c607c306d7366b55cad);
+            
+        
+
+        poly_line_f406f4afd8efbfe0b02c1bfe6e981ea6.bindPopup(popup_c34f0e31b84c5de7b1e273ca1ebf3232)
+        ;
+
+        
+    
+    
+            var poly_line_915aadac765f213aa81de1a28f9edf22 = L.polyline(
+                [[43.7197737, 10.3956139], [43.7215349, 10.3957813]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_f242d513f52aac8266bf14b375638fc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63b0ff2565c530202905a1962abc405f = $(`<div id="html_63b0ff2565c530202905a1962abc405f" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_f242d513f52aac8266bf14b375638fc4.setContent(html_63b0ff2565c530202905a1962abc405f);
+            
+        
+
+        poly_line_915aadac765f213aa81de1a28f9edf22.bindPopup(popup_f242d513f52aac8266bf14b375638fc4)
+        ;
+
+        
+    
+    
+            var poly_line_c35e3222ce0af4a8e86018522f3b67f9 = L.polyline(
+                [[43.7215349, 10.3957813], [43.7215057, 10.3966777]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_0641263f7c7b9a8047a606703d8d0182 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ca82c58475220cf9c73c790fa2284d0 = $(`<div id="html_1ca82c58475220cf9c73c790fa2284d0" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_0641263f7c7b9a8047a606703d8d0182.setContent(html_1ca82c58475220cf9c73c790fa2284d0);
+            
+        
+
+        poly_line_c35e3222ce0af4a8e86018522f3b67f9.bindPopup(popup_0641263f7c7b9a8047a606703d8d0182)
+        ;
+
+        
+    
+    
+            var poly_line_1734ccc6fc82240ae3f744a5a4bbc5b8 = L.polyline(
+                [[43.7215057, 10.3966777], [43.7198467, 10.396716]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_c79b4920d41d373ce291e96e0fdea212 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efc6211ca5cf44c7c3c231a124b66870 = $(`<div id="html_efc6211ca5cf44c7c3c231a124b66870" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_c79b4920d41d373ce291e96e0fdea212.setContent(html_efc6211ca5cf44c7c3c231a124b66870);
+            
+        
+
+        poly_line_1734ccc6fc82240ae3f744a5a4bbc5b8.bindPopup(popup_c79b4920d41d373ce291e96e0fdea212)
+        ;
+
+        
+    
+    
+            var poly_line_f2844f5a593184f724e6dacbf8e57aa2 = L.polyline(
+                [[43.7198467, 10.396716], [43.7198819, 10.3973556]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_265eca84e7988af102b4552724f423ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83853dda35144dec82bf68e8d226f1ab = $(`<div id="html_83853dda35144dec82bf68e8d226f1ab" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_265eca84e7988af102b4552724f423ec.setContent(html_83853dda35144dec82bf68e8d226f1ab);
+            
+        
+
+        poly_line_f2844f5a593184f724e6dacbf8e57aa2.bindPopup(popup_265eca84e7988af102b4552724f423ec)
+        ;
+
+        
+    
+    
+            var poly_line_1ad11f56f9e315da0217eb9992f1910b = L.polyline(
+                [[43.7199116, 10.3977601], [43.7198819, 10.3973556]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_e2bd903d180f5b1cc60724849838a4ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6e255ca4f5afb7300ec115d5a17ec82 = $(`<div id="html_e6e255ca4f5afb7300ec115d5a17ec82" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_e2bd903d180f5b1cc60724849838a4ad.setContent(html_e6e255ca4f5afb7300ec115d5a17ec82);
+            
+        
+
+        poly_line_1ad11f56f9e315da0217eb9992f1910b.bindPopup(popup_e2bd903d180f5b1cc60724849838a4ad)
+        ;
+
+        
+    
+    
+            var poly_line_eb1e5e5459f084c01b28e125a68793dc = L.polyline(
+                [[43.7199116, 10.3977601], [43.7208932, 10.3978034]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_f195764622496e8de94eba315b4fa9a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c402f2c23e81b5146975181feeb2e49 = $(`<div id="html_2c402f2c23e81b5146975181feeb2e49" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_f195764622496e8de94eba315b4fa9a2.setContent(html_2c402f2c23e81b5146975181feeb2e49);
+            
+        
+
+        poly_line_eb1e5e5459f084c01b28e125a68793dc.bindPopup(popup_f195764622496e8de94eba315b4fa9a2)
+        ;
+
+        
+    
+    
+            var poly_line_d95e7fad21e74f41754669759f8ea346 = L.polyline(
+                [[43.7208932, 10.3978034], [43.7223336, 10.3979114]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_c9d9ab6c97d813f3aa5d2b9d4b909e7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f0bcf8a866540281bb24065056433c2 = $(`<div id="html_8f0bcf8a866540281bb24065056433c2" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_c9d9ab6c97d813f3aa5d2b9d4b909e7e.setContent(html_8f0bcf8a866540281bb24065056433c2);
+            
+        
+
+        poly_line_d95e7fad21e74f41754669759f8ea346.bindPopup(popup_c9d9ab6c97d813f3aa5d2b9d4b909e7e)
+        ;
+
+        
+    
+    
+            var poly_line_0a2a18bb29258a4f9e7a71e1b2b9e3a7 = L.polyline(
+                [[43.7225026, 10.3984423], [43.7223336, 10.3979114]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_8186b374f8ccbaf9dbeb61af64b10d32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41418971378b59706f68d76acff2c5ed = $(`<div id="html_41418971378b59706f68d76acff2c5ed" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_8186b374f8ccbaf9dbeb61af64b10d32.setContent(html_41418971378b59706f68d76acff2c5ed);
+            
+        
+
+        poly_line_0a2a18bb29258a4f9e7a71e1b2b9e3a7.bindPopup(popup_8186b374f8ccbaf9dbeb61af64b10d32)
+        ;
+
+        
+    
+    
+            var poly_line_bf16d9e7bac9e85af1c2f236cbe9773a = L.polyline(
+                [[43.7228801, 10.3985253], [43.7225026, 10.3984423]],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffff00ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_bb180a2a1b9ce645fd971e8a4fc8846a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d80e56d80e58f2d250beabf5aa96a4f4 = $(`<div id="html_d80e56d80e58f2d250beabf5aa96a4f4" style="width: 100.0%; height: 100.0%;">Count: 1</div>`)[0];
+                popup_bb180a2a1b9ce645fd971e8a4fc8846a.setContent(html_d80e56d80e58f2d250beabf5aa96a4f4);
+            
+        
+
+        poly_line_bf16d9e7bac9e85af1c2f236cbe9773a.bindPopup(popup_bb180a2a1b9ce645fd971e8a4fc8846a)
+        ;
+
+        
+    
+    
+            var marker_8db749d095ce1b410fdb9029745121ba = L.marker(
+                [43.7155503, 10.4016837],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_3fed8684f2f945cc0f74f1a74a0a217a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34f98ffca4380288ae766842e0c516b7 = $(`<div id="html_34f98ffca4380288ae766842e0c516b7" style="width: 100.0%; height: 100.0%;">[0, 'Ponte di Mezzo; Lungarno Galileo Galilei; Lungarno Gambacorti; Lungarno Gambacorti']</div>`)[0];
+                popup_3fed8684f2f945cc0f74f1a74a0a217a.setContent(html_34f98ffca4380288ae766842e0c516b7);
+            
+        
+
+        marker_8db749d095ce1b410fdb9029745121ba.bindPopup(popup_3fed8684f2f945cc0f74f1a74a0a217a)
+        ;
+
+        
+    
+    
+            var marker_91495203a31b0ac0795b900d7d318c4b = L.marker(
+                [43.7156025, 10.3949766],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_6fa1c313fb9f5e088c56e7665923bc8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1af8e9fd2bd967ae96dbc0531c8e0a33 = $(`<div id="html_1af8e9fd2bd967ae96dbc0531c8e0a33" style="width: 100.0%; height: 100.0%;">[1, 'Ponte Solferino; Lungarno Antonio Pacinotti; Lungarno Ranieri Simonelli; Piazza Solferino']</div>`)[0];
+                popup_6fa1c313fb9f5e088c56e7665923bc8d.setContent(html_1af8e9fd2bd967ae96dbc0531c8e0a33);
+            
+        
+
+        marker_91495203a31b0ac0795b900d7d318c4b.bindPopup(popup_6fa1c313fb9f5e088c56e7665923bc8d)
+        ;
+
+        
+    
+    
+            var marker_4707550f9cb1e023039af6ea04659a35 = L.marker(
+                [43.7158105, 10.3955213],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_2cc77a44c30878ff112b48665c2d0e57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6bb2ea759337d44a5dd5c77758bbf6e = $(`<div id="html_b6bb2ea759337d44a5dd5c77758bbf6e" style="width: 100.0%; height: 100.0%;">[2, 'Lungarno Antonio Pacinotti; Via del Buongusto; Lungarno Antonio Pacinotti']</div>`)[0];
+                popup_2cc77a44c30878ff112b48665c2d0e57.setContent(html_b6bb2ea759337d44a5dd5c77758bbf6e);
+            
+        
+
+        marker_4707550f9cb1e023039af6ea04659a35.bindPopup(popup_2cc77a44c30878ff112b48665c2d0e57)
+        ;
+
+        
+    
+    
+            var marker_e7fb91f9cd525ba199685c3d4c521afd = L.marker(
+                [43.7158011, 10.4003727],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a8d4df67231d68758ffdcdd333151391 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aec311a85d1fb2a7506e40755b6c68f5 = $(`<div id="html_aec311a85d1fb2a7506e40755b6c68f5" style="width: 100.0%; height: 100.0%;">[3, 'Lungarno Gambacorti; Lungarno Gambacorti; Via Pietro Toselli']</div>`)[0];
+                popup_a8d4df67231d68758ffdcdd333151391.setContent(html_aec311a85d1fb2a7506e40755b6c68f5);
+            
+        
+
+        marker_e7fb91f9cd525ba199685c3d4c521afd.bindPopup(popup_a8d4df67231d68758ffdcdd333151391)
+        ;
+
+        
+    
+    
+            var marker_4af829cb413dba91d86dba8994ba1dea = L.marker(
+                [43.7158286, 10.3996151],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_6e3a5ee5b42223ec53fdb53b2744d2c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd152681f642c212a73acf5c76d742ec = $(`<div id="html_bd152681f642c212a73acf5c76d742ec" style="width: 100.0%; height: 100.0%;">[4, 'Via delle Belle Donne; Lungarno Gambacorti; Lungarno Gambacorti']</div>`)[0];
+                popup_6e3a5ee5b42223ec53fdb53b2744d2c8.setContent(html_bd152681f642c212a73acf5c76d742ec);
+            
+        
+
+        marker_4af829cb413dba91d86dba8994ba1dea.bindPopup(popup_6e3a5ee5b42223ec53fdb53b2744d2c8)
+        ;
+
+        
+    
+    
+            var marker_1f5a798831988c2989cc86a4a3207509 = L.marker(
+                [43.7147231, 10.3957059],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a8fa0d7a73aea311284be50a2f75b1f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_556d9e8a165883468c27e9d49cc5f3ef = $(`<div id="html_556d9e8a165883468c27e9d49cc5f3ef" style="width: 100.0%; height: 100.0%;">[5, 'Via Francesco Crispi; Lungarno Sidney Sonnino; Ponte Solferino; Lungarno Gambacorti; Lungarno Gambacorti']</div>`)[0];
+                popup_a8fa0d7a73aea311284be50a2f75b1f7.setContent(html_556d9e8a165883468c27e9d49cc5f3ef);
+            
+        
+
+        marker_1f5a798831988c2989cc86a4a3207509.bindPopup(popup_a8fa0d7a73aea311284be50a2f75b1f7)
+        ;
+
+        
+    
+    
+            var marker_60f6aac7ceea9c0b7ef865c0667da998 = L.marker(
+                [43.7211779, 10.3914214],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_9c6a0fda08f661dc51eed67d97d3f837 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00b458fc2019f0ba5189468c75b7aa79 = $(`<div id="html_00b458fc2019f0ba5189468c75b7aa79" style="width: 100.0%; height: 100.0%;">[6, 'Via Giunta Pisano; Via Bonanno Pisano']</div>`)[0];
+                popup_9c6a0fda08f661dc51eed67d97d3f837.setContent(html_00b458fc2019f0ba5189468c75b7aa79);
+            
+        
+
+        marker_60f6aac7ceea9c0b7ef865c0667da998.bindPopup(popup_9c6a0fda08f661dc51eed67d97d3f837)
+        ;
+
+        
+    
+    
+            var marker_65bbb754d6f7f929d3cb7059319f4e58 = L.marker(
+                [43.7221479, 10.3882131],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_c918747edc59c23e53d9692513d5cdf2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3603d2fb53d7172813d830971cc7b277 = $(`<div id="html_3603d2fb53d7172813d830971cc7b277" style="width: 100.0%; height: 100.0%;">[7, 'Via Diotisalvi; Via Andrea Pisano; Via Giunta Pisano']</div>`)[0];
+                popup_c918747edc59c23e53d9692513d5cdf2.setContent(html_3603d2fb53d7172813d830971cc7b277);
+            
+        
+
+        marker_65bbb754d6f7f929d3cb7059319f4e58.bindPopup(popup_c918747edc59c23e53d9692513d5cdf2)
+        ;
+
+        
+    
+    
+            var marker_c237f5d04eaadee72dbe1ff93f2f27b8 = L.marker(
+                [43.7229513, 10.3982212],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_1a6b02ce52546235dbf5969e1e2f3959 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_853870aa029dafc07c87482c69976362 = $(`<div id="html_853870aa029dafc07c87482c69976362" style="width: 100.0%; height: 100.0%;">[8, 'Via Cardinale Pietro Maffi; Via San Ranierino; Via Cardinale Pietro Maffi']</div>`)[0];
+                popup_1a6b02ce52546235dbf5969e1e2f3959.setContent(html_853870aa029dafc07c87482c69976362);
+            
+        
+
+        marker_c237f5d04eaadee72dbe1ff93f2f27b8.bindPopup(popup_1a6b02ce52546235dbf5969e1e2f3959)
+        ;
+
+        
+    
+    
+            var marker_cfaf9c1a9dab17bc2842d1d91aa2d976 = L.marker(
+                [43.7228801, 10.3985253],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_1b4c14837903f1c62fcdfece6c82feaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c12dc6430bf1c6df08baa0c3f91ad8e = $(`<div id="html_8c12dc6430bf1c6df08baa0c3f91ad8e" style="width: 100.0%; height: 100.0%;">[9, 'Via Cardinale Pietro Maffi; Via Ugo Camozzo; Via Cardinale Pietro Maffi']</div>`)[0];
+                popup_1b4c14837903f1c62fcdfece6c82feaa.setContent(html_8c12dc6430bf1c6df08baa0c3f91ad8e);
+            
+        
+
+        marker_cfaf9c1a9dab17bc2842d1d91aa2d976.bindPopup(popup_1b4c14837903f1c62fcdfece6c82feaa)
+        ;
+
+        
+    
+    
+            var marker_d752e2a636ff72afb03699162a8d3847 = L.marker(
+                [43.71338, 10.3888137],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_2d01721974244b7bcace2ca2c064b228 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0489a3ac25dd17713c28eeac3e500cd1 = $(`<div id="html_0489a3ac25dd17713c28eeac3e500cd1" style="width: 100.0%; height: 100.0%;">[10, 'Via Bonanno Pisano; Lungarno Giacomo Leopardi; Piazza di Terzanaia']</div>`)[0];
+                popup_2d01721974244b7bcace2ca2c064b228.setContent(html_0489a3ac25dd17713c28eeac3e500cd1);
+            
+        
+
+        marker_d752e2a636ff72afb03699162a8d3847.bindPopup(popup_2d01721974244b7bcace2ca2c064b228)
+        ;
+
+        
+    
+    
+            var marker_f19163cdf0267a435c41701b5bcb6fdf = L.marker(
+                [43.715621, 10.387824],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_6c8dbe97ee800ad22248a608cc726a1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea897fb5bb6e76c36826d94819bedae2 = $(`<div id="html_ea897fb5bb6e76c36826d94819bedae2" style="width: 100.0%; height: 100.0%;">[11, 'Via Bonanno Pisano; Via dei Macelli']</div>`)[0];
+                popup_6c8dbe97ee800ad22248a608cc726a1a.setContent(html_ea897fb5bb6e76c36826d94819bedae2);
+            
+        
+
+        marker_f19163cdf0267a435c41701b5bcb6fdf.bindPopup(popup_6c8dbe97ee800ad22248a608cc726a1a)
+        ;
+
+        
+    
+    
+            var marker_9280c3731b179f3ae00970e092235d3b = L.marker(
+                [43.7164088, 10.3882581],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_0425b01e865541283dd1df1e9c89e0e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9013cc580c86306226b81a720b263d0 = $(`<div id="html_c9013cc580c86306226b81a720b263d0" style="width: 100.0%; height: 100.0%;">[12, 'Via Bonanno Pisano; Via dei Macelli']</div>`)[0];
+                popup_0425b01e865541283dd1df1e9c89e0e1.setContent(html_c9013cc580c86306226b81a720b263d0);
+            
+        
+
+        marker_9280c3731b179f3ae00970e092235d3b.bindPopup(popup_0425b01e865541283dd1df1e9c89e0e1)
+        ;
+
+        
+    
+    
+            var marker_2a5e79c0e39ae0f5b3d37ed6373ef6df = L.marker(
+                [43.7181759, 10.3894504],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_0b38a4c0dace30ca195ba085f093d8b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc3041b7fdeeedbce066a0401bbf7f1f = $(`<div id="html_dc3041b7fdeeedbce066a0401bbf7f1f" style="width: 100.0%; height: 100.0%;">[13, 'Via Rustichello da Pisa; Via Turino Vanni; Via Bonanno Pisano; Via Bonanno Pisano; Via Pietro da Pisa']</div>`)[0];
+                popup_0b38a4c0dace30ca195ba085f093d8b0.setContent(html_dc3041b7fdeeedbce066a0401bbf7f1f);
+            
+        
+
+        marker_2a5e79c0e39ae0f5b3d37ed6373ef6df.bindPopup(popup_0b38a4c0dace30ca195ba085f093d8b0)
+        ;
+
+        
+    
+    
+            var marker_47748876bf07118aeeb3a031271221c9 = L.marker(
+                [43.7228292, 10.3922295],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_051f6b683a4f8477e5ae2b47ff3ccdca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2378bbae72859751803f9a16e0db872 = $(`<div id="html_b2378bbae72859751803f9a16e0db872" style="width: 100.0%; height: 100.0%;">[14, 'Via G. Battista Niccolini; Via Andrea Pisano; Via Bonanno Pisano']</div>`)[0];
+                popup_051f6b683a4f8477e5ae2b47ff3ccdca.setContent(html_b2378bbae72859751803f9a16e0db872);
+            
+        
+
+        marker_47748876bf07118aeeb3a031271221c9.bindPopup(popup_051f6b683a4f8477e5ae2b47ff3ccdca)
+        ;
+
+        
+    
+    
+            var marker_ca173549009735d38b5a2de804f0cccf = L.marker(
+                [43.7228368, 10.3895119],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_cbae0fa469660b1abdbd2e05c7ff7fca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb83407e23c98664962f81ca1c4ce45c = $(`<div id="html_cb83407e23c98664962f81ca1c4ce45c" style="width: 100.0%; height: 100.0%;">[15, 'Via Andrea Pisano; Via Vecchia Barbaricina']</div>`)[0];
+                popup_cbae0fa469660b1abdbd2e05c7ff7fca.setContent(html_cb83407e23c98664962f81ca1c4ce45c);
+            
+        
+
+        marker_ca173549009735d38b5a2de804f0cccf.bindPopup(popup_cbae0fa469660b1abdbd2e05c7ff7fca)
+        ;
+
+        
+    
+    
+            var marker_c86aa644e8a925ed60ba331fc04e2ca5 = L.marker(
+                [43.7228354, 10.4017621],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_75988512ddac5288317733e071625096 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6ca1d602d0bdb956e49186ec59ea4d4 = $(`<div id="html_b6ca1d602d0bdb956e49186ec59ea4d4" style="width: 100.0%; height: 100.0%;">[16, 'Largo del Parlascio; Via Luigi Bianchi; Via del Brennero; Via Contessa Matilde; Via Contessa Matilde']</div>`)[0];
+                popup_75988512ddac5288317733e071625096.setContent(html_b6ca1d602d0bdb956e49186ec59ea4d4);
+            
+        
+
+        marker_c86aa644e8a925ed60ba331fc04e2ca5.bindPopup(popup_75988512ddac5288317733e071625096)
+        ;
+
+        
+    
+    
+            var marker_a4b90a4e1297aaa50004e13e842e837e = L.marker(
+                [43.7241928, 10.402379],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a46394754d88fb3e8fba9a0eed9a6c03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ad859878e0aa333965adea3fab1e4ed = $(`<div id="html_9ad859878e0aa333965adea3fab1e4ed" style="width: 100.0%; height: 100.0%;">[17, 'Via Luigi Bianchi; Via Santo Stefano']</div>`)[0];
+                popup_a46394754d88fb3e8fba9a0eed9a6c03.setContent(html_9ad859878e0aa333965adea3fab1e4ed);
+            
+        
+
+        marker_a4b90a4e1297aaa50004e13e842e837e.bindPopup(popup_a46394754d88fb3e8fba9a0eed9a6c03)
+        ;
+
+        
+    
+    
+            var marker_7d36fd22a5d6400b604932661aa0e517 = L.marker(
+                [43.7245985, 10.4024017],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_736eebb23fd74f734c7d08134e92ffcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52b805c5dc518f59c29a236dbd837917 = $(`<div id="html_52b805c5dc518f59c29a236dbd837917" style="width: 100.0%; height: 100.0%;">[18, 'Via Luigi Bianchi; Via Giuseppe Cesare Abba']</div>`)[0];
+                popup_736eebb23fd74f734c7d08134e92ffcb.setContent(html_52b805c5dc518f59c29a236dbd837917);
+            
+        
+
+        marker_7d36fd22a5d6400b604932661aa0e517.bindPopup(popup_736eebb23fd74f734c7d08134e92ffcb)
+        ;
+
+        
+    
+    
+            var marker_cb1a67c17e958b892c117580f0beec76 = L.marker(
+                [43.7163779, 10.3947648],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_91fd0acd4b9a33980fa1c15c7fb6b8f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfcf0495fc89ed575c526cedf1a26e7c = $(`<div id="html_cfcf0495fc89ed575c526cedf1a26e7c" style="width: 100.0%; height: 100.0%;">[19, 'Via Roma; Via Enrico Fermi; Piazza Solferino; Via Roma; Via Enrico Fermi']</div>`)[0];
+                popup_91fd0acd4b9a33980fa1c15c7fb6b8f6.setContent(html_cfcf0495fc89ed575c526cedf1a26e7c);
+            
+        
+
+        marker_cb1a67c17e958b892c117580f0beec76.bindPopup(popup_91fd0acd4b9a33980fa1c15c7fb6b8f6)
+        ;
+
+        
+    
+    
+            var marker_5fe68f432f033cd6df0c70e2c28b8898 = L.marker(
+                [43.7236889, 10.3919032],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_9ea7c81c6a1a4dbe963334007fdbb50a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8c27ca12e3c3f1ae5d61f0a18ea8dc2 = $(`<div id="html_f8c27ca12e3c3f1ae5d61f0a18ea8dc2" style="width: 100.0%; height: 100.0%;">[20, 'Via G. Battista Niccolini; Via Vecchia Barbaricina; Via Carlo Salomone Cammeo']</div>`)[0];
+                popup_9ea7c81c6a1a4dbe963334007fdbb50a.setContent(html_f8c27ca12e3c3f1ae5d61f0a18ea8dc2);
+            
+        
+
+        marker_5fe68f432f033cd6df0c70e2c28b8898.bindPopup(popup_9ea7c81c6a1a4dbe963334007fdbb50a)
+        ;
+
+        
+    
+    
+            var marker_9c7f5d38b89e391e887974cd83b6ebfe = L.marker(
+                [43.7196742, 10.4021804],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_692426031ebf61a3a58d0fe8fd82f9ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25d58f1f30ffe8fb56e2e841a1faece1 = $(`<div id="html_25d58f1f30ffe8fb56e2e841a1faece1" style="width: 100.0%; height: 100.0%;">[21, 'Via Giosuè Carducci; Via San Lorenzo; Via Canto del Nicchio']</div>`)[0];
+                popup_692426031ebf61a3a58d0fe8fd82f9ca.setContent(html_25d58f1f30ffe8fb56e2e841a1faece1);
+            
+        
+
+        marker_9c7f5d38b89e391e887974cd83b6ebfe.bindPopup(popup_692426031ebf61a3a58d0fe8fd82f9ca)
+        ;
+
+        
+    
+    
+            var marker_22d50b9acab2fb32d56587463aab8355 = L.marker(
+                [43.7214562, 10.4021771],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_1e7ffd3e6e52fcc91189d67ad60b2f6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df934642fedc8c96011c5d8e7268648a = $(`<div id="html_df934642fedc8c96011c5d8e7268648a" style="width: 100.0%; height: 100.0%;">[22, 'Via Giosuè Carducci; Via Santa Caterina; Via Carlo Fedeli']</div>`)[0];
+                popup_1e7ffd3e6e52fcc91189d67ad60b2f6d.setContent(html_df934642fedc8c96011c5d8e7268648a);
+            
+        
+
+        marker_22d50b9acab2fb32d56587463aab8355.bindPopup(popup_1e7ffd3e6e52fcc91189d67ad60b2f6d)
+        ;
+
+        
+    
+    
+            var marker_366cc7cb5df8e6ac288d478b7d375412 = L.marker(
+                [43.7219085, 10.4021025],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a185e81be0e21d2f7c6968e4dd3caf23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1547a47b55563c93ca9633b32929de9 = $(`<div id="html_f1547a47b55563c93ca9633b32929de9" style="width: 100.0%; height: 100.0%;">[23, 'Largo del Parlascio; Largo del Parlascio; Via Carlo Fedeli']</div>`)[0];
+                popup_a185e81be0e21d2f7c6968e4dd3caf23.setContent(html_f1547a47b55563c93ca9633b32929de9);
+            
+        
+
+        marker_366cc7cb5df8e6ac288d478b7d375412.bindPopup(popup_a185e81be0e21d2f7c6968e4dd3caf23)
+        ;
+
+        
+    
+    
+            var marker_2306bd5a7d4226f42e4034a18ee2417c = L.marker(
+                [43.7221886, 10.401703],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_6f8fc76cce56f5ad443c4282e48b551c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74c86af5c9a63fb7adab0e5b9e1e4243 = $(`<div id="html_74c86af5c9a63fb7adab0e5b9e1e4243" style="width: 100.0%; height: 100.0%;">[24, 'Largo del Parlascio; Largo del Parlascio; Via Cardinale Pietro Maffi']</div>`)[0];
+                popup_6f8fc76cce56f5ad443c4282e48b551c.setContent(html_74c86af5c9a63fb7adab0e5b9e1e4243);
+            
+        
+
+        marker_2306bd5a7d4226f42e4034a18ee2417c.bindPopup(popup_6f8fc76cce56f5ad443c4282e48b551c)
+        ;
+
+        
+    
+    
+            var marker_a53aac81e075b5bfb6e53eeeb0705d39 = L.marker(
+                [43.7240033, 10.397229],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_735f3f7c28cddbade5767ede0d163c76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7447c3b54ae59dcd205fe3297a540558 = $(`<div id="html_7447c3b54ae59dcd205fe3297a540558" style="width: 100.0%; height: 100.0%;">[25, 'Via Piave; Via Contessa Matilde; Via Contessa Matilde']</div>`)[0];
+                popup_735f3f7c28cddbade5767ede0d163c76.setContent(html_7447c3b54ae59dcd205fe3297a540558);
+            
+        
+
+        marker_a53aac81e075b5bfb6e53eeeb0705d39.bindPopup(popup_735f3f7c28cddbade5767ede0d163c76)
+        ;
+
+        
+    
+    
+            var marker_86a9e519ddc055e695f6ed8ae8c7214c = L.marker(
+                [43.7157697, 10.3988833],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_e555b65b30c9ee8f999c4889f704604b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2cb2c62c56832024cb42fbf6717cddf = $(`<div id="html_b2cb2c62c56832024cb42fbf6717cddf" style="width: 100.0%; height: 100.0%;">[26, 'Via Giuseppe Mazzini; Lungarno Gambacorti; Lungarno Gambacorti']</div>`)[0];
+                popup_e555b65b30c9ee8f999c4889f704604b.setContent(html_b2cb2c62c56832024cb42fbf6717cddf);
+            
+        
+
+        marker_86a9e519ddc055e695f6ed8ae8c7214c.bindPopup(popup_e555b65b30c9ee8f999c4889f704604b)
+        ;
+
+        
+    
+    
+            var marker_832e4b48940737ce064a0d4840d1c9d9 = L.marker(
+                [43.7147344, 10.3988625],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_fac5460ea0441a4ffed7ef9b048e5237 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48fdc53539f7cccfbe89d80b191e0574 = $(`<div id="html_48fdc53539f7cccfbe89d80b191e0574" style="width: 100.0%; height: 100.0%;">[27, 'Via La Maddalena; Via Giuseppe Mazzini']</div>`)[0];
+                popup_fac5460ea0441a4ffed7ef9b048e5237.setContent(html_48fdc53539f7cccfbe89d80b191e0574);
+            
+        
+
+        marker_832e4b48940737ce064a0d4840d1c9d9.bindPopup(popup_fac5460ea0441a4ffed7ef9b048e5237)
+        ;
+
+        
+    
+    
+            var marker_b1ed86c62612c7b439865546c2a7b51b = L.marker(
+                [43.7140192, 10.398755],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_2af3e1f0ee61c3e130c361cc218fcd20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef31d5fc34d5fb74bf5dd411d6990da1 = $(`<div id="html_ef31d5fc34d5fb74bf5dd411d6990da1" style="width: 100.0%; height: 100.0%;">[28, 'Via Giuseppe Mazzini; Via Alberto Mario']</div>`)[0];
+                popup_2af3e1f0ee61c3e130c361cc218fcd20.setContent(html_ef31d5fc34d5fb74bf5dd411d6990da1);
+            
+        
+
+        marker_b1ed86c62612c7b439865546c2a7b51b.bindPopup(popup_2af3e1f0ee61c3e130c361cc218fcd20)
+        ;
+
+        
+    
+    
+            var marker_8b2e43a16ed00561f8c41f7d87426f41 = L.marker(
+                [43.7250113, 10.391233],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_b574d6605765ab4a3a793214e5b973d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7965f5205e4b1cf754d460060dd53d28 = $(`<div id="html_7965f5205e4b1cf754d460060dd53d28" style="width: 100.0%; height: 100.0%;">[29, 'Via Marinello Nelli; Rotatoria Lorenzo Poggi; Via Pietrasantina; Viale delle Cascine; Via Carlo Salomone Cammeo; Via Contessa Matilde']</div>`)[0];
+                popup_b574d6605765ab4a3a793214e5b973d2.setContent(html_7965f5205e4b1cf754d460060dd53d28);
+            
+        
+
+        marker_8b2e43a16ed00561f8c41f7d87426f41.bindPopup(popup_b574d6605765ab4a3a793214e5b973d2)
+        ;
+
+        
+    
+    
+            var marker_1958b453988006e62df97403df0e916e = L.marker(
+                [43.7225026, 10.3984423],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a22a7478cda5e87ea70c83036408b179 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9769889f266bdc5b4b096045fd48eb45 = $(`<div id="html_9769889f266bdc5b4b096045fd48eb45" style="width: 100.0%; height: 100.0%;">[30, "Via Ugo Camozzo; Piazza dell'Arcivescovado"]</div>`)[0];
+                popup_a22a7478cda5e87ea70c83036408b179.setContent(html_9769889f266bdc5b4b096045fd48eb45);
+            
+        
+
+        marker_1958b453988006e62df97403df0e916e.bindPopup(popup_a22a7478cda5e87ea70c83036408b179)
+        ;
+
+        
+    
+    
+            var marker_d153053e59423dcadcf9290b496fd953 = L.marker(
+                [43.7217743, 10.3997097],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_2b838852085fe2fa244198675cbda5be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1532b2e50cf872926abf9fec004c8302 = $(`<div id="html_1532b2e50cf872926abf9fec004c8302" style="width: 100.0%; height: 100.0%;">[31, 'Via Ferdinando Capponi; Via San Tommaso; Via Ferdinando Capponi']</div>`)[0];
+                popup_2b838852085fe2fa244198675cbda5be.setContent(html_1532b2e50cf872926abf9fec004c8302);
+            
+        
+
+        marker_d153053e59423dcadcf9290b496fd953.bindPopup(popup_2b838852085fe2fa244198675cbda5be)
+        ;
+
+        
+    
+    
+            var marker_d5128ca6c70a9210bdd77df876967f59 = L.marker(
+                [43.721923, 10.399224],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_c7c88b8431b2d3f7348a7b4f92dbd69a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a655f99657b3d6f90d6f09a81547b0da = $(`<div id="html_a655f99657b3d6f90d6f09a81547b0da" style="width: 100.0%; height: 100.0%;">[32, 'Via Ferdinando Capponi; Via Uguccione della Faggiola; Via Ferdinando Capponi']</div>`)[0];
+                popup_c7c88b8431b2d3f7348a7b4f92dbd69a.setContent(html_a655f99657b3d6f90d6f09a81547b0da);
+            
+        
+
+        marker_d5128ca6c70a9210bdd77df876967f59.bindPopup(popup_c7c88b8431b2d3f7348a7b4f92dbd69a)
+        ;
+
+        
+    
+    
+            var marker_8cb9aa2442d98a70b6bc52cdcc26710c = L.marker(
+                [43.7212777, 10.4003564],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a61daf8ea4e16ef2156aa2368e245fad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7634a75e38d178e0cb4ffd3ed25bccc7 = $(`<div id="html_7634a75e38d178e0cb4ffd3ed25bccc7" style="width: 100.0%; height: 100.0%;">[33, 'Via dei Martiri; Via San Giuseppe; Via Ferdinando Capponi']</div>`)[0];
+                popup_a61daf8ea4e16ef2156aa2368e245fad.setContent(html_7634a75e38d178e0cb4ffd3ed25bccc7);
+            
+        
+
+        marker_8cb9aa2442d98a70b6bc52cdcc26710c.bindPopup(popup_a61daf8ea4e16ef2156aa2368e245fad)
+        ;
+
+        
+    
+    
+            var marker_397a3a448fd830acf3aa3597c6a7e66f = L.marker(
+                [43.7198717, 10.3996002],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_3705e0b315565ac134502c897b5fa750 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a2fca2dae5537acdedf886f43d6b4aa = $(`<div id="html_6a2fca2dae5537acdedf886f43d6b4aa" style="width: 100.0%; height: 100.0%;">[34, 'Via dei Martiri; Via Dalmazia']</div>`)[0];
+                popup_3705e0b315565ac134502c897b5fa750.setContent(html_6a2fca2dae5537acdedf886f43d6b4aa);
+            
+        
+
+        marker_397a3a448fd830acf3aa3597c6a7e66f.bindPopup(popup_3705e0b315565ac134502c897b5fa750)
+        ;
+
+        
+    
+    
+            var marker_8a34918f214ea3d2ef84ff5cdc50ba6b = L.marker(
+                [43.7177108, 10.3998677],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_c9228e7b1700abec0dd923a915762e46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea0448dcc3c684d6574534c836614098 = $(`<div id="html_ea0448dcc3c684d6574534c836614098" style="width: 100.0%; height: 100.0%;">[35, 'Piazza San Frediano; Via Curtatone e Montanara; Via Domenico Cavalca']</div>`)[0];
+                popup_c9228e7b1700abec0dd923a915762e46.setContent(html_ea0448dcc3c684d6574534c836614098);
+            
+        
+
+        marker_8a34918f214ea3d2ef84ff5cdc50ba6b.bindPopup(popup_c9228e7b1700abec0dd923a915762e46)
+        ;
+
+        
+    
+    
+            var marker_19c5a11f60a67acfc6da1b60a67c83e4 = L.marker(
+                [43.7181135, 10.3998918],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_50e02addafe007a7b77c4264ae6a7602 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6021b306ffc52fe98e00cccafd15f957 = $(`<div id="html_6021b306ffc52fe98e00cccafd15f957" style="width: 100.0%; height: 100.0%;">[36, 'Piazza San Frediano; Via San Frediano; Via Tavoleria']</div>`)[0];
+                popup_50e02addafe007a7b77c4264ae6a7602.setContent(html_6021b306ffc52fe98e00cccafd15f957);
+            
+        
+
+        marker_19c5a11f60a67acfc6da1b60a67c83e4.bindPopup(popup_50e02addafe007a7b77c4264ae6a7602)
+        ;
+
+        
+    
+    
+            var marker_0797861718eb70691b823d667dca255e = L.marker(
+                [43.7240077, 10.3992421],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a82ff4a94fd7dbf8e6c26a3e0750533e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ce434c2babdd1d3a3f128505e1e5bf5 = $(`<div id="html_7ce434c2babdd1d3a3f128505e1e5bf5" style="width: 100.0%; height: 100.0%;">[37, 'Via Antonio Rosmini; Via Santo Stefano; Via Santo Stefano']</div>`)[0];
+                popup_a82ff4a94fd7dbf8e6c26a3e0750533e.setContent(html_7ce434c2babdd1d3a3f128505e1e5bf5);
+            
+        
+
+        marker_0797861718eb70691b823d667dca255e.bindPopup(popup_a82ff4a94fd7dbf8e6c26a3e0750533e)
+        ;
+
+        
+    
+    
+            var marker_87960b80fbef613cd70741408f59de06 = L.marker(
+                [43.7154022, 10.3945081],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_70c75ade3a7e01107e758f9ee22febf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de9b3a4c62e1b2d09b496d0246bb8100 = $(`<div id="html_de9b3a4c62e1b2d09b496d0246bb8100" style="width: 100.0%; height: 100.0%;">[38, 'Lungarno Ranieri Simonelli; Via Volturno; Lungarno Ranieri Simonelli']</div>`)[0];
+                popup_70c75ade3a7e01107e758f9ee22febf6.setContent(html_de9b3a4c62e1b2d09b496d0246bb8100);
+            
+        
+
+        marker_87960b80fbef613cd70741408f59de06.bindPopup(popup_70c75ade3a7e01107e758f9ee22febf6)
+        ;
+
+        
+    
+    
+            var marker_91d1620fed21128e05bbf1bc774a8d10 = L.marker(
+                [43.7170206, 10.3916516],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_8f7a3a32beb3cb1aa21adb9ea27341d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d86cdcea3467608d4d7c5dc2a6a429d6 = $(`<div id="html_d86cdcea3467608d4d7c5dc2a6a429d6" style="width: 100.0%; height: 100.0%;">[39, 'Via Nicola Pisano; Via Rustichello da Pisa; Via Enrico Fermi; Via Nicola Pisano']</div>`)[0];
+                popup_8f7a3a32beb3cb1aa21adb9ea27341d6.setContent(html_d86cdcea3467608d4d7c5dc2a6a429d6);
+            
+        
+
+        marker_91d1620fed21128e05bbf1bc774a8d10.bindPopup(popup_8f7a3a32beb3cb1aa21adb9ea27341d6)
+        ;
+
+        
+    
+    
+            var marker_a20375e22de3c3828ab8e3484ec9ff23 = L.marker(
+                [43.7165557, 10.3915297],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_e3db8cf2e10774201141d97190b1a4d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0ba909d2d28f6c8ad564a748aa51572 = $(`<div id="html_e0ba909d2d28f6c8ad564a748aa51572" style="width: 100.0%; height: 100.0%;">[40, 'Via Nicola Pisano; Via Volturno']</div>`)[0];
+                popup_e3db8cf2e10774201141d97190b1a4d9.setContent(html_e0ba909d2d28f6c8ad564a748aa51572);
+            
+        
+
+        marker_a20375e22de3c3828ab8e3484ec9ff23.bindPopup(popup_e3db8cf2e10774201141d97190b1a4d9)
+        ;
+
+        
+    
+    
+            var marker_b5598beef4184f83932114ff2349b3c3 = L.marker(
+                [43.714059, 10.391151],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_26e05ee583d105084fb263989dc3dc5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17032d06b2d58cfc580554c648a0b795 = $(`<div id="html_17032d06b2d58cfc580554c648a0b795" style="width: 100.0%; height: 100.0%;">[41, 'Via Nicola Pisano; Lungarno Ranieri Simonelli; Lungarno Ranieri Simonelli']</div>`)[0];
+                popup_26e05ee583d105084fb263989dc3dc5d.setContent(html_17032d06b2d58cfc580554c648a0b795);
+            
+        
+
+        marker_b5598beef4184f83932114ff2349b3c3.bindPopup(popup_26e05ee583d105084fb263989dc3dc5d)
+        ;
+
+        
+    
+    
+            var marker_19c748c93d02a3477f8f7c65e10b6c78 = L.marker(
+                [43.7162818, 10.4021489],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_ffaf083cda0636f6ca669c374f8d58fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5419e44c0d361c26017c64844a004f0b = $(`<div id="html_5419e44c0d361c26017c64844a004f0b" style="width: 100.0%; height: 100.0%;">[42, 'Lungarno Antonio Pacinotti; Ponte di Mezzo; Lungarno Mediceo']</div>`)[0];
+                popup_ffaf083cda0636f6ca669c374f8d58fc.setContent(html_5419e44c0d361c26017c64844a004f0b);
+            
+        
+
+        marker_19c748c93d02a3477f8f7c65e10b6c78.bindPopup(popup_ffaf083cda0636f6ca669c374f8d58fc)
+        ;
+
+        
+    
+    
+            var marker_36b607c638e1c5ee44d8815166fde91f = L.marker(
+                [43.7144795, 10.4021165],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a287d8b0d9e95c24454fd8c893323e7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e68e1995909f84f21dfab767a36195a = $(`<div id="html_5e68e1995909f84f21dfab767a36195a" style="width: 100.0%; height: 100.0%;">[43, 'Via Franceschi; Via San Martino; Via del Moro; Via Kinzica dei Sismondi']</div>`)[0];
+                popup_a287d8b0d9e95c24454fd8c893323e7c.setContent(html_5e68e1995909f84f21dfab767a36195a);
+            
+        
+
+        marker_36b607c638e1c5ee44d8815166fde91f.bindPopup(popup_a287d8b0d9e95c24454fd8c893323e7c)
+        ;
+
+        
+    
+    
+            var marker_1c64efbe5206c2f5109cab1b4f7c2958 = L.marker(
+                [43.7139052, 10.4017466],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_1f31b4790f6e643b03c4df927ffdee91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91468575b70b99184f4b196dc179be42 = $(`<div id="html_91468575b70b99184f4b196dc179be42" style="width: 100.0%; height: 100.0%;">[44, 'Via Kinzica dei Sismondi; Via San Bernardo; Via San Bernardo']</div>`)[0];
+                popup_1f31b4790f6e643b03c4df927ffdee91.setContent(html_91468575b70b99184f4b196dc179be42);
+            
+        
+
+        marker_1c64efbe5206c2f5109cab1b4f7c2958.bindPopup(popup_1f31b4790f6e643b03c4df927ffdee91)
+        ;
+
+        
+    
+    
+            var marker_21085df566f5a1099b6b392bbde5053d = L.marker(
+                [43.7197737, 10.3956139],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_c5b3c9333fd8324d7049fbbaf90c791e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2b35939c655c086be527c5256ae62c8 = $(`<div id="html_d2b35939c655c086be527c5256ae62c8" style="width: 100.0%; height: 100.0%;">[45, 'Via Paolo Savi; Via Roma; Via Roma']</div>`)[0];
+                popup_c5b3c9333fd8324d7049fbbaf90c791e.setContent(html_d2b35939c655c086be527c5256ae62c8);
+            
+        
+
+        marker_21085df566f5a1099b6b392bbde5053d.bindPopup(popup_c5b3c9333fd8324d7049fbbaf90c791e)
+        ;
+
+        
+    
+    
+            var marker_eda7bc6df17d61aa56b63fe1bbf4152d = L.marker(
+                [43.7198919, 10.3929772],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_f7632a2099ad7a8fec2ddfe0a9c73a0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49a7c268322a35cf20b1ef6c6847b97c = $(`<div id="html_49a7c268322a35cf20b1ef6c6847b97c" style="width: 100.0%; height: 100.0%;">[46, 'Via Paolo Savi; Via Nicola Pisano']</div>`)[0];
+                popup_f7632a2099ad7a8fec2ddfe0a9c73a0b.setContent(html_49a7c268322a35cf20b1ef6c6847b97c);
+            
+        
+
+        marker_eda7bc6df17d61aa56b63fe1bbf4152d.bindPopup(popup_f7632a2099ad7a8fec2ddfe0a9c73a0b)
+        ;
+
+        
+    
+    
+            var marker_8bb5e4838ef8ccb3529ca9cbedb15a26 = L.marker(
+                [43.7181988, 10.3925435],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_886f2bd27f654f2a38cb196291d51b3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_442ca6e6c2c40df60ddd6dcb76a42de5 = $(`<div id="html_442ca6e6c2c40df60ddd6dcb76a42de5" style="width: 100.0%; height: 100.0%;">[47, 'Via Risorgimento; Via Risorgimento; Via Nicola Pisano; Via Nicola Pisano']</div>`)[0];
+                popup_886f2bd27f654f2a38cb196291d51b3e.setContent(html_442ca6e6c2c40df60ddd6dcb76a42de5);
+            
+        
+
+        marker_8bb5e4838ef8ccb3529ca9cbedb15a26.bindPopup(popup_886f2bd27f654f2a38cb196291d51b3e)
+        ;
+
+        
+    
+    
+            var marker_dd4ae729c7fe9286401602d2785952e5 = L.marker(
+                [43.7238789, 10.4013326],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_de088358ddafcb0180479a81943fa6dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecb51480c25869bdfc7d45322c7c6913 = $(`<div id="html_ecb51480c25869bdfc7d45322c7c6913" style="width: 100.0%; height: 100.0%;">[48, "Via Santo Stefano; Via Sant'Ansano"]</div>`)[0];
+                popup_de088358ddafcb0180479a81943fa6dd.setContent(html_ecb51480c25869bdfc7d45322c7c6913);
+            
+        
+
+        marker_dd4ae729c7fe9286401602d2785952e5.bindPopup(popup_de088358ddafcb0180479a81943fa6dd)
+        ;
+
+        
+    
+    
+            var marker_96a18302042bdba5473887727593f4d3 = L.marker(
+                [43.720987, 10.3886822],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_72a436cf635b291c6af1dd9c53b3db22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a50444e1ac10b52e1e930f28cef7f553 = $(`<div id="html_a50444e1ac10b52e1e930f28cef7f553" style="width: 100.0%; height: 100.0%;">[49, 'Via Cimabue; Via Diotisalvi; Via Diotisalvi']</div>`)[0];
+                popup_72a436cf635b291c6af1dd9c53b3db22.setContent(html_a50444e1ac10b52e1e930f28cef7f553);
+            
+        
+
+        marker_96a18302042bdba5473887727593f4d3.bindPopup(popup_72a436cf635b291c6af1dd9c53b3db22)
+        ;
+
+        
+    
+    
+            var marker_8068c923383f1127368d93fc87c8c0a1 = L.marker(
+                [43.7196471, 10.3879154],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_0a86fa9470d8782ca772e097036fc670 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99c684ffa3ed5ca968b46ae885e5e8b5 = $(`<div id="html_99c684ffa3ed5ca968b46ae885e5e8b5" style="width: 100.0%; height: 100.0%;">[50, 'Via Cimabue; Via Carlo Francesco Gabba']</div>`)[0];
+                popup_0a86fa9470d8782ca772e097036fc670.setContent(html_99c684ffa3ed5ca968b46ae885e5e8b5);
+            
+        
+
+        marker_8068c923383f1127368d93fc87c8c0a1.bindPopup(popup_0a86fa9470d8782ca772e097036fc670)
+        ;
+
+        
+    
+    
+            var marker_c178edceea2734725a73723457e993e1 = L.marker(
+                [43.719364, 10.388843],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_fcf7519f9561dcd1a096eb9d4f303f77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_727e66449aee69bbad2abe510e4ca4f7 = $(`<div id="html_727e66449aee69bbad2abe510e4ca4f7" style="width: 100.0%; height: 100.0%;">[51, 'Via Francesco Traini; Via Carlo Francesco Gabba']</div>`)[0];
+                popup_fcf7519f9561dcd1a096eb9d4f303f77.setContent(html_727e66449aee69bbad2abe510e4ca4f7);
+            
+        
+
+        marker_c178edceea2734725a73723457e993e1.bindPopup(popup_fcf7519f9561dcd1a096eb9d4f303f77)
+        ;
+
+        
+    
+    
+            var marker_9ff5a362560e48ea6bc1c985295ea713 = L.marker(
+                [43.7198206, 10.3989136],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_aca74f34c14107ff40b8cbd0c9cc3af2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_263ef714e1748e27ead8c42d7b2fef36 = $(`<div id="html_263ef714e1748e27ead8c42d7b2fef36" style="width: 100.0%; height: 100.0%;">[52, 'Via dei Mille; Via Corsica; Via Uguccione della Faggiola; Piazza Francesco Buonamici']</div>`)[0];
+                popup_aca74f34c14107ff40b8cbd0c9cc3af2.setContent(html_263ef714e1748e27ead8c42d7b2fef36);
+            
+        
+
+        marker_9ff5a362560e48ea6bc1c985295ea713.bindPopup(popup_aca74f34c14107ff40b8cbd0c9cc3af2)
+        ;
+
+        
+    
+    
+            var marker_f1f1bcba9399068807eb4092f6080ef8 = L.marker(
+                [43.7199116, 10.3977601],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_01d05acfdcfe0a3302a8510d46462a29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8c5d4f6b011e220c9863c59c0106a8c = $(`<div id="html_b8c5d4f6b011e220c9863c59c0106a8c" style="width: 100.0%; height: 100.0%;">[53, 'Via dei Mille; Piazza Felice Cavallotti; Piazza Felice Cavallotti']</div>`)[0];
+                popup_01d05acfdcfe0a3302a8510d46462a29.setContent(html_b8c5d4f6b011e220c9863c59c0106a8c);
+            
+        
+
+        marker_f1f1bcba9399068807eb4092f6080ef8.bindPopup(popup_01d05acfdcfe0a3302a8510d46462a29)
+        ;
+
+        
+    
+    
+            var marker_08f81aa4bcd489ce8a5f66e7cf6d62f7 = L.marker(
+                [43.7139872, 10.3971365],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_0ab3385bd88a23e70475ecb288495ef6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cd32ec06aa284b625de6e0037c025e3 = $(`<div id="html_5cd32ec06aa284b625de6e0037c025e3" style="width: 100.0%; height: 100.0%;">[55, "Via Alberto Mario; Via San Paolo; Via Sant'Antonio"]</div>`)[0];
+                popup_0ab3385bd88a23e70475ecb288495ef6.setContent(html_5cd32ec06aa284b625de6e0037c025e3);
+            
+        
+
+        marker_08f81aa4bcd489ce8a5f66e7cf6d62f7.bindPopup(popup_0ab3385bd88a23e70475ecb288495ef6)
+        ;
+
+        
+    
+    
+            var marker_4ac3767ee15e5968a66b55bdb4fb3633 = L.marker(
+                [43.7140844, 10.3977181],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_ee8780231d414f8aac7bfd8de3f1f769 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06686a29ca411296e415d122643bb2d7 = $(`<div id="html_06686a29ca411296e415d122643bb2d7" style="width: 100.0%; height: 100.0%;">[56, 'Via Alberto Mario; Vicolo San Cosimo; Via Camilla Del Lante']</div>`)[0];
+                popup_ee8780231d414f8aac7bfd8de3f1f769.setContent(html_06686a29ca411296e415d122643bb2d7);
+            
+        
+
+        marker_4ac3767ee15e5968a66b55bdb4fb3633.bindPopup(popup_ee8780231d414f8aac7bfd8de3f1f769)
+        ;
+
+        
+    
+    
+            var marker_4e0718c3ade7fc02d6269bd14c1e10fe = L.marker(
+                [43.7141077, 10.3980147],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_7a89a6527b9a22f66bb3887307ada407 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e1cb70a1a7d7f9634998c3d818b550f = $(`<div id="html_0e1cb70a1a7d7f9634998c3d818b550f" style="width: 100.0%; height: 100.0%;">[57, 'Via Alberto Mario; Vicolo delle Conce']</div>`)[0];
+                popup_7a89a6527b9a22f66bb3887307ada407.setContent(html_0e1cb70a1a7d7f9634998c3d818b550f);
+            
+        
+
+        marker_4e0718c3ade7fc02d6269bd14c1e10fe.bindPopup(popup_7a89a6527b9a22f66bb3887307ada407)
+        ;
+
+        
+    
+    
+            var marker_c11cf70b5a9daa7e4254e7f487efdc28 = L.marker(
+                [43.7141139, 10.3982709],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_97995e7efa54589a08c9676660221cc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e03070bb1be6ffcbfdb154cf1f4b8831 = $(`<div id="html_e03070bb1be6ffcbfdb154cf1f4b8831" style="width: 100.0%; height: 100.0%;">[58, "Via Alberto Mario; Vicolo dell'Annunziata"]</div>`)[0];
+                popup_97995e7efa54589a08c9676660221cc9.setContent(html_e03070bb1be6ffcbfdb154cf1f4b8831);
+            
+        
+
+        marker_c11cf70b5a9daa7e4254e7f487efdc28.bindPopup(popup_97995e7efa54589a08c9676660221cc9)
+        ;
+
+        
+    
+    
+            var marker_13a1c3ccf5465afaa318bd166653430f = L.marker(
+                [43.7166398, 10.3998939],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_cdb7b529e2fb4e03d0016b95f26568ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7830f1893b8dc9688851534da1188ef0 = $(`<div id="html_7830f1893b8dc9688851534da1188ef0" style="width: 100.0%; height: 100.0%;">[59, 'Via Curtatone e Montanara; Lungarno Antonio Pacinotti; Lungarno Antonio Pacinotti']</div>`)[0];
+                popup_cdb7b529e2fb4e03d0016b95f26568ec.setContent(html_7830f1893b8dc9688851534da1188ef0);
+            
+        
+
+        marker_13a1c3ccf5465afaa318bd166653430f.bindPopup(popup_cdb7b529e2fb4e03d0016b95f26568ec)
+        ;
+
+        
+    
+    
+            var marker_96cc3fea5850dda09cc105233bbc1b1a = L.marker(
+                [43.7207076, 10.3896235],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_8a63d01a863aeccaf4eb17af3ece608e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8efe9f8108512e99fefd9f5b6a93ae3 = $(`<div id="html_d8efe9f8108512e99fefd9f5b6a93ae3" style="width: 100.0%; height: 100.0%;">[60, 'Largo Lucio Lazzarino; Via Diotisalvi; Via Diotisalvi; Via Francesco Traini']</div>`)[0];
+                popup_8a63d01a863aeccaf4eb17af3ece608e.setContent(html_d8efe9f8108512e99fefd9f5b6a93ae3);
+            
+        
+
+        marker_96cc3fea5850dda09cc105233bbc1b1a.bindPopup(popup_8a63d01a863aeccaf4eb17af3ece608e)
+        ;
+
+        
+    
+    
+            var marker_d69c77c77e92a5668837075097c3b0f8 = L.marker(
+                [43.7190822, 10.4007174],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_7748f78a711da12d98ad91ccffb91ce6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3eb71e23a02c191a201184b23df90e9 = $(`<div id="html_c3eb71e23a02c191a201184b23df90e9" style="width: 100.0%; height: 100.0%;">[62, 'Via Ulisse Dini; Piazza dei Cavalieri']</div>`)[0];
+                popup_7748f78a711da12d98ad91ccffb91ce6.setContent(html_c3eb71e23a02c191a201184b23df90e9);
+            
+        
+
+        marker_d69c77c77e92a5668837075097c3b0f8.bindPopup(popup_7748f78a711da12d98ad91ccffb91ce6)
+        ;
+
+        
+    
+    
+            var marker_03e3250d0875faf9e3c0fe9e443421f9 = L.marker(
+                [43.7183748, 10.4015048],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_d83691ad502fa1b4902b279da6b8442a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68fe6ced7099f8d8c83e3277a3d84db9 = $(`<div id="html_68fe6ced7099f8d8c83e3277a3d84db9" style="width: 100.0%; height: 100.0%;">[63, 'Via Ulisse Dini; Piazza San Felice']</div>`)[0];
+                popup_d83691ad502fa1b4902b279da6b8442a.setContent(html_68fe6ced7099f8d8c83e3277a3d84db9);
+            
+        
+
+        marker_03e3250d0875faf9e3c0fe9e443421f9.bindPopup(popup_d83691ad502fa1b4902b279da6b8442a)
+        ;
+
+        
+    
+    
+            var marker_208fab4d1c6e45b21bbd088a32e710c0 = L.marker(
+                [43.718232, 10.4018044],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_9e35aaa9d6e2ce9e4f7af092b25e9b13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af3512ef262663aa5127291ccc4533ab = $(`<div id="html_af3512ef262663aa5127291ccc4533ab" style="width: 100.0%; height: 100.0%;">[64, 'Via Ulisse Dini; Piazza Giovan Battista Donati']</div>`)[0];
+                popup_9e35aaa9d6e2ce9e4f7af092b25e9b13.setContent(html_af3512ef262663aa5127291ccc4533ab);
+            
+        
+
+        marker_208fab4d1c6e45b21bbd088a32e710c0.bindPopup(popup_9e35aaa9d6e2ce9e4f7af092b25e9b13)
+        ;
+
+        
+    
+    
+            var marker_59cb3e432b3ba8e45d3d2ce8c0b0e343 = L.marker(
+                [43.7195462, 10.399977],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_33fb7e5019399eecfc4dbd717832f294 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d183aa17fedb30911d55eda5d4d17bd = $(`<div id="html_6d183aa17fedb30911d55eda5d4d17bd" style="width: 100.0%; height: 100.0%;">[65, 'Via Corsica; Piazza dei Cavalieri']</div>`)[0];
+                popup_33fb7e5019399eecfc4dbd717832f294.setContent(html_6d183aa17fedb30911d55eda5d4d17bd);
+            
+        
+
+        marker_59cb3e432b3ba8e45d3d2ce8c0b0e343.bindPopup(popup_33fb7e5019399eecfc4dbd717832f294)
+        ;
+
+        
+    
+    
+            var marker_0b49f707383d176455aaa83d7104cec8 = L.marker(
+                [43.7256525, 10.3906496],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_2a86c09b6e1042bf83d52a8e5235eb3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb932efa85aaf3e0b53af45b27ce2408 = $(`<div id="html_fb932efa85aaf3e0b53af45b27ce2408" style="width: 100.0%; height: 100.0%;">[66, 'Via Mino Rosi; Via Marinello Nelli']</div>`)[0];
+                popup_2a86c09b6e1042bf83d52a8e5235eb3c.setContent(html_fb932efa85aaf3e0b53af45b27ce2408);
+            
+        
+
+        marker_0b49f707383d176455aaa83d7104cec8.bindPopup(popup_2a86c09b6e1042bf83d52a8e5235eb3c)
+        ;
+
+        
+    
+    
+            var marker_4e25c55f04c0c1318101326d6d154b87 = L.marker(
+                [43.7196868, 10.4018689],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_4898ef7815d26b76c219b65497dafb37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99889f8f3eba29748289cd9444dcebc2 = $(`<div id="html_99889f8f3eba29748289cd9444dcebc2" style="width: 100.0%; height: 100.0%;">[67, 'Via Consoli del Mare; Via Canto del Nicchio; Via Santa Apollonia']</div>`)[0];
+                popup_4898ef7815d26b76c219b65497dafb37.setContent(html_99889f8f3eba29748289cd9444dcebc2);
+            
+        
+
+        marker_4e25c55f04c0c1318101326d6d154b87.bindPopup(popup_4898ef7815d26b76c219b65497dafb37)
+        ;
+
+        
+    
+    
+            var marker_64de7b02c2c7aedfebcc0e3a9fd27feb = L.marker(
+                [43.7193552, 10.4003227],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_88627ea67ef2a7b4507a99951b3595ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_974c603f93614e21ac93e445273673e0 = $(`<div id="html_974c603f93614e21ac93e445273673e0" style="width: 100.0%; height: 100.0%;">[68, 'Via Consoli del Mare; Piazza dei Cavalieri']</div>`)[0];
+                popup_88627ea67ef2a7b4507a99951b3595ec.setContent(html_974c603f93614e21ac93e445273673e0);
+            
+        
+
+        marker_64de7b02c2c7aedfebcc0e3a9fd27feb.bindPopup(popup_88627ea67ef2a7b4507a99951b3595ec)
+        ;
+
+        
+    
+    
+            var marker_6844fd2deb66bb9768950e22e80205ec = L.marker(
+                [43.7178518, 10.4018389],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_173e831664dafb1e249afeea29bbe6d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ef93d800e3155b28c2e99df464257ce = $(`<div id="html_2ef93d800e3155b28c2e99df464257ce" style="width: 100.0%; height: 100.0%;">[69, "Piazza Giovan Battista Donati; Piazza Sant'Omobono"]</div>`)[0];
+                popup_173e831664dafb1e249afeea29bbe6d9.setContent(html_2ef93d800e3155b28c2e99df464257ce);
+            
+        
+
+        marker_6844fd2deb66bb9768950e22e80205ec.bindPopup(popup_173e831664dafb1e249afeea29bbe6d9)
+        ;
+
+        
+    
+    
+            var marker_5495ec2df721f27b7446f786911f5127 = L.marker(
+                [43.718127, 10.3969295],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_0d7a661d8ccc4a51eb83e2d96fc564de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e6c502112c511316d05740d4d649e3a = $(`<div id="html_5e6c502112c511316d05740d4d649e3a" style="width: 100.0%; height: 100.0%;">[70, 'Via Alessandro Volta; Via Santa Maria']</div>`)[0];
+                popup_0d7a661d8ccc4a51eb83e2d96fc564de.setContent(html_5e6c502112c511316d05740d4d649e3a);
+            
+        
+
+        marker_5495ec2df721f27b7446f786911f5127.bindPopup(popup_0d7a661d8ccc4a51eb83e2d96fc564de)
+        ;
+
+        
+    
+    
+            var marker_5b444c43bf916b0687e81cd331cbb587 = L.marker(
+                [43.7185764, 10.3954069],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_dd2582d9957bd92c72e32ae69bd74956 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8c08beabfa3de06beaf227ae61cb26a = $(`<div id="html_b8c08beabfa3de06beaf227ae61cb26a" style="width: 100.0%; height: 100.0%;">[71, 'Via Alessandro Volta; Via Derna; Via Roma']</div>`)[0];
+                popup_dd2582d9957bd92c72e32ae69bd74956.setContent(html_b8c08beabfa3de06beaf227ae61cb26a);
+            
+        
+
+        marker_5b444c43bf916b0687e81cd331cbb587.bindPopup(popup_dd2582d9957bd92c72e32ae69bd74956)
+        ;
+
+        
+    
+    
+            var marker_e6106769ada1a4f26414d640a35164a7 = L.marker(
+                [43.7213169, 10.4019478],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_7828c58d3c1fb67edfaaa8f5ba63bdf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76afb83a30ca665b40726a0cbccaa694 = $(`<div id="html_76afb83a30ca665b40726a0cbccaa694" style="width: 100.0%; height: 100.0%;">[72, 'Via San Giuseppe; Via Santa Apollonia']</div>`)[0];
+                popup_7828c58d3c1fb67edfaaa8f5ba63bdf9.setContent(html_76afb83a30ca665b40726a0cbccaa694);
+            
+        
+
+        marker_e6106769ada1a4f26414d640a35164a7.bindPopup(popup_7828c58d3c1fb67edfaaa8f5ba63bdf9)
+        ;
+
+        
+    
+    
+            var marker_2842e6183e25f6cd8ddacb0606bd5b37 = L.marker(
+                [43.7193247, 10.3929429],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_ea9c1057f1456eac9f0460600ab92a7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdc49c07c7df6ebc8359476b811fe090 = $(`<div id="html_cdc49c07c7df6ebc8359476b811fe090" style="width: 100.0%; height: 100.0%;">[73, 'Via Derna; Via Nicola Pisano']</div>`)[0];
+                popup_ea9c1057f1456eac9f0460600ab92a7d.setContent(html_cdc49c07c7df6ebc8359476b811fe090);
+            
+        
+
+        marker_2842e6183e25f6cd8ddacb0606bd5b37.bindPopup(popup_ea9c1057f1456eac9f0460600ab92a7d)
+        ;
+
+        
+    
+    
+            var marker_b9a9b80f9d315fadcc2c1852306c3635 = L.marker(
+                [43.7152091, 10.4010139],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_87c80356821545bf44db43af08d99c06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c35b0ee4ec68be56a20791687b605b7 = $(`<div id="html_1c35b0ee4ec68be56a20791687b605b7" style="width: 100.0%; height: 100.0%;">[74, 'Via Garofani; Via Pietro Toselli; Via Pietro Toselli']</div>`)[0];
+                popup_87c80356821545bf44db43af08d99c06.setContent(html_1c35b0ee4ec68be56a20791687b605b7);
+            
+        
+
+        marker_b9a9b80f9d315fadcc2c1852306c3635.bindPopup(popup_87c80356821545bf44db43af08d99c06)
+        ;
+
+        
+    
+    
+            var marker_1e5d38b264450738959ac29b436b27fd = L.marker(
+                [43.7143622, 10.4004438],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_ca7655cbddae285dd22bf106692ab819 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34917b9ccbd9e1131d4276a8c66586f5 = $(`<div id="html_34917b9ccbd9e1131d4276a8c66586f5" style="width: 100.0%; height: 100.0%;">[75, 'Via Garofani; Piazza dei Grilletti']</div>`)[0];
+                popup_ca7655cbddae285dd22bf106692ab819.setContent(html_34917b9ccbd9e1131d4276a8c66586f5);
+            
+        
+
+        marker_1e5d38b264450738959ac29b436b27fd.bindPopup(popup_ca7655cbddae285dd22bf106692ab819)
+        ;
+
+        
+    
+    
+            var marker_cb1cbf656601f1f184111387342ea10c = L.marker(
+                [43.7144221, 10.4001763],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_6cbf299565e8aca7c83c1821736f43e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_379ee03a44b3a0c80586ab69a8c6fdc8 = $(`<div id="html_379ee03a44b3a0c80586ab69a8c6fdc8" style="width: 100.0%; height: 100.0%;">[76, "Via dell'Occhio; Piazza dei Grilletti"]</div>`)[0];
+                popup_6cbf299565e8aca7c83c1821736f43e7.setContent(html_379ee03a44b3a0c80586ab69a8c6fdc8);
+            
+        
+
+        marker_cb1cbf656601f1f184111387342ea10c.bindPopup(popup_6cbf299565e8aca7c83c1821736f43e7)
+        ;
+
+        
+    
+    
+            var marker_3d282ae8bfb4a07a1b1d8738246f652d = L.marker(
+                [43.715441, 10.4006405],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_2be36ca7d601b2876ead3f5f351f57b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7af8a082a6bfcf00b50690fd6fae898e = $(`<div id="html_7af8a082a6bfcf00b50690fd6fae898e" style="width: 100.0%; height: 100.0%;">[77, "Via dell'Occhio; Via Pietro Toselli; Via Pietro Toselli"]</div>`)[0];
+                popup_2be36ca7d601b2876ead3f5f351f57b9.setContent(html_7af8a082a6bfcf00b50690fd6fae898e);
+            
+        
+
+        marker_3d282ae8bfb4a07a1b1d8738246f652d.bindPopup(popup_2be36ca7d601b2876ead3f5f351f57b9)
+        ;
+
+        
+    
+    
+            var marker_38cbee613a9db82790714fe2d6a15ed1 = L.marker(
+                [43.7140585, 10.4011719],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_2869d66ae70595b861982be56fb0dc99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c454bbe4c234fd60bbb66bcf8f11676 = $(`<div id="html_2c454bbe4c234fd60bbb66bcf8f11676" style="width: 100.0%; height: 100.0%;">[78, "Via San Bernardo; Via della Foglia; Vicolo dell'Oro; Via Empanada"]</div>`)[0];
+                popup_2869d66ae70595b861982be56fb0dc99.setContent(html_2c454bbe4c234fd60bbb66bcf8f11676);
+            
+        
+
+        marker_38cbee613a9db82790714fe2d6a15ed1.bindPopup(popup_2869d66ae70595b861982be56fb0dc99)
+        ;
+
+        
+    
+    
+            var marker_018289a42aaa01dfcdb0e8160079225e = L.marker(
+                [43.7137774, 10.4021925],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a56b4a73d74ea0ac83b28c4ed4e5d93d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97e2b468ba1f3cffb2b9b9c0c8288205 = $(`<div id="html_97e2b468ba1f3cffb2b9b9c0c8288205" style="width: 100.0%; height: 100.0%;">[80, 'Via San Bernardo; Vicolo Rosselmini; Vicolo Borghese']</div>`)[0];
+                popup_a56b4a73d74ea0ac83b28c4ed4e5d93d.setContent(html_97e2b468ba1f3cffb2b9b9c0c8288205);
+            
+        
+
+        marker_018289a42aaa01dfcdb0e8160079225e.bindPopup(popup_a56b4a73d74ea0ac83b28c4ed4e5d93d)
+        ;
+
+        
+    
+    
+            var marker_212c267678b1d06c9d471ab28048f764 = L.marker(
+                [43.7143129, 10.4024901],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_3f01c59aa069c03f34afc5c77e9bcdc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dfe0e359c040b70901d3813c1119c5e = $(`<div id="html_2dfe0e359c040b70901d3813c1119c5e" style="width: 100.0%; height: 100.0%;">[81, 'Vicolo Rosselmini; Via San Martino']</div>`)[0];
+                popup_3f01c59aa069c03f34afc5c77e9bcdc5.setContent(html_2dfe0e359c040b70901d3813c1119c5e);
+            
+        
+
+        marker_212c267678b1d06c9d471ab28048f764.bindPopup(popup_3f01c59aa069c03f34afc5c77e9bcdc5)
+        ;
+
+        
+    
+    
+            var marker_43eeb7f0fd0decd7b65ed02225847819 = L.marker(
+                [43.7184888, 10.3882776],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_57330242c7a2f249f9336e2337bf18c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7839dbca7abeb0c0c6c873cdbdbfc4db = $(`<div id="html_7839dbca7abeb0c0c6c873cdbdbfc4db" style="width: 100.0%; height: 100.0%;">[82, 'Via Turino Vanni; Via Spinello Aretino']</div>`)[0];
+                popup_57330242c7a2f249f9336e2337bf18c1.setContent(html_7839dbca7abeb0c0c6c873cdbdbfc4db);
+            
+        
+
+        marker_43eeb7f0fd0decd7b65ed02225847819.bindPopup(popup_57330242c7a2f249f9336e2337bf18c1)
+        ;
+
+        
+    
+    
+            var marker_f4904a38f5057edec77f82fc5022d47b = L.marker(
+                [43.7201818, 10.3990435],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_b5b146af44e0392f82361511c9ced217 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e06104e5e2cfe583b91e24765fa8fe34 = $(`<div id="html_e06104e5e2cfe583b91e24765fa8fe34" style="width: 100.0%; height: 100.0%;">[83, 'Via Dalmazia; Via Uguccione della Faggiola']</div>`)[0];
+                popup_b5b146af44e0392f82361511c9ced217.setContent(html_e06104e5e2cfe583b91e24765fa8fe34);
+            
+        
+
+        marker_f4904a38f5057edec77f82fc5022d47b.bindPopup(popup_b5b146af44e0392f82361511c9ced217)
+        ;
+
+        
+    
+    
+            var marker_b0e6e0b8c25ab71c3d13f9ee65b1c1a7 = L.marker(
+                [43.7159922, 10.3927926],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_0666a2c519c9e977ef3d6076ebdca2fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33fae30f757617330d286d3c57bca292 = $(`<div id="html_33fae30f757617330d286d3c57bca292" style="width: 100.0%; height: 100.0%;">[84, 'Via Volturno; Via San Vito']</div>`)[0];
+                popup_0666a2c519c9e977ef3d6076ebdca2fa.setContent(html_33fae30f757617330d286d3c57bca292);
+            
+        
+
+        marker_b0e6e0b8c25ab71c3d13f9ee65b1c1a7.bindPopup(popup_0666a2c519c9e977ef3d6076ebdca2fa)
+        ;
+
+        
+    
+    
+            var marker_04896303d0a664bc113773fe881b7eeb = L.marker(
+                [43.7149487, 10.3936246],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_1183d5817b19f87f0cbf0f984e1d0067 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d00eee5fec6875adac3cec5904a6742 = $(`<div id="html_2d00eee5fec6875adac3cec5904a6742" style="width: 100.0%; height: 100.0%;">[85, 'Via San Vito; Lungarno Ranieri Simonelli; Lungarno Ranieri Simonelli']</div>`)[0];
+                popup_1183d5817b19f87f0cbf0f984e1d0067.setContent(html_2d00eee5fec6875adac3cec5904a6742);
+            
+        
+
+        marker_04896303d0a664bc113773fe881b7eeb.bindPopup(popup_1183d5817b19f87f0cbf0f984e1d0067)
+        ;
+
+        
+    
+    
+            var marker_13ef40c5d1e84c0a784be789e2a33e92 = L.marker(
+                [43.7172173, 10.4011256],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_ae0c2b709cc4e39afbddad803e9f0f23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7dd762c5c6afc646cdad7abb9bddd92 = $(`<div id="html_b7dd762c5c6afc646cdad7abb9bddd92" style="width: 100.0%; height: 100.0%;">[86, 'Via Porton Rosso; Via Domenico Cavalca']</div>`)[0];
+                popup_ae0c2b709cc4e39afbddad803e9f0f23.setContent(html_b7dd762c5c6afc646cdad7abb9bddd92);
+            
+        
+
+        marker_13ef40c5d1e84c0a784be789e2a33e92.bindPopup(popup_ae0c2b709cc4e39afbddad803e9f0f23)
+        ;
+
+        
+    
+    
+            var marker_a4261c5fb769a27143535723e996c7f8 = L.marker(
+                [43.7174903, 10.4007603],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_f6d2b02c872c7754c47624b267087ca2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c078cb6fb051134a56f1a9b6906dd50d = $(`<div id="html_c078cb6fb051134a56f1a9b6906dd50d" style="width: 100.0%; height: 100.0%;">[87, 'Vicolo del Tidi; Via Quarantotti; Via Domenico Cavalca; Via Santa Margherita']</div>`)[0];
+                popup_f6d2b02c872c7754c47624b267087ca2.setContent(html_c078cb6fb051134a56f1a9b6906dd50d);
+            
+        
+
+        marker_a4261c5fb769a27143535723e996c7f8.bindPopup(popup_f6d2b02c872c7754c47624b267087ca2)
+        ;
+
+        
+    
+    
+            var marker_5fcf1174c3310e0e4ad2dff473733883 = L.marker(
+                [43.7215349, 10.3957813],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_abc6ddde7ed7933d0356554859ea7530 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b97f9696bdbe7d1c536fb74af5c369b2 = $(`<div id="html_b97f9696bdbe7d1c536fb74af5c369b2" style="width: 100.0%; height: 100.0%;">[88, 'Via Angelo Galli Tassi; Via Roma']</div>`)[0];
+                popup_abc6ddde7ed7933d0356554859ea7530.setContent(html_b97f9696bdbe7d1c536fb74af5c369b2);
+            
+        
+
+        marker_5fcf1174c3310e0e4ad2dff473733883.bindPopup(popup_abc6ddde7ed7933d0356554859ea7530)
+        ;
+
+        
+    
+    
+            var marker_7bc3ee5d9d72982632cca8de3f5a18d4 = L.marker(
+                [43.7215057, 10.3966777],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a7b9dbd92fb699618d1b971c6fda7447 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f25394dfab833978ff9962848a045013 = $(`<div id="html_f25394dfab833978ff9962848a045013" style="width: 100.0%; height: 100.0%;">[89, 'Via Angelo Galli Tassi; Via Porta Buozzi']</div>`)[0];
+                popup_a7b9dbd92fb699618d1b971c6fda7447.setContent(html_f25394dfab833978ff9962848a045013);
+            
+        
+
+        marker_7bc3ee5d9d72982632cca8de3f5a18d4.bindPopup(popup_a7b9dbd92fb699618d1b971c6fda7447)
+        ;
+
+        
+    
+    
+            var marker_eaf04c4808922685164b6b83f01c5339 = L.marker(
+                [43.7198467, 10.396716],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_7b2868b43d40cce564b97eb43f70d376 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f7ef571a936747c31a376dfb873d9b1 = $(`<div id="html_9f7ef571a936747c31a376dfb873d9b1" style="width: 100.0%; height: 100.0%;">[90, 'Via Porta Buozzi; Via Luca Ghini']</div>`)[0];
+                popup_7b2868b43d40cce564b97eb43f70d376.setContent(html_9f7ef571a936747c31a376dfb873d9b1);
+            
+        
+
+        marker_eaf04c4808922685164b6b83f01c5339.bindPopup(popup_7b2868b43d40cce564b97eb43f70d376)
+        ;
+
+        
+    
+    
+            var marker_3df489847c5617996d1626dabc2dd46d = L.marker(
+                [43.7198819, 10.3973556],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_f02f2aece6261bf9353006fd53515921 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09584d036015b39a9858ec4409f157ea = $(`<div id="html_09584d036015b39a9858ec4409f157ea" style="width: 100.0%; height: 100.0%;">[91, 'Via Luca Ghini; Via Santa Maria; Piazza Felice Cavallotti']</div>`)[0];
+                popup_f02f2aece6261bf9353006fd53515921.setContent(html_09584d036015b39a9858ec4409f157ea);
+            
+        
+
+        marker_3df489847c5617996d1626dabc2dd46d.bindPopup(popup_f02f2aece6261bf9353006fd53515921)
+        ;
+
+        
+    
+    
+            var marker_87abb8b4a97b4d407c6d6413624f371f = L.marker(
+                [43.7208932, 10.3978034],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_ffdeda7770e2a3dcef0837bb815435fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a206fedaf015eb1470ef198846a4591d = $(`<div id="html_a206fedaf015eb1470ef198846a4591d" style="width: 100.0%; height: 100.0%;">[92, 'Piazza Felice Cavallotti; Via Don Gaetano Boschi; Via Giacomo Leopardi']</div>`)[0];
+                popup_ffdeda7770e2a3dcef0837bb815435fd.setContent(html_a206fedaf015eb1470ef198846a4591d);
+            
+        
+
+        marker_87abb8b4a97b4d407c6d6413624f371f.bindPopup(popup_ffdeda7770e2a3dcef0837bb815435fd)
+        ;
+
+        
+    
+    
+            var marker_7f093f855080afacb28bc29728f71051 = L.marker(
+                [43.7180247, 10.39365],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_f6f5e5a1309f0b6086c4c5b32ed7923c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a07ebea9c5a709a6f682ea4432776b7 = $(`<div id="html_5a07ebea9c5a709a6f682ea4432776b7" style="width: 100.0%; height: 100.0%;">[93, 'Via Risorgimento; Via Magenta']</div>`)[0];
+                popup_f6f5e5a1309f0b6086c4c5b32ed7923c.setContent(html_5a07ebea9c5a709a6f682ea4432776b7);
+            
+        
+
+        marker_7f093f855080afacb28bc29728f71051.bindPopup(popup_f6f5e5a1309f0b6086c4c5b32ed7923c)
+        ;
+
+        
+    
+    
+            var marker_e87251138f59afa83183592bf16e57d3 = L.marker(
+                [43.71779, 10.3951959],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_6ccf0192b2c53ed0c313d36dd89e29de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fedda49d161ffd70831c923510a5ebe4 = $(`<div id="html_fedda49d161ffd70831c923510a5ebe4" style="width: 100.0%; height: 100.0%;">[94, 'Via Risorgimento; Via Roma; Via Roma']</div>`)[0];
+                popup_6ccf0192b2c53ed0c313d36dd89e29de.setContent(html_fedda49d161ffd70831c923510a5ebe4);
+            
+        
+
+        marker_e87251138f59afa83183592bf16e57d3.bindPopup(popup_6ccf0192b2c53ed0c313d36dd89e29de)
+        ;
+
+        
+    
+    
+            var marker_e1c07452bf2872e136716a702b63c2e5 = L.marker(
+                [43.7170109, 10.3933401],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_e4fbf96e17fe5de9080a8599205875c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_320b57f03dd04e59c2d05d54fb5a7b21 = $(`<div id="html_320b57f03dd04e59c2d05d54fb5a7b21" style="width: 100.0%; height: 100.0%;">[95, 'Via Magenta; Via Trieste']</div>`)[0];
+                popup_e4fbf96e17fe5de9080a8599205875c8.setContent(html_320b57f03dd04e59c2d05d54fb5a7b21);
+            
+        
+
+        marker_e1c07452bf2872e136716a702b63c2e5.bindPopup(popup_e4fbf96e17fe5de9080a8599205875c8)
+        ;
+
+        
+    
+    
+            var marker_99b128c218754842c4150ebdfc3e9e89 = L.marker(
+                [43.7165899, 10.396422],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_24d6125c8af870b4468c751502c1ecb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8eb97a78606385169ae699f3a42178da = $(`<div id="html_8eb97a78606385169ae699f3a42178da" style="width: 100.0%; height: 100.0%;">[96, 'Via San Niccola; Via Santa Maria; Via San Nicola; Via Trento']</div>`)[0];
+                popup_24d6125c8af870b4468c751502c1ecb7.setContent(html_8eb97a78606385169ae699f3a42178da);
+            
+        
+
+        marker_99b128c218754842c4150ebdfc3e9e89.bindPopup(popup_24d6125c8af870b4468c751502c1ecb7)
+        ;
+
+        
+    
+    
+            var marker_a4f8bb29b3a00033263516cb57933f9d = L.marker(
+                [43.7167786, 10.3956664],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_879b37043b809e315c06d46bb3651a3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe6dc5575505ca9086fc857689a48601 = $(`<div id="html_fe6dc5575505ca9086fc857689a48601" style="width: 100.0%; height: 100.0%;">[97, 'Via Trento; Via Ricucchi']</div>`)[0];
+                popup_879b37043b809e315c06d46bb3651a3a.setContent(html_fe6dc5575505ca9086fc857689a48601);
+            
+        
+
+        marker_a4f8bb29b3a00033263516cb57933f9d.bindPopup(popup_879b37043b809e315c06d46bb3651a3a)
+        ;
+
+        
+    
+    
+            var marker_25841b01f1b297dfce604db988737b8d = L.marker(
+                [43.7168523, 10.39526],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_6fc692eadfbba76139dc3477656d28ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_863bd7ef6113b1b04a03e4e78bbe0f02 = $(`<div id="html_863bd7ef6113b1b04a03e4e78bbe0f02" style="width: 100.0%; height: 100.0%;">[98, 'Via Trento; Via Santa Lucia']</div>`)[0];
+                popup_6fc692eadfbba76139dc3477656d28ee.setContent(html_863bd7ef6113b1b04a03e4e78bbe0f02);
+            
+        
+
+        marker_25841b01f1b297dfce604db988737b8d.bindPopup(popup_6fc692eadfbba76139dc3477656d28ee)
+        ;
+
+        
+    
+    
+            var marker_0c3510b10071ceafec8c363e1020d12c = L.marker(
+                [43.7169278, 10.3949365],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a6f1fcbc2f19c80fcb86eb64b9e18c7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_693c8e6a874c070b77cfd603ec4ebfaa = $(`<div id="html_693c8e6a874c070b77cfd603ec4ebfaa" style="width: 100.0%; height: 100.0%;">[99, 'Via Trento; Via Trieste; Via Roma']</div>`)[0];
+                popup_a6f1fcbc2f19c80fcb86eb64b9e18c7c.setContent(html_693c8e6a874c070b77cfd603ec4ebfaa);
+            
+        
+
+        marker_0c3510b10071ceafec8c363e1020d12c.bindPopup(popup_a6f1fcbc2f19c80fcb86eb64b9e18c7c)
+        ;
+
+        
+    
+    
+            var marker_e04e49eb91e9e9eca45f858f0f48ec0d = L.marker(
+                [43.717472, 10.3919227],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_59a9de42783ceb677317bf41d4fb87d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_099996e313b65e23ebd88a5cf0b8d660 = $(`<div id="html_099996e313b65e23ebd88a5cf0b8d660" style="width: 100.0%; height: 100.0%;">[100, 'Via Trieste; Via Nicola Pisano']</div>`)[0];
+                popup_59a9de42783ceb677317bf41d4fb87d0.setContent(html_099996e313b65e23ebd88a5cf0b8d660);
+            
+        
+
+        marker_e04e49eb91e9e9eca45f858f0f48ec0d.bindPopup(popup_59a9de42783ceb677317bf41d4fb87d0)
+        ;
+
+        
+    
+    
+            var marker_bd11862dd7241d6c01e37988138e4fc2 = L.marker(
+                [43.7161419, 10.3952414],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_d24fc442bcc27a0bf3d6a11392fdcebb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b2c4de26e3caaa2a2cff23e842e402d = $(`<div id="html_8b2c4de26e3caaa2a2cff23e842e402d" style="width: 100.0%; height: 100.0%;">[101, 'Via Santa Lucia; Piazza Vittorio Locchi; Via del Buongusto']</div>`)[0];
+                popup_d24fc442bcc27a0bf3d6a11392fdcebb.setContent(html_8b2c4de26e3caaa2a2cff23e842e402d);
+            
+        
+
+        marker_bd11862dd7241d6c01e37988138e4fc2.bindPopup(popup_d24fc442bcc27a0bf3d6a11392fdcebb)
+        ;
+
+        
+    
+    
+            var marker_01958e0fe1fcccacfb48a961375c9f25 = L.marker(
+                [43.717876, 10.4007659],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_58248db04f43c931338f4f6d3f1d6f46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3247810589e701f3b1ddb706f35086fc = $(`<div id="html_3247810589e701f3b1ddb706f35086fc" style="width: 100.0%; height: 100.0%;">[102, 'Via Santa Margherita; Via Tavoleria']</div>`)[0];
+                popup_58248db04f43c931338f4f6d3f1d6f46.setContent(html_3247810589e701f3b1ddb706f35086fc);
+            
+        
+
+        marker_01958e0fe1fcccacfb48a961375c9f25.bindPopup(popup_58248db04f43c931338f4f6d3f1d6f46)
+        ;
+
+        
+    
+    
+            var marker_bdaa65416577a209fe52f3729718f6b3 = L.marker(
+                [43.7179668, 10.4005045],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_f1709b974377ab63e2c16e88f3e89dde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb0b7438089cd5c767f0ffaffd3e6a1f = $(`<div id="html_eb0b7438089cd5c767f0ffaffd3e6a1f" style="width: 100.0%; height: 100.0%;">[103, 'Via del Castelletto; Via Tavoleria']</div>`)[0];
+                popup_f1709b974377ab63e2c16e88f3e89dde.setContent(html_eb0b7438089cd5c767f0ffaffd3e6a1f);
+            
+        
+
+        marker_bdaa65416577a209fe52f3729718f6b3.bindPopup(popup_f1709b974377ab63e2c16e88f3e89dde)
+        ;
+
+        
+    
+    
+            var marker_b2ddb2c96b3c9711a86578f2c9303e7f = L.marker(
+                [43.7178101, 10.4010112],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a807b1e0c6dff7b50b71f487a3200cfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ad99493d3666e5b1d18c3e7fa1dd84e = $(`<div id="html_2ad99493d3666e5b1d18c3e7fa1dd84e" style="width: 100.0%; height: 100.0%;">[104, 'Via Quarantotti; Via del Castelletto; Via Tavoleria']</div>`)[0];
+                popup_a807b1e0c6dff7b50b71f487a3200cfc.setContent(html_2ad99493d3666e5b1d18c3e7fa1dd84e);
+            
+        
+
+        marker_b2ddb2c96b3c9711a86578f2c9303e7f.bindPopup(popup_a807b1e0c6dff7b50b71f487a3200cfc)
+        ;
+
+        
+    
+    
+            var marker_bd87aa9cf560f032f07146cbe77f1835 = L.marker(
+                [43.7176171, 10.4016837],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_b097e22d19fec7868f73e3c18186227a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eafd6a2aa37c158405b0be3babeca0ae = $(`<div id="html_eafd6a2aa37c158405b0be3babeca0ae" style="width: 100.0%; height: 100.0%;">[105, "Via Tavoleria; Piazza Sant'Omobono"]</div>`)[0];
+                popup_b097e22d19fec7868f73e3c18186227a.setContent(html_eafd6a2aa37c158405b0be3babeca0ae);
+            
+        
+
+        marker_bd87aa9cf560f032f07146cbe77f1835.bindPopup(popup_b097e22d19fec7868f73e3c18186227a)
+        ;
+
+        
+    
+    
+            var marker_cde7014b53b931ba5d56ad1ca6d4f2c0 = L.marker(
+                [43.7136976, 10.3899272],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a30670b1cbc3911c313e953e136fe9d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35e994c9267aab6014d1521d1cd14664 = $(`<div id="html_35e994c9267aab6014d1521d1cd14664" style="width: 100.0%; height: 100.0%;">[106, 'Ponte della Cittadella; Piazza di Terzanaia; Lungarno Ranieri Simonelli; Rotatoria Piero Fioretti']</div>`)[0];
+                popup_a30670b1cbc3911c313e953e136fe9d9.setContent(html_35e994c9267aab6014d1521d1cd14664);
+            
+        
+
+        marker_cde7014b53b931ba5d56ad1ca6d4f2c0.bindPopup(popup_a30670b1cbc3911c313e953e136fe9d9)
+        ;
+
+        
+    
+    
+            var marker_34f3a7fd0f7d91336eced0cc38d3d744 = L.marker(
+                [43.7137546, 10.3958697],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_508b32b3c9612beee8e53104f0a59eed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c4bf71cf6628d1351c4c2beb498ba10 = $(`<div id="html_7c4bf71cf6628d1351c4c2beb498ba10" style="width: 100.0%; height: 100.0%;">[108, 'Via del Galloro; Via San Paolo']</div>`)[0];
+                popup_508b32b3c9612beee8e53104f0a59eed.setContent(html_7c4bf71cf6628d1351c4c2beb498ba10);
+            
+        
+
+        marker_34f3a7fd0f7d91336eced0cc38d3d744.bindPopup(popup_508b32b3c9612beee8e53104f0a59eed)
+        ;
+
+        
+    
+    
+            var marker_69bb91f971ccc010b07a2baf04bef54b = L.marker(
+                [43.7144254, 10.3955704],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_6dd16b1665f80db858d6ad6ccfc4454c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9750e35389f02e194fc4fdfe14cd323b = $(`<div id="html_9750e35389f02e194fc4fdfe14cd323b" style="width: 100.0%; height: 100.0%;">[109, 'Via del Galloro; Piazza Aurelio Saffi']</div>`)[0];
+                popup_6dd16b1665f80db858d6ad6ccfc4454c.setContent(html_9750e35389f02e194fc4fdfe14cd323b);
+            
+        
+
+        marker_69bb91f971ccc010b07a2baf04bef54b.bindPopup(popup_6dd16b1665f80db858d6ad6ccfc4454c)
+        ;
+
+        
+    
+    
+            var marker_1a5b3fa700796719f5c18ac13eaf4381 = L.marker(
+                [43.7136029, 10.3952831],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_9d6a86f7e4b5b3ac2f059f83b60a68ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca7f0c36f69654b3175c309c3e7e5863 = $(`<div id="html_ca7f0c36f69654b3175c309c3e7e5863" style="width: 100.0%; height: 100.0%;">[110, 'Via Carabottaia; Via San Paolo; Via San Paolo; Via Porta Dolfi']</div>`)[0];
+                popup_9d6a86f7e4b5b3ac2f059f83b60a68ff.setContent(html_ca7f0c36f69654b3175c309c3e7e5863);
+            
+        
+
+        marker_1a5b3fa700796719f5c18ac13eaf4381.bindPopup(popup_9d6a86f7e4b5b3ac2f059f83b60a68ff)
+        ;
+
+        
+    
+    
+            var marker_05d2e15a4710c4c8d15b5884bf8fc3f4 = L.marker(
+                [43.7143259, 10.3948894],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_c46cba6c32a1cfa2886ed0d8fea943b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3984f9d70ed8d7fe71067cd2f28f3282 = $(`<div id="html_3984f9d70ed8d7fe71067cd2f28f3282" style="width: 100.0%; height: 100.0%;">[111, 'Via Porta Dolfi; Lungarno Sidney Sonnino; Lungarno Sidney Sonnino']</div>`)[0];
+                popup_c46cba6c32a1cfa2886ed0d8fea943b8.setContent(html_3984f9d70ed8d7fe71067cd2f28f3282);
+            
+        
+
+        marker_05d2e15a4710c4c8d15b5884bf8fc3f4.bindPopup(popup_c46cba6c32a1cfa2886ed0d8fea943b8)
+        ;
+
+        
+    
+    
+            var marker_f4db410a39d7b4cd4cc81381797dd643 = L.marker(
+                [43.7135287, 10.3950472],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_8baba96170b7a1e2bada8a5ae2c2b621 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_369f7256a68e49dc3a1f3c2394f4cfca = $(`<div id="html_369f7256a68e49dc3a1f3c2394f4cfca" style="width: 100.0%; height: 100.0%;">[112, 'Via Balduinetti; Via San Paolo']</div>`)[0];
+                popup_8baba96170b7a1e2bada8a5ae2c2b621.setContent(html_369f7256a68e49dc3a1f3c2394f4cfca);
+            
+        
+
+        marker_f4db410a39d7b4cd4cc81381797dd643.bindPopup(popup_8baba96170b7a1e2bada8a5ae2c2b621)
+        ;
+
+        
+    
+    
+            var marker_d5e0e631fa90bf70c593770b48a736ff = L.marker(
+                [43.7142242, 10.3946734],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_4ab9d6f21786346ab84475eaa91465c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87e1f963faa69ef1124ff988c6f4b283 = $(`<div id="html_87e1f963faa69ef1124ff988c6f4b283" style="width: 100.0%; height: 100.0%;">[113, 'Lungarno Sidney Sonnino; Via Balduinetti']</div>`)[0];
+                popup_4ab9d6f21786346ab84475eaa91465c1.setContent(html_87e1f963faa69ef1124ff988c6f4b283);
+            
+        
+
+        marker_d5e0e631fa90bf70c593770b48a736ff.bindPopup(popup_4ab9d6f21786346ab84475eaa91465c1)
+        ;
+
+        
+    
+    
+            var marker_d36d44217953392214543c49189d6bd5 = L.marker(
+                [43.713107, 10.3935777],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a3d43b2e6280797792e85a533a9be195 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8840494a9fca8eddb3422843feaadb41 = $(`<div id="html_8840494a9fca8eddb3422843feaadb41" style="width: 100.0%; height: 100.0%;">[114, "Piazza San Paolo a Ripa d'Arno; Via San Paolo"]</div>`)[0];
+                popup_a3d43b2e6280797792e85a533a9be195.setContent(html_8840494a9fca8eddb3422843feaadb41);
+            
+        
+
+        marker_d36d44217953392214543c49189d6bd5.bindPopup(popup_a3d43b2e6280797792e85a533a9be195)
+        ;
+
+        
+    
+    
+            var marker_3343723b2690b0ed802a882fb6a5ce8b = L.marker(
+                [43.7134857, 10.3932634],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_be6ecbd4a774415eaf75d61096d30af7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03c30f31521cfd7b99ac56e5a5738752 = $(`<div id="html_03c30f31521cfd7b99ac56e5a5738752" style="width: 100.0%; height: 100.0%;">[115, "Piazza San Paolo a Ripa d'Arno; Lungarno Sidney Sonnino; Lungarno Sidney Sonnino; Piazza San Paolo a Ripa d'Arno"]</div>`)[0];
+                popup_be6ecbd4a774415eaf75d61096d30af7.setContent(html_03c30f31521cfd7b99ac56e5a5738752);
+            
+        
+
+        marker_3343723b2690b0ed802a882fb6a5ce8b.bindPopup(popup_be6ecbd4a774415eaf75d61096d30af7)
+        ;
+
+        
+    
+    
+            var marker_6180220e2911de03cfceec019a81e452 = L.marker(
+                [43.7139388, 10.3968286],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_70b85638326074d8393ded1d2c2fd3da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_630ccc92ec4d5310dd41db604a4f6d47 = $(`<div id="html_630ccc92ec4d5310dd41db604a4f6d47" style="width: 100.0%; height: 100.0%;">[116, 'Via San Paolo; Via Borgundio']</div>`)[0];
+                popup_70b85638326074d8393ded1d2c2fd3da.setContent(html_630ccc92ec4d5310dd41db604a4f6d47);
+            
+        
+
+        marker_6180220e2911de03cfceec019a81e452.bindPopup(popup_70b85638326074d8393ded1d2c2fd3da)
+        ;
+
+        
+    
+    
+            var marker_02796b978d1d5f6f982256f1429042fd = L.marker(
+                [43.7138861, 10.3964708],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_d112ab730a27fdc8acd4282f68ddcb65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41a9b880408fa295dbee4aa2521d6df3 = $(`<div id="html_41a9b880408fa295dbee4aa2521d6df3" style="width: 100.0%; height: 100.0%;">[117, 'Via San Paolo; Via San Paolo; Via dei Somari']</div>`)[0];
+                popup_d112ab730a27fdc8acd4282f68ddcb65.setContent(html_41a9b880408fa295dbee4aa2521d6df3);
+            
+        
+
+        marker_02796b978d1d5f6f982256f1429042fd.bindPopup(popup_d112ab730a27fdc8acd4282f68ddcb65)
+        ;
+
+        
+    
+    
+            var marker_afd8445194e58bb015f96ba314b38564 = L.marker(
+                [43.7138206, 10.3961585],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_c65f5d2a02110807a3c52d72c8f255b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93444b052ca3307bbb100c4916035e33 = $(`<div id="html_93444b052ca3307bbb100c4916035e33" style="width: 100.0%; height: 100.0%;">[118, 'Via San Paolo; Via Francesco Crispi; Via San Paolo; Via Francesco Crispi']</div>`)[0];
+                popup_c65f5d2a02110807a3c52d72c8f255b2.setContent(html_93444b052ca3307bbb100c4916035e33);
+            
+        
+
+        marker_afd8445194e58bb015f96ba314b38564.bindPopup(popup_c65f5d2a02110807a3c52d72c8f255b2)
+        ;
+
+        
+    
+    
+            var marker_094736b159eacb516a222873464b0acf = L.marker(
+                [43.7147596, 10.3976168],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_5f750f0268b194a4042a9f3e468d8787 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33f858ce92f20c11795079060383b770 = $(`<div id="html_33f858ce92f20c11795079060383b770" style="width: 100.0%; height: 100.0%;">[119, 'Via La Maddalena; Vicolo San Cosimo; Via Camilla Del Lante']</div>`)[0];
+                popup_5f750f0268b194a4042a9f3e468d8787.setContent(html_33f858ce92f20c11795079060383b770);
+            
+        
+
+        marker_094736b159eacb516a222873464b0acf.bindPopup(popup_5f750f0268b194a4042a9f3e468d8787)
+        ;
+
+        
+    
+    
+            var marker_c22267917b75d5ac6197af4cfaad8b92 = L.marker(
+                [43.7147739, 10.3980333],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_ae18c3ead87d278dd88c5c16e58d8b7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98496023de83d28bd9e326fa60ebd7e1 = $(`<div id="html_98496023de83d28bd9e326fa60ebd7e1" style="width: 100.0%; height: 100.0%;">[120, 'Via delle Conce; Via La Maddalena; Vicolo delle Conce; Via La Maddalena']</div>`)[0];
+                popup_ae18c3ead87d278dd88c5c16e58d8b7d.setContent(html_98496023de83d28bd9e326fa60ebd7e1);
+            
+        
+
+        marker_c22267917b75d5ac6197af4cfaad8b92.bindPopup(popup_ae18c3ead87d278dd88c5c16e58d8b7d)
+        ;
+
+        
+    
+    
+            var marker_02b208d284828cd3bb2c387c78969293 = L.marker(
+                [43.715567, 10.3979147],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_66fed8b6d781b9ba72c8b3c1588c23fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e666cd2c5633f6bf7f61e2c49f8b67e3 = $(`<div id="html_e666cd2c5633f6bf7f61e2c49f8b67e3" style="width: 100.0%; height: 100.0%;">[121, 'Via delle Conce; Lungarno Gambacorti; Lungarno Gambacorti']</div>`)[0];
+                popup_66fed8b6d781b9ba72c8b3c1588c23fa.setContent(html_e666cd2c5633f6bf7f61e2c49f8b67e3);
+            
+        
+
+        marker_02b208d284828cd3bb2c387c78969293.bindPopup(popup_66fed8b6d781b9ba72c8b3c1588c23fa)
+        ;
+
+        
+    
+    
+            var marker_2db6fc477e3eed3f00d4b41803fd8e66 = L.marker(
+                [43.7147773, 10.3983352],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_3c917b90da605198a5fc3bf6f5fb10cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75c659e4a58a254758ce09a95841eee3 = $(`<div id="html_75c659e4a58a254758ce09a95841eee3" style="width: 100.0%; height: 100.0%;">[122, "Via La Maddalena; Vicolo dell'Annunziata; Vicolo Ricciardi"]</div>`)[0];
+                popup_3c917b90da605198a5fc3bf6f5fb10cd.setContent(html_75c659e4a58a254758ce09a95841eee3);
+            
+        
+
+        marker_2db6fc477e3eed3f00d4b41803fd8e66.bindPopup(popup_3c917b90da605198a5fc3bf6f5fb10cd)
+        ;
+
+        
+    
+    
+            var marker_bdd79d74a78f935475e51043c33002be = L.marker(
+                [43.71478, 10.3985469],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_27194ea1717514adcc5c6788778d2d90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b379ddc98b4c81d45be1e71a0e4f442 = $(`<div id="html_7b379ddc98b4c81d45be1e71a0e4f442" style="width: 100.0%; height: 100.0%;">[123, 'Via Mecherini; Via La Maddalena']</div>`)[0];
+                popup_27194ea1717514adcc5c6788778d2d90.setContent(html_7b379ddc98b4c81d45be1e71a0e4f442);
+            
+        
+
+        marker_bdd79d74a78f935475e51043c33002be.bindPopup(popup_27194ea1717514adcc5c6788778d2d90)
+        ;
+
+        
+    
+    
+            var marker_177336ffdf02e681ada3e1f6700dfadf = L.marker(
+                [43.715746, 10.39856295],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_4f66882087504d547231ca297c22d48e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4734180a8c420b956d7de37d2dee8489 = $(`<div id="html_4734180a8c420b956d7de37d2dee8489" style="width: 100.0%; height: 100.0%;">[124, 'Via Mecherini; Lungarno Gambacorti; Lungarno Gambacorti']</div>`)[0];
+                popup_4f66882087504d547231ca297c22d48e.setContent(html_4734180a8c420b956d7de37d2dee8489);
+            
+        
+
+        marker_177336ffdf02e681ada3e1f6700dfadf.bindPopup(popup_4f66882087504d547231ca297c22d48e)
+        ;
+
+        
+    
+    
+            var marker_c312fad9128d7fef445dfebc7e4dc082 = L.marker(
+                [43.714612, 10.3954692],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_755a52ade6ad736b5d8981c161ca4b69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80358daf8e8d7d784722e2de48372522 = $(`<div id="html_80358daf8e8d7d784722e2de48372522" style="width: 100.0%; height: 100.0%;">[125, 'Lungarno Sidney Sonnino; Piazza Aurelio Saffi']</div>`)[0];
+                popup_755a52ade6ad736b5d8981c161ca4b69.setContent(html_80358daf8e8d7d784722e2de48372522);
+            
+        
+
+        marker_c312fad9128d7fef445dfebc7e4dc082.bindPopup(popup_755a52ade6ad736b5d8981c161ca4b69)
+        ;
+
+        
+    
+    
+            var marker_6ba1d944bd9027fb9f21e2e99ca73d12 = L.marker(
+                [43.71494, 10.3994507],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_24b9fac5309e4cb9fa37317b47494113 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e040354a331915e3d1b94cd637c4605 = $(`<div id="html_9e040354a331915e3d1b94cd637c4605" style="width: 100.0%; height: 100.0%;">[126, 'Piazza dei Facchini; Via delle Belle Donne']</div>`)[0];
+                popup_24b9fac5309e4cb9fa37317b47494113.setContent(html_9e040354a331915e3d1b94cd637c4605);
+            
+        
+
+        marker_6ba1d944bd9027fb9f21e2e99ca73d12.bindPopup(popup_24b9fac5309e4cb9fa37317b47494113)
+        ;
+
+        
+    
+    
+            var marker_e00f56792df3dca12969fa1382781ae1 = L.marker(
+                [43.7153082, 10.4001725],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_73efd1cac636ad0faba207ef91d8c41a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cac28fb7b9560c34208f28a3473ab132 = $(`<div id="html_cac28fb7b9560c34208f28a3473ab132" style="width: 100.0%; height: 100.0%;">[127, 'Piazza dei Facchini; Galleria Luciano Chiti']</div>`)[0];
+                popup_73efd1cac636ad0faba207ef91d8c41a.setContent(html_cac28fb7b9560c34208f28a3473ab132);
+            
+        
+
+        marker_e00f56792df3dca12969fa1382781ae1.bindPopup(popup_73efd1cac636ad0faba207ef91d8c41a)
+        ;
+
+        
+    
+    
+            var marker_5efbe2b0c7d3b498eae7da0f0c5974a7 = L.marker(
+                [43.722343, 10.401046],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_2587518dd24b0aa0871396c8ac29bb22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd1318e7e3d5b304cf6d946873c71d63 = $(`<div id="html_dd1318e7e3d5b304cf6d946873c71d63" style="width: 100.0%; height: 100.0%;">[128, 'Via San Tommaso; Via Cardinale Pietro Maffi; Via Cardinale Pietro Maffi']</div>`)[0];
+                popup_2587518dd24b0aa0871396c8ac29bb22.setContent(html_dd1318e7e3d5b304cf6d946873c71d63);
+            
+        
+
+        marker_5efbe2b0c7d3b498eae7da0f0c5974a7.bindPopup(popup_2587518dd24b0aa0871396c8ac29bb22)
+        ;
+
+        
+    
+    
+            var marker_afa99909759e03e3677b76283e749b21 = L.marker(
+                [43.7194963, 10.3987961],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_49951f59e9d36c582ce507cdf8ad78cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_744eb72a9ca5c05ef7139f8375150fa0 = $(`<div id="html_744eb72a9ca5c05ef7139f8375150fa0" style="width: 100.0%; height: 100.0%;">[129, 'Via Pasquale Paoli; Piazza Francesco Buonamici']</div>`)[0];
+                popup_49951f59e9d36c582ce507cdf8ad78cb.setContent(html_744eb72a9ca5c05ef7139f8375150fa0);
+            
+        
+
+        marker_afa99909759e03e3677b76283e749b21.bindPopup(popup_49951f59e9d36c582ce507cdf8ad78cb)
+        ;
+
+        
+    
+    
+            var marker_e5a6969531c16904d1a754b597acf013 = L.marker(
+                [43.7163187, 10.3974748],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_38259c4a926cff4bb28f2e46f8ded006 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c32bd60a51db2470b02c2192cd74ae45 = $(`<div id="html_c32bd60a51db2470b02c2192cd74ae45" style="width: 100.0%; height: 100.0%;">[130, 'Piazza Francesco Carrara; Lungarno Antonio Pacinotti; Lungarno Antonio Pacinotti']</div>`)[0];
+                popup_38259c4a926cff4bb28f2e46f8ded006.setContent(html_c32bd60a51db2470b02c2192cd74ae45);
+            
+        
+
+        marker_e5a6969531c16904d1a754b597acf013.bindPopup(popup_38259c4a926cff4bb28f2e46f8ded006)
+        ;
+
+        
+    
+    
+            var marker_524626f5e440228a89b61e9726cb2969 = L.marker(
+                [43.7166222, 10.4002481],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_9d8b97027eaa90f8d5f3010c34717f49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a2048f03abbfbb790aab4eba8a97fab = $(`<div id="html_0a2048f03abbfbb790aab4eba8a97fab" style="width: 100.0%; height: 100.0%;">[131, 'Lungarno Antonio Pacinotti; Lungarno Antonio Pacinotti; Vicolo del Tidi']</div>`)[0];
+                popup_9d8b97027eaa90f8d5f3010c34717f49.setContent(html_0a2048f03abbfbb790aab4eba8a97fab);
+            
+        
+
+        marker_524626f5e440228a89b61e9726cb2969.bindPopup(popup_9d8b97027eaa90f8d5f3010c34717f49)
+        ;
+
+        
+    
+    
+            var marker_6bde034da5c9123c3320648d7896582f = L.marker(
+                [43.7153998, 10.4021415],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_2e4f1bf590e9e69dbe463f0b54698e51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ef74802e61ed33fe7c24d219cf740cf = $(`<div id="html_6ef74802e61ed33fe7c24d219cf740cf" style="width: 100.0%; height: 100.0%;">[132, 'Via del Moro; Lungarno Galileo Galilei']</div>`)[0];
+                popup_2e4f1bf590e9e69dbe463f0b54698e51.setContent(html_6ef74802e61ed33fe7c24d219cf740cf);
+            
+        
+
+        marker_6bde034da5c9123c3320648d7896582f.bindPopup(popup_2e4f1bf590e9e69dbe463f0b54698e51)
+        ;
+
+        
+    
+    
+            var marker_2f0b6f81a48f7f6d8f993e8d82d1fc56 = L.marker(
+                [43.715532, 10.4002761],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_ad4b978421ff915e7de40550f9a2ffa2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cee779f65c0963f75ab58c6f3641522 = $(`<div id="html_2cee779f65c0963f75ab58c6f3641522" style="width: 100.0%; height: 100.0%;">[133, 'Via Pietro Toselli; Galleria Luciano Chiti']</div>`)[0];
+                popup_ad4b978421ff915e7de40550f9a2ffa2.setContent(html_2cee779f65c0963f75ab58c6f3641522);
+            
+        
+
+        marker_2f0b6f81a48f7f6d8f993e8d82d1fc56.bindPopup(popup_ad4b978421ff915e7de40550f9a2ffa2)
+        ;
+
+        
+    
+    
+            var marker_2db65ee5eb53cb1d7622d9a9375ef427 = L.marker(
+                [43.7156532, 10.3982661],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_99e5c3afba3be22c87a5483e8407bf13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90575cbad4e6d6d7db29e92a19abb2b5 = $(`<div id="html_90575cbad4e6d6d7db29e92a19abb2b5" style="width: 100.0%; height: 100.0%;">[135, 'Vicolo Ricciardi; Lungarno Gambacorti; Lungarno Gambacorti']</div>`)[0];
+                popup_99e5c3afba3be22c87a5483e8407bf13.setContent(html_90575cbad4e6d6d7db29e92a19abb2b5);
+            
+        
+
+        marker_2db65ee5eb53cb1d7622d9a9375ef427.bindPopup(popup_99e5c3afba3be22c87a5483e8407bf13)
+        ;
+
+        
+    
+    
+            var marker_d351a8630c7aaf576b048f7cbcbd8117 = L.marker(
+                [43.715194, 10.3968328],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_2422a787b6dbb56d4092ec1bf572d856 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58990c5cdf74af2aade37a3d7fb12187 = $(`<div id="html_58990c5cdf74af2aade37a3d7fb12187" style="width: 100.0%; height: 100.0%;">[136, "Lungarno Gambacorti; Via Sant'Antonio; Lungarno Gambacorti"]</div>`)[0];
+                popup_2422a787b6dbb56d4092ec1bf572d856.setContent(html_58990c5cdf74af2aade37a3d7fb12187);
+            
+        
+
+        marker_d351a8630c7aaf576b048f7cbcbd8117.bindPopup(popup_2422a787b6dbb56d4092ec1bf572d856)
+        ;
+
+        
+    
+    
+            var marker_508e1f8e2280ff5a1938cecdef0cedb7 = L.marker(
+                [43.7235875, 10.3985304],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_e63ead3ad02574d66b9195832e1c99ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc598490ac1dcf7880ebbfdb4df135e4 = $(`<div id="html_dc598490ac1dcf7880ebbfdb4df135e4" style="width: 100.0%; height: 100.0%;">[137, 'Via San Ranierino; Via Contessa Matilde; Via Contessa Matilde']</div>`)[0];
+                popup_e63ead3ad02574d66b9195832e1c99ac.setContent(html_dc598490ac1dcf7880ebbfdb4df135e4);
+            
+        
+
+        marker_508e1f8e2280ff5a1938cecdef0cedb7.bindPopup(popup_e63ead3ad02574d66b9195832e1c99ac)
+        ;
+
+        
+    
+    
+            var marker_7b8b7e8c01163f33f2fcfd5e79caedaa = L.marker(
+                [43.7189718, 10.3899712],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_e7b9d44527c531cf3a4485ce93016657 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1da46ef3a81f12209a9525eee1520fe3 = $(`<div id="html_1da46ef3a81f12209a9525eee1520fe3" style="width: 100.0%; height: 100.0%;">[138, 'Via Bonanno Pisano; Via Bonanno Pisano; Via Carlo Francesco Gabba; Via Risorgimento']</div>`)[0];
+                popup_e7b9d44527c531cf3a4485ce93016657.setContent(html_1da46ef3a81f12209a9525eee1520fe3);
+            
+        
+
+        marker_7b8b7e8c01163f33f2fcfd5e79caedaa.bindPopup(popup_e7b9d44527c531cf3a4485ce93016657)
+        ;
+
+        
+    
+    
+            var marker_cebf504c100c09de1b4c37f15e659020 = L.marker(
+                [43.7145502, 10.3962007],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_a065eae997e9909a209638e1b238cc6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f3efb69ab98e8f0eadbed3c5bb9777e = $(`<div id="html_7f3efb69ab98e8f0eadbed3c5bb9777e" style="width: 100.0%; height: 100.0%;">[139, 'Via dei Somari; Via La Maddalena']</div>`)[0];
+                popup_a065eae997e9909a209638e1b238cc6a.setContent(html_7f3efb69ab98e8f0eadbed3c5bb9777e);
+            
+        
+
+        marker_cebf504c100c09de1b4c37f15e659020.bindPopup(popup_a065eae997e9909a209638e1b238cc6a)
+        ;
+
+        
+    
+    
+            var marker_2accb412c9103f3d2bc07aff85821a11 = L.marker(
+                [43.7146889, 10.3969861],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_fe19bb2e330c13ed2d64a9add948671d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e871ced56641d2f051cdcd08bb91ca55 = $(`<div id="html_e871ced56641d2f051cdcd08bb91ca55" style="width: 100.0%; height: 100.0%;">[140, "Via La Maddalena; Via Sant'Antonio; Via La Maddalena"]</div>`)[0];
+                popup_fe19bb2e330c13ed2d64a9add948671d.setContent(html_e871ced56641d2f051cdcd08bb91ca55);
+            
+        
+
+        marker_2accb412c9103f3d2bc07aff85821a11.bindPopup(popup_fe19bb2e330c13ed2d64a9add948671d)
+        ;
+
+        
+    
+    
+            var marker_f865ea16447f5432d831ccd02ea35bcc = L.marker(
+                [43.7146116, 10.3965151],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_110a00cf51a9d43d360e78b4b25db42d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c55ef9652055678261b5495a664f3ac = $(`<div id="html_3c55ef9652055678261b5495a664f3ac" style="width: 100.0%; height: 100.0%;">[141, 'Via La Maddalena; Via Borgundio']</div>`)[0];
+                popup_110a00cf51a9d43d360e78b4b25db42d.setContent(html_3c55ef9652055678261b5495a664f3ac);
+            
+        
+
+        marker_f865ea16447f5432d831ccd02ea35bcc.bindPopup(popup_110a00cf51a9d43d360e78b4b25db42d)
+        ;
+
+        
+    
+    
+            var marker_dc34cee5f21ede7466cde56af9dac659 = L.marker(
+                [43.7144783, 10.3958279],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_dfc57fc78c29da4c1e63fce4b4a0806c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fe6a0e16a288ec9c23c29c170a0d4b0 = $(`<div id="html_6fe6a0e16a288ec9c23c29c170a0d4b0" style="width: 100.0%; height: 100.0%;">[142, 'Via La Maddalena; Via Francesco Crispi; Piazza Aurelio Saffi; Via Francesco Crispi']</div>`)[0];
+                popup_dfc57fc78c29da4c1e63fce4b4a0806c.setContent(html_6fe6a0e16a288ec9c23c29c170a0d4b0);
+            
+        
+
+        marker_dc34cee5f21ede7466cde56af9dac659.bindPopup(popup_dfc57fc78c29da4c1e63fce4b4a0806c)
+        ;
+
+        
+    
+    
+            var marker_dbfe672a3a3908c06cc9bdd11fac989b = L.marker(
+                [43.7167129, 10.3973467],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_583ffa7481da2d29feebd7435e7bbea2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c17e571b6e370b973b4d895b174fc02c = $(`<div id="html_c17e571b6e370b973b4d895b174fc02c" style="width: 100.0%; height: 100.0%;">[143, 'Piazza Francesco Carrara; Via San Nicola']</div>`)[0];
+                popup_583ffa7481da2d29feebd7435e7bbea2.setContent(html_c17e571b6e370b973b4d895b174fc02c);
+            
+        
+
+        marker_dbfe672a3a3908c06cc9bdd11fac989b.bindPopup(popup_583ffa7481da2d29feebd7435e7bbea2)
+        ;
+
+        
+    
+    
+            var marker_97ab3a0932665879324a92e0359c08d0 = L.marker(
+                [43.7203357, 10.3908775],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_8bcfec13cec45e02b6a75c57ae5e265e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d932255c3303d80a4c854f981d7ff8d = $(`<div id="html_4d932255c3303d80a4c854f981d7ff8d" style="width: 100.0%; height: 100.0%;">[144, 'Via Diotisalvi; Via Bonanno Pisano']</div>`)[0];
+                popup_8bcfec13cec45e02b6a75c57ae5e265e.setContent(html_4d932255c3303d80a4c854f981d7ff8d);
+            
+        
+
+        marker_97ab3a0932665879324a92e0359c08d0.bindPopup(popup_8bcfec13cec45e02b6a75c57ae5e265e)
+        ;
+
+        
+    
+    
+            var marker_f3eeac6f121afc957a44b9d4a671adaf = L.marker(
+                [43.7161352, 10.3966029],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_e3a6101c553127668479ababcc0dab1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44de434e7a9536ea2d4b9913c7833c20 = $(`<div id="html_44de434e7a9536ea2d4b9913c7833c20" style="width: 100.0%; height: 100.0%;">[145, 'Via Santa Maria; Lungarno Antonio Pacinotti; Lungarno Antonio Pacinotti']</div>`)[0];
+                popup_e3a6101c553127668479ababcc0dab1b.setContent(html_44de434e7a9536ea2d4b9913c7833c20);
+            
+        
+
+        marker_f3eeac6f121afc957a44b9d4a671adaf.bindPopup(popup_e3a6101c553127668479ababcc0dab1b)
+        ;
+
+        
+    
+    
+            var marker_92e7d75155998c40bc583ba0d14d0184 = L.marker(
+                [43.7190682, 10.3999712],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_0a522aef5f2376e0d8b2eaeb8a884997 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbe71426e0804a010e786d45b827cfa3 = $(`<div id="html_bbe71426e0804a010e786d45b827cfa3" style="width: 100.0%; height: 100.0%;">[146, 'Via San Frediano; Piazza dei Cavalieri']</div>`)[0];
+                popup_0a522aef5f2376e0d8b2eaeb8a884997.setContent(html_bbe71426e0804a010e786d45b827cfa3);
+            
+        
+
+        marker_92e7d75155998c40bc583ba0d14d0184.bindPopup(popup_0a522aef5f2376e0d8b2eaeb8a884997)
+        ;
+
+        
+    
+    
+            var marker_fd6f8f49008ce6959c44c1f9793df3f7 = L.marker(
+                [43.7220093, 10.3983839],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_92fc9a6fcabf0f15a66ebd0b0df12f05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ddb40d68cbc26722e136a2a06aa8628 = $(`<div id="html_3ddb40d68cbc26722e136a2a06aa8628" style="width: 100.0%; height: 100.0%;">[147, "Via Ferdinando Capponi; Piazza dell'Arcivescovado"]</div>`)[0];
+                popup_92fc9a6fcabf0f15a66ebd0b0df12f05.setContent(html_3ddb40d68cbc26722e136a2a06aa8628);
+            
+        
+
+        marker_fd6f8f49008ce6959c44c1f9793df3f7.bindPopup(popup_92fc9a6fcabf0f15a66ebd0b0df12f05)
+        ;
+
+        
+    
+    
+            var marker_fa22e9013ffba3708c70003155d18283 = L.marker(
+                [43.7223336, 10.3979114],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_fa527f328a838c7ae5d6fd52b003c428 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c578f42920daeaae11ea25d37d6a2f24 = $(`<div id="html_c578f42920daeaae11ea25d37d6a2f24" style="width: 100.0%; height: 100.0%;">[148, "Via Don Gaetano Boschi; Piazza dell'Arcivescovado"]</div>`)[0];
+                popup_fa527f328a838c7ae5d6fd52b003c428.setContent(html_c578f42920daeaae11ea25d37d6a2f24);
+            
+        
+
+        marker_fa22e9013ffba3708c70003155d18283.bindPopup(popup_fa527f328a838c7ae5d6fd52b003c428)
+        ;
+
+        
+    
+    
+            var marker_1969196f3a41e53bcddab4aab60baecf = L.marker(
+                [43.7211679, 10.3880796],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_4322541ff648f57c3e69ff54b9b38f1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a22f86909f3c7d78051d61c09d81852c = $(`<div id="html_a22f86909f3c7d78051d61c09d81852c" style="width: 100.0%; height: 100.0%;">[149, 'Via Diotisalvi; Via Ape al Bocconcino']</div>`)[0];
+                popup_4322541ff648f57c3e69ff54b9b38f1d.setContent(html_a22f86909f3c7d78051d61c09d81852c);
+            
+        
+
+        marker_1969196f3a41e53bcddab4aab60baecf.bindPopup(popup_4322541ff648f57c3e69ff54b9b38f1d)
+        ;
+
+        
+    
+    
+            var marker_6bade8674165d171b23acb17fc666593 = L.marker(
+                [43.712376, 10.391163],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_0a164484c94f45c14f7eb820c24b9bf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ed51616e3f472002d2b92eb4cbaaa34 = $(`<div id="html_6ed51616e3f472002d2b92eb4cbaaa34" style="width: 100.0%; height: 100.0%;">[150, ' Ponte della Cittadella; Lungarno Sidney Sonnino']</div>`)[0];
+                popup_0a164484c94f45c14f7eb820c24b9bf6.setContent(html_6ed51616e3f472002d2b92eb4cbaaa34);
+            
+        
+
+        marker_6bade8674165d171b23acb17fc666593.bindPopup(popup_0a164484c94f45c14f7eb820c24b9bf6)
+        ;
+
+        
+    
+    
+            var marker_1bbad555414e482d44ce893270c8c267 = L.marker(
+                [43.714896, 10.399991],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_bdae1b77fa95ccdd91bd2a50a8e92b51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35581edd024608ec5c9cfcf9b1bff216 = $(`<div id="html_35581edd024608ec5c9cfcf9b1bff216" style="width: 100.0%; height: 100.0%;">[151, ' Piazza dei Facchini; Piazza dei Facchini']</div>`)[0];
+                popup_bdae1b77fa95ccdd91bd2a50a8e92b51.setContent(html_35581edd024608ec5c9cfcf9b1bff216);
+            
+        
+
+        marker_1bbad555414e482d44ce893270c8c267.bindPopup(popup_bdae1b77fa95ccdd91bd2a50a8e92b51)
+        ;
+
+        
+    
+    
+            var marker_55aa3686d3c5439d290eca31d489c149 = L.marker(
+                [43.720877, 10.3990833],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_14edf10fa796bf500d8c3d733a188b39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e8f9da74ac0b7cbd9bec74b873943d9 = $(`<div id="html_2e8f9da74ac0b7cbd9bec74b873943d9" style="width: 100.0%; height: 100.0%;">[152, ' Via Giacomo Leopardi; Via Uguccione della Faggiola; Via Uguccione della Faggiola']</div>`)[0];
+                popup_14edf10fa796bf500d8c3d733a188b39.setContent(html_2e8f9da74ac0b7cbd9bec74b873943d9);
+            
+        
+
+        marker_55aa3686d3c5439d290eca31d489c149.bindPopup(popup_14edf10fa796bf500d8c3d733a188b39)
+        ;
+
+        
+    
+    
+            var marker_f8c74a66de526c12de9db5a6c943c671 = L.marker(
+                [43.7234938, 10.3989486],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_4f0f7c5c81551a1d70eadc285787a672 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00e1ce118ca4a9d3bf44b123c725463f = $(`<div id="html_00e1ce118ca4a9d3bf44b123c725463f" style="width: 100.0%; height: 100.0%;">[153, ' Via Contessa Matilde; Via Contessa Matilde; Via Santo Stefano']</div>`)[0];
+                popup_4f0f7c5c81551a1d70eadc285787a672.setContent(html_00e1ce118ca4a9d3bf44b123c725463f);
+            
+        
+
+        marker_f8c74a66de526c12de9db5a6c943c671.bindPopup(popup_4f0f7c5c81551a1d70eadc285787a672)
+        ;
+
+        
+    
+    
+            var marker_8d29ae6ef68dd81be1c22c22ec98c634 = L.marker(
+                [43.7147395, 10.4016867],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_5dd63d056e5a277566231f84ead32a5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ce38c440ba1f16e75b51d26786bdc41 = $(`<div id="html_2ce38c440ba1f16e75b51d26786bdc41" style="width: 100.0%; height: 100.0%;">[154, ' Via Empanada; Via San Martino; Via Pietro Toselli']</div>`)[0];
+                popup_5dd63d056e5a277566231f84ead32a5c.setContent(html_2ce38c440ba1f16e75b51d26786bdc41);
+            
+        
+
+        marker_8d29ae6ef68dd81be1c22c22ec98c634.bindPopup(popup_5dd63d056e5a277566231f84ead32a5c)
+        ;
+
+        
+    
+    
+            var marker_ae9f66dd987fc8ad4962e4c9c06ab97c = L.marker(
+                [43.7225588, 10.4017027],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_f94741401686287f4f40943ca5609b56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c20529f70f4d0fa4e430ba2a7ed9e83 = $(`<div id="html_7c20529f70f4d0fa4e430ba2a7ed9e83" style="width: 100.0%; height: 100.0%;">[155, ' Largo del Parlascio; Largo del Parlascio; Largo del Parlascio']</div>`)[0];
+                popup_f94741401686287f4f40943ca5609b56.setContent(html_7c20529f70f4d0fa4e430ba2a7ed9e83);
+            
+        
+
+        marker_ae9f66dd987fc8ad4962e4c9c06ab97c.bindPopup(popup_f94741401686287f4f40943ca5609b56)
+        ;
+
+        
+    
+    
+            var marker_357a6d455f8b95aa5278d9a7ee82a142 = L.marker(
+                [43.722543, 10.4022058],
+                {}
+            ).addTo(map_bc7f124e8e724e02188124d15e77aab4);
+        
+    
+        var popup_47b64a8081af4b64d856792c20e8ee61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71b696a743870f259d90b00bdd72757a = $(`<div id="html_71b696a743870f259d90b00bdd72757a" style="width: 100.0%; height: 100.0%;">[156, ' Largo del Parlascio; Largo del Parlascio']</div>`)[0];
+                popup_47b64a8081af4b64d856792c20e8ee61.setContent(html_71b696a743870f259d90b00bdd72757a);
+            
+        
+
+        marker_357a6d455f8b95aa5278d9a7ee82a142.bindPopup(popup_47b64a8081af4b64d856792c20e8ee61)
+        ;
+
+        
+    
+    
+    var color_map_ac77a2925060f10ad55dfc61754cdfc3 = {};
+
+    
+    color_map_ac77a2925060f10ad55dfc61754cdfc3.color = d3.scale.threshold()
+              .domain([0.0, 0.004008016032064128, 0.008016032064128256, 0.012024048096192385, 0.01603206412825651, 0.02004008016032064, 0.02404809619238477, 0.028056112224448898, 0.03206412825651302, 0.036072144288577156, 0.04008016032064128, 0.04408817635270541, 0.04809619238476954, 0.052104208416833664, 0.056112224448897796, 0.06012024048096192, 0.06412825651302605, 0.06813627254509018, 0.07214428857715431, 0.07615230460921844, 0.08016032064128256, 0.0841683366733467, 0.08817635270541083, 0.09218436873747494, 0.09619238476953908, 0.10020040080160321, 0.10420841683366733, 0.10821643286573146, 0.11222444889779559, 0.11623246492985972, 0.12024048096192384, 0.12424849699398798, 0.1282565130260521, 0.13226452905811623, 0.13627254509018036, 0.1402805611222445, 0.14428857715430862, 0.14829659318637275, 0.1523046092184369, 0.156312625250501, 0.16032064128256512, 0.16432865731462926, 0.1683366733466934, 0.17234468937875752, 0.17635270541082165, 0.18036072144288579, 0.1843687374749499, 0.18837675350701402, 0.19238476953907815, 0.1963927855711423, 0.20040080160320642, 0.20440881763527055, 0.20841683366733466, 0.2124248496993988, 0.21643286573146292, 0.22044088176352705, 0.22444889779559118, 0.22845691382765532, 0.23246492985971945, 0.23647294589178355, 0.24048096192384769, 0.24448897795591182, 0.24849699398797595, 0.25250501002004005, 0.2565130260521042, 0.2605210420841683, 0.26452905811623245, 0.2685370741482966, 0.2725450901803607, 0.27655310621242485, 0.280561122244489, 0.2845691382765531, 0.28857715430861725, 0.2925851703406814, 0.2965931863727455, 0.30060120240480964, 0.3046092184368738, 0.30861723446893785, 0.312625250501002, 0.3166332665330661, 0.32064128256513025, 0.3246492985971944, 0.3286573146292585, 0.33266533066132264, 0.3366733466933868, 0.3406813627254509, 0.34468937875751504, 0.3486973947895792, 0.3527054108216433, 0.35671342685370744, 0.36072144288577157, 0.36472945891783565, 0.3687374749498998, 0.3727454909819639, 0.37675350701402804, 0.3807615230460922, 0.3847695390781563, 0.38877755511022044, 0.3927855711422846, 0.3967935871743487, 0.40080160320641284, 0.40480961923847697, 0.4088176352705411, 0.41282565130260523, 0.4168336673346693, 0.42084168336673344, 0.4248496993987976, 0.4288577154308617, 0.43286573146292584, 0.43687374749499, 0.4408817635270541, 0.44488977955911824, 0.44889779559118237, 0.4529058116232465, 0.45691382765531063, 0.46092184368737477, 0.4649298597194389, 0.46893787575150303, 0.4729458917835671, 0.47695390781563124, 0.48096192384769537, 0.4849699398797595, 0.48897795591182364, 0.49298597194388777, 0.4969939879759519, 0.501002004008016, 0.5050100200400801, 0.5090180360721442, 0.5130260521042084, 0.5170340681362725, 0.5210420841683366, 0.5250501002004008, 0.5290581162324649, 0.533066132264529, 0.5370741482965932, 0.5410821643286573, 0.5450901803607214, 0.5490981963927856, 0.5531062124248497, 0.5571142284569138, 0.561122244488978, 0.5651302605210421, 0.5691382765531062, 0.5731462925851704, 0.5771543086172345, 0.5811623246492986, 0.5851703406813628, 0.5891783567134269, 0.593186372745491, 0.5971943887775552, 0.6012024048096193, 0.6052104208416834, 0.6092184368737475, 0.6132264529058116, 0.6172344689378757, 0.6212424849699398, 0.625250501002004, 0.6292585170340681, 0.6332665330661322, 0.6372745490981964, 0.6412825651302605, 0.6452905811623246, 0.6492985971943888, 0.6533066132264529, 0.657314629258517, 0.6613226452905812, 0.6653306613226453, 0.6693386773547094, 0.6733466933867736, 0.6773547094188377, 0.6813627254509018, 0.685370741482966, 0.6893787575150301, 0.6933867735470942, 0.6973947895791583, 0.7014028056112225, 0.7054108216432866, 0.7094188376753507, 0.7134268537074149, 0.717434869739479, 0.7214428857715431, 0.7254509018036072, 0.7294589178356713, 0.7334669338677354, 0.7374749498997996, 0.7414829659318637, 0.7454909819639278, 0.749498997995992, 0.7535070140280561, 0.7575150300601202, 0.7615230460921844, 0.7655310621242485, 0.7695390781563126, 0.7735470941883767, 0.7775551102204409, 0.781563126252505, 0.7855711422845691, 0.7895791583166333, 0.7935871743486974, 0.7975951903807615, 0.8016032064128257, 0.8056112224448898, 0.8096192384769539, 0.8136272545090181, 0.8176352705410822, 0.8216432865731463, 0.8256513026052105, 0.8296593186372746, 0.8336673346693386, 0.8376753507014028, 0.8416833667334669, 0.845691382765531, 0.8496993987975952, 0.8537074148296593, 0.8577154308617234, 0.8617234468937875, 0.8657314629258517, 0.8697394789579158, 0.87374749498998, 0.8777555110220441, 0.8817635270541082, 0.8857715430861723, 0.8897795591182365, 0.8937875751503006, 0.8977955911823647, 0.9018036072144289, 0.905811623246493, 0.9098196392785571, 0.9138276553106213, 0.9178356713426854, 0.9218436873747495, 0.9258517034068137, 0.9298597194388778, 0.9338677354709419, 0.9378757515030061, 0.9418837675350702, 0.9458917835671342, 0.9498997995991983, 0.9539078156312625, 0.9579158316633266, 0.9619238476953907, 0.9659318637274549, 0.969939879759519, 0.9739478957915831, 0.9779559118236473, 0.9819639278557114, 0.9859719438877755, 0.9899799599198397, 0.9939879759519038, 0.9979959919839679, 1.002004008016032, 1.006012024048096, 1.0100200400801602, 1.0140280561122244, 1.0180360721442885, 1.0220440881763526, 1.0260521042084167, 1.0300601202404809, 1.034068136272545, 1.0380761523046091, 1.0420841683366733, 1.0460921843687374, 1.0501002004008015, 1.0541082164328657, 1.0581162324649298, 1.062124248496994, 1.066132264529058, 1.0701402805611222, 1.0741482965931863, 1.0781563126252505, 1.0821643286573146, 1.0861723446893787, 1.0901803607214429, 1.094188376753507, 1.0981963927855711, 1.1022044088176353, 1.1062124248496994, 1.1102204408817635, 1.1142284569138277, 1.1182364729458918, 1.122244488977956, 1.12625250501002, 1.1302605210420842, 1.1342685370741483, 1.1382765531062125, 1.1422845691382766, 1.1462925851703407, 1.1503006012024048, 1.154308617234469, 1.1583166332665331, 1.1623246492985972, 1.1663326653306614, 1.1703406813627255, 1.1743486973947896, 1.1783567134268538, 1.182364729458918, 1.186372745490982, 1.1903807615230462, 1.1943887775551103, 1.1983967935871744, 1.2024048096192386, 1.2064128256513027, 1.2104208416833668, 1.214428857715431, 1.218436873747495, 1.222444889779559, 1.2264529058116231, 1.2304609218436873, 1.2344689378757514, 1.2384769539078155, 1.2424849699398797, 1.2464929859719438, 1.250501002004008, 1.254509018036072, 1.2585170340681362, 1.2625250501002003, 1.2665330661322645, 1.2705410821643286, 1.2745490981963927, 1.2785571142284569, 1.282565130260521, 1.2865731462925851, 1.2905811623246493, 1.2945891783567134, 1.2985971943887775, 1.3026052104208417, 1.3066132264529058, 1.31062124248497, 1.314629258517034, 1.3186372745490982, 1.3226452905811623, 1.3266533066132264, 1.3306613226452906, 1.3346693386773547, 1.3386773547094188, 1.342685370741483, 1.346693386773547, 1.3507014028056112, 1.3547094188376754, 1.3587174348697395, 1.3627254509018036, 1.3667334669338678, 1.370741482965932, 1.374749498997996, 1.3787575150300602, 1.3827655310621243, 1.3867735470941884, 1.3907815631262526, 1.3947895791583167, 1.3987975951903808, 1.402805611222445, 1.406813627254509, 1.4108216432865732, 1.4148296593186374, 1.4188376753507015, 1.4228456913827656, 1.4268537074148298, 1.4308617234468939, 1.434869739478958, 1.4388777555110221, 1.4428857715430863, 1.4468937875751502, 1.4509018036072143, 1.4549098196392785, 1.4589178356713426, 1.4629258517034067, 1.4669338677354709, 1.470941883767535, 1.4749498997995991, 1.4789579158316633, 1.4829659318637274, 1.4869739478957915, 1.4909819639278556, 1.4949899799599198, 1.498997995991984, 1.503006012024048, 1.5070140280561122, 1.5110220440881763, 1.5150300601202404, 1.5190380761523046, 1.5230460921843687, 1.5270541082164328, 1.531062124248497, 1.535070140280561, 1.5390781563126252, 1.5430861723446894, 1.5470941883767535, 1.5511022044088176, 1.5551102204408818, 1.559118236472946, 1.56312625250501, 1.5671342685370742, 1.5711422845691383, 1.5751503006012024, 1.5791583166332666, 1.5831663326653307, 1.5871743486973948, 1.591182364729459, 1.595190380761523, 1.5991983967935872, 1.6032064128256514, 1.6072144288577155, 1.6112224448897796, 1.6152304609218437, 1.6192384769539079, 1.623246492985972, 1.6272545090180361, 1.6312625250501003, 1.6352705410821644, 1.6392785571142285, 1.6432865731462927, 1.6472945891783568, 1.651302605210421, 1.655310621242485, 1.6593186372745492, 1.6633266533066133, 1.6673346693386772, 1.6713426853707414, 1.6753507014028055, 1.6793587174348696, 1.6833667334669338, 1.687374749498998, 1.691382765531062, 1.6953907815631262, 1.6993987975951903, 1.7034068136272544, 1.7074148296593186, 1.7114228456913827, 1.7154308617234468, 1.719438877755511, 1.723446893787575, 1.7274549098196392, 1.7314629258517034, 1.7354709418837675, 1.7394789579158316, 1.7434869739478958, 1.74749498997996, 1.751503006012024, 1.7555110220440882, 1.7595190380761523, 1.7635270541082164, 1.7675350701402806, 1.7715430861723447, 1.7755511022044088, 1.779559118236473, 1.783567134268537, 1.7875751503006012, 1.7915831663326653, 1.7955911823647295, 1.7995991983967936, 1.8036072144288577, 1.8076152304609219, 1.811623246492986, 1.8156312625250501, 1.8196392785571143, 1.8236472945891784, 1.8276553106212425, 1.8316633266533067, 1.8356713426853708, 1.839679358717435, 1.843687374749499, 1.8476953907815632, 1.8517034068136273, 1.8557114228456915, 1.8597194388777556, 1.8637274549098197, 1.8677354709418839, 1.871743486973948, 1.8757515030060121, 1.8797595190380763, 1.8837675350701404, 1.8877755511022045, 1.8917835671342684, 1.8957915831663326, 1.8997995991983967, 1.9038076152304608, 1.907815631262525, 1.911823647294589, 1.9158316633266532, 1.9198396793587174, 1.9238476953907815, 1.9278557114228456, 1.9318637274549098, 1.9358717434869739, 1.939879759519038, 1.9438877755511021, 1.9478957915831663, 1.9519038076152304, 1.9559118236472945, 1.9599198396793587, 1.9639278557114228, 1.967935871743487, 1.971943887775551, 1.9759519038076152, 1.9799599198396793, 1.9839679358717435, 1.9879759519038076, 1.9919839679358717, 1.9959919839679359, 2.0])
+              .range(['#008000ff', '#018100ff', '#028100ff', '#038200ff', '#048200ff', '#058300ff', '#068300ff', '#078400ff', '#088400ff', '#098500ff', '#0a8500ff', '#0b8600ff', '#0c8600ff', '#0d8700ff', '#0e8700ff', '#0f8800ff', '#108800ff', '#118900ff', '#128900ff', '#138a00ff', '#148a00ff', '#158b00ff', '#168b00ff', '#178c00ff', '#188c00ff', '#198d00ff', '#1a8d00ff', '#1b8e00ff', '#1c8e00ff', '#1d8f00ff', '#1e8f00ff', '#1f9000ff', '#209000ff', '#219100ff', '#229100ff', '#239200ff', '#249200ff', '#259300ff', '#269300ff', '#289400ff', '#299400ff', '#2a9500ff', '#2b9500ff', '#2c9600ff', '#2d9600ff', '#2e9700ff', '#2f9800ff', '#309800ff', '#319900ff', '#329900ff', '#339a00ff', '#349a00ff', '#359b00ff', '#369b00ff', '#379c00ff', '#389c00ff', '#399d00ff', '#3a9d00ff', '#3b9e00ff', '#3c9e00ff', '#3d9f00ff', '#3e9f00ff', '#3fa000ff', '#40a000ff', '#41a100ff', '#42a100ff', '#43a200ff', '#44a200ff', '#45a300ff', '#46a300ff', '#47a400ff', '#48a400ff', '#49a500ff', '#4aa500ff', '#4ba600ff', '#4ca600ff', '#4da700ff', '#4fa700ff', '#50a800ff', '#51a800ff', '#52a900ff', '#53a900ff', '#54aa00ff', '#55aa00ff', '#56ab00ff', '#57ab00ff', '#58ac00ff', '#59ac00ff', '#5aad00ff', '#5bad00ff', '#5cae00ff', '#5daf00ff', '#5eaf00ff', '#5fb000ff', '#60b000ff', '#61b100ff', '#62b100ff', '#63b200ff', '#64b200ff', '#65b300ff', '#66b300ff', '#67b400ff', '#68b400ff', '#69b500ff', '#6ab500ff', '#6bb600ff', '#6cb600ff', '#6db700ff', '#6eb700ff', '#6fb800ff', '#70b800ff', '#71b900ff', '#72b900ff', '#73ba00ff', '#74ba00ff', '#75bb00ff', '#77bb00ff', '#78bc00ff', '#79bc00ff', '#7abd00ff', '#7bbd00ff', '#7cbe00ff', '#7dbe00ff', '#7ebf00ff', '#7fbf00ff', '#80c000ff', '#81c000ff', '#82c100ff', '#83c100ff', '#84c200ff', '#85c200ff', '#86c300ff', '#87c300ff', '#88c400ff', '#89c400ff', '#8ac500ff', '#8bc500ff', '#8cc600ff', '#8dc700ff', '#8ec700ff', '#8fc800ff', '#90c800ff', '#91c900ff', '#92c900ff', '#93ca00ff', '#94ca00ff', '#95cb00ff', '#96cb00ff', '#97cc00ff', '#98cc00ff', '#99cd00ff', '#9acd00ff', '#9bce00ff', '#9cce00ff', '#9ecf00ff', '#9fcf00ff', '#a0d000ff', '#a1d000ff', '#a2d100ff', '#a3d100ff', '#a4d200ff', '#a5d200ff', '#a6d300ff', '#a7d300ff', '#a8d400ff', '#a9d400ff', '#aad500ff', '#abd500ff', '#acd600ff', '#add600ff', '#aed700ff', '#afd700ff', '#b0d800ff', '#b1d800ff', '#b2d900ff', '#b3d900ff', '#b4da00ff', '#b5da00ff', '#b6db00ff', '#b7db00ff', '#b8dc00ff', '#b9dc00ff', '#badd00ff', '#bbde00ff', '#bcde00ff', '#bddf00ff', '#bedf00ff', '#bfe000ff', '#c0e000ff', '#c1e100ff', '#c2e100ff', '#c3e200ff', '#c5e200ff', '#c6e300ff', '#c7e300ff', '#c8e400ff', '#c9e400ff', '#cae500ff', '#cbe500ff', '#cce600ff', '#cde600ff', '#cee700ff', '#cfe700ff', '#d0e800ff', '#d1e800ff', '#d2e900ff', '#d3e900ff', '#d4ea00ff', '#d5ea00ff', '#d6eb00ff', '#d7eb00ff', '#d8ec00ff', '#d9ec00ff', '#daed00ff', '#dbed00ff', '#dcee00ff', '#ddee00ff', '#deef00ff', '#dfef00ff', '#e0f000ff', '#e1f000ff', '#e2f100ff', '#e3f100ff', '#e4f200ff', '#e5f200ff', '#e6f300ff', '#e7f300ff', '#e8f400ff', '#e9f500ff', '#eaf500ff', '#ebf600ff', '#edf600ff', '#eef700ff', '#eff700ff', '#f0f800ff', '#f1f800ff', '#f2f900ff', '#f3f900ff', '#f4fa00ff', '#f5fa00ff', '#f6fb00ff', '#f7fb00ff', '#f8fc00ff', '#f9fc00ff', '#fafd00ff', '#fbfd00ff', '#fcfe00ff', '#fdfe00ff', '#feff00ff', '#ffff00ff', '#ffff00ff', '#fffe00ff', '#fffd00ff', '#fffc00ff', '#fffb00ff', '#fffa00ff', '#fff900ff', '#fff800ff', '#fff700ff', '#fff600ff', '#fff500ff', '#fff400ff', '#fff300ff', '#fff200ff', '#fff100ff', '#fff000ff', '#ffef00ff', '#ffee00ff', '#ffed00ff', '#ffeb00ff', '#ffea00ff', '#ffe900ff', '#ffe800ff', '#ffe700ff', '#ffe600ff', '#ffe500ff', '#ffe400ff', '#ffe300ff', '#ffe200ff', '#ffe100ff', '#ffe000ff', '#ffdf00ff', '#ffde00ff', '#ffdd00ff', '#ffdc00ff', '#ffdb00ff', '#ffda00ff', '#ffd900ff', '#ffd800ff', '#ffd700ff', '#ffd600ff', '#ffd500ff', '#ffd400ff', '#ffd300ff', '#ffd200ff', '#ffd100ff', '#ffd000ff', '#ffcf00ff', '#ffce00ff', '#ffcd00ff', '#ffcc00ff', '#ffcb00ff', '#ffca00ff', '#ffc900ff', '#ffc800ff', '#ffc700ff', '#ffc600ff', '#ffc500ff', '#ffc300ff', '#ffc200ff', '#ffc100ff', '#ffc000ff', '#ffbf00ff', '#ffbe00ff', '#ffbd00ff', '#ffbc00ff', '#ffbb00ff', '#ffba00ff', '#ffb900ff', '#ffb800ff', '#ffb700ff', '#ffb600ff', '#ffb500ff', '#ffb400ff', '#ffb300ff', '#ffb200ff', '#ffb100ff', '#ffb000ff', '#ffaf00ff', '#ffae00ff', '#ffad00ff', '#ffac00ff', '#ffab00ff', '#ffaa00ff', '#ffa900ff', '#ffa800ff', '#ffa700ff', '#ffa600ff', '#ffa500ff', '#ffa400ff', '#ffa300ff', '#ffa200ff', '#ffa100ff', '#ffa000ff', '#ff9f00ff', '#ff9e00ff', '#ff9c00ff', '#ff9b00ff', '#ff9a00ff', '#ff9900ff', '#ff9800ff', '#ff9700ff', '#ff9600ff', '#ff9500ff', '#ff9400ff', '#ff9300ff', '#ff9200ff', '#ff9100ff', '#ff9000ff', '#ff8f00ff', '#ff8e00ff', '#ff8d00ff', '#ff8c00ff', '#ff8b00ff', '#ff8a00ff', '#ff8900ff', '#ff8800ff', '#ff8700ff', '#ff8600ff', '#ff8500ff', '#ff8400ff', '#ff8300ff', '#ff8200ff', '#ff8100ff', '#ff8000ff', '#ff7f00ff', '#ff7e00ff', '#ff7d00ff', '#ff7c00ff', '#ff7b00ff', '#ff7a00ff', '#ff7900ff', '#ff7800ff', '#ff7700ff', '#ff7500ff', '#ff7400ff', '#ff7300ff', '#ff7200ff', '#ff7100ff', '#ff7000ff', '#ff6f00ff', '#ff6e00ff', '#ff6d00ff', '#ff6c00ff', '#ff6b00ff', '#ff6a00ff', '#ff6900ff', '#ff6800ff', '#ff6700ff', '#ff6600ff', '#ff6500ff', '#ff6400ff', '#ff6300ff', '#ff6200ff', '#ff6100ff', '#ff6000ff', '#ff5f00ff', '#ff5e00ff', '#ff5d00ff', '#ff5c00ff', '#ff5b00ff', '#ff5a00ff', '#ff5900ff', '#ff5800ff', '#ff5700ff', '#ff5600ff', '#ff5500ff', '#ff5400ff', '#ff5300ff', '#ff5200ff', '#ff5100ff', '#ff5000ff', '#ff4f00ff', '#ff4d00ff', '#ff4c00ff', '#ff4b00ff', '#ff4a00ff', '#ff4900ff', '#ff4800ff', '#ff4700ff', '#ff4600ff', '#ff4500ff', '#ff4400ff', '#ff4300ff', '#ff4200ff', '#ff4100ff', '#ff4000ff', '#ff3f00ff', '#ff3e00ff', '#ff3d00ff', '#ff3c00ff', '#ff3b00ff', '#ff3a00ff', '#ff3900ff', '#ff3800ff', '#ff3700ff', '#ff3600ff', '#ff3500ff', '#ff3400ff', '#ff3300ff', '#ff3200ff', '#ff3100ff', '#ff3000ff', '#ff2f00ff', '#ff2e00ff', '#ff2d00ff', '#ff2c00ff', '#ff2b00ff', '#ff2a00ff', '#ff2900ff', '#ff2800ff', '#ff2600ff', '#ff2500ff', '#ff2400ff', '#ff2300ff', '#ff2200ff', '#ff2100ff', '#ff2000ff', '#ff1f00ff', '#ff1e00ff', '#ff1d00ff', '#ff1c00ff', '#ff1b00ff', '#ff1a00ff', '#ff1900ff', '#ff1800ff', '#ff1700ff', '#ff1600ff', '#ff1500ff', '#ff1400ff', '#ff1300ff', '#ff1200ff', '#ff1100ff', '#ff1000ff', '#ff0f00ff', '#ff0e00ff', '#ff0d00ff', '#ff0c00ff', '#ff0b00ff', '#ff0a00ff', '#ff0900ff', '#ff0800ff', '#ff0700ff', '#ff0600ff', '#ff0500ff', '#ff0400ff', '#ff0300ff', '#ff0200ff', '#ff0100ff', '#ff0000ff']);
+    
+
+    color_map_ac77a2925060f10ad55dfc61754cdfc3.x = d3.scale.linear()
+              .domain([0.0, 2.0])
+              .range([0, 450 - 50]);
+
+    color_map_ac77a2925060f10ad55dfc61754cdfc3.legend = L.control({position: 'topright'});
+    color_map_ac77a2925060f10ad55dfc61754cdfc3.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_ac77a2925060f10ad55dfc61754cdfc3.legend.addTo(map_bc7f124e8e724e02188124d15e77aab4);
+
+    color_map_ac77a2925060f10ad55dfc61754cdfc3.xAxis = d3.svg.axis()
+        .scale(color_map_ac77a2925060f10ad55dfc61754cdfc3.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 1.0, 2.0]);
+
+    color_map_ac77a2925060f10ad55dfc61754cdfc3.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_ac77a2925060f10ad55dfc61754cdfc3.g = color_map_ac77a2925060f10ad55dfc61754cdfc3.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_ac77a2925060f10ad55dfc61754cdfc3.g.selectAll("rect")
+        .data(color_map_ac77a2925060f10ad55dfc61754cdfc3.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_ac77a2925060f10ad55dfc61754cdfc3.x(color_map_ac77a2925060f10ad55dfc61754cdfc3.color.domain()[i - 1]) : color_map_ac77a2925060f10ad55dfc61754cdfc3.x.range()[0],
+            x1: i < color_map_ac77a2925060f10ad55dfc61754cdfc3.color.domain().length ? color_map_ac77a2925060f10ad55dfc61754cdfc3.x(color_map_ac77a2925060f10ad55dfc61754cdfc3.color.domain()[i]) : color_map_ac77a2925060f10ad55dfc61754cdfc3.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_ac77a2925060f10ad55dfc61754cdfc3.g.call(color_map_ac77a2925060f10ad55dfc61754cdfc3.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("Count dei Rumori");
+</script>
+</html>

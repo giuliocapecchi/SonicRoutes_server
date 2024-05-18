@@ -1,0 +1,49 @@
+index,latitude,longitude,street_name,street_counter
+0,43.7211779,10.3914214,Via Giunta Pisano; Via Bonanno Pisano,2
+1,43.7221479,10.3882131,Via Giunta Pisano; Via Diotisalvi; Via Andrea Pisano,3
+2,43.7229513,10.3982212,Via Ugo Camozzo; Via Cardinale Pietro Maffi; Via San Ranierino,3
+3,43.7164088,10.3882581,Via Bonanno Pisano; Via dei Macelli,2
+4,43.7181759,10.3894504,Via Turino Vanni; Via Bonanno Pisano; Via Rustichello da Pisa; Via Pietro da Pisa,4
+5,43.7228292,10.3922295,Via Andrea Pisano; Via Bonanno Pisano; Via G. Battista Niccolini,3
+6,43.722951,10.3897496,N/A; Via Andrea Pisano; Via Vecchia Barbaricina,3
+7,43.7225026,10.3984423,Via Ugo Camozzo; Piazza dell'Arcivescovado,2
+8,43.721923,10.399224,Via San Tommaso; Via Ferdinando Capponi; Via Uguccione della Faggiola,3
+9,43.7212777,10.4003564,Via dei Martiri; Via Ferdinando Capponi,2
+10,43.7198717,10.3996002,Via dei Martiri; Via Dalmazia; Piazza dei Cavalieri; Via Corsica,4
+11,43.7177108,10.3998677,Via Tavoleria; Piazza San Frediano; Via Domenico Cavalca; Via San Frediano; Via Curtatone e Montanara,5
+12,43.7170206,10.3916516,Via Nicola Pisano; Via Enrico Fermi; Via Rustichello da Pisa,3
+13,43.7165557,10.3915297,Via Nicola Pisano; Via Volturno,2
+14,43.7197737,10.3956139,Via Roma; Via Paolo Savi; Via Porta Buozzi,3
+15,43.7198919,10.3929772,Via Nicola Pisano; Via Paolo Savi,2
+16,43.7181988,10.3925435,Via Nicola Pisano; Via Risorgimento,2
+17,43.720987,10.3886822,Via Cimabue; Via Diotisalvi,2
+18,43.7196471,10.3879154,Via Cimabue; Via Carlo Francesco Gabba,2
+19,43.7198206,10.3989136,Via Pasquale Paoli; Piazza Francesco Buonamici; Via Uguccione della Faggiola; Via Dalmazia; Via Corsica; Via dei Mille,6
+20,43.7198819,10.3973556,Via Luca Ghini; Via Don Gaetano Boschi; Piazza Felice Cavallotti; Via Santa Maria; Via dei Mille,5
+21,43.7166398,10.3998939,Via Curtatone e Montanara; Lungarno Antonio Pacinotti,2
+22,43.7205101,10.3895106,Via Diotisalvi; Via Francesco Traini; Largo Lucio Lazzarino,3
+23,43.718127,10.3969295,Via Santa Maria; Via Alessandro Volta,2
+24,43.7185764,10.3954069,Via Roma; Via Derna; Via Alessandro Volta,3
+25,43.7193247,10.3929429,Via Derna; Via Nicola Pisano,2
+26,43.7184888,10.3882776,Via Turino Vanni; Via Spinello Aretino,2
+27,43.7166748,10.3970962,Piazza Francesco Carrara; Lungarno Antonio Pacinotti; N/A; Via San Niccola; Via San Nicola,5
+28,43.7215349,10.3957813,Via Roma; Via Angelo Galli Tassi,2
+29,43.7215057,10.3966777,Via Porta Buozzi; Via Angelo Galli Tassi,2
+30,43.7198467,10.396716,Via Porta Buozzi; Via Luca Ghini,2
+31,43.7180247,10.39365,Via Risorgimento; Via Magenta,2
+32,43.71779,10.3951959,Via Roma; Via Risorgimento,2
+33,43.7170109,10.3933401,Via Trieste; Via Magenta,2
+34,43.7166791,10.3963901,Via Trento; Via San Niccola; Via Santa Maria,3
+35,43.7168523,10.39526,Via Santa Lucia; Via Trento; Via Ricucchi,3
+36,43.7169278,10.3949365,Via Trieste; Via Trento; Via Roma,3
+37,43.717472,10.3919227,Via Trieste; Via Nicola Pisano,2
+38,43.7163698,10.3945476,Via Roma; Via Enrico Fermi,2
+39,43.7176731,10.3978318,Piazza San Giorgio; Via del Collegio Ricci; Via La Pergola,3
+40,43.722343,10.401046,Via San Tommaso; Via Cardinale Pietro Maffi,2
+41,43.7193253,10.388812,Via Francesco Traini; Via Carlo Francesco Gabba,2
+42,43.7189718,10.3899712,Via Bonanno Pisano; Via Risorgimento; Via Carlo Francesco Gabba,3
+43,43.7203357,10.3908775,Via Diotisalvi; Via Bonanno Pisano,2
+44,43.7161352,10.3966029,Via Santa Maria; Lungarno Antonio Pacinotti,2
+45,43.7190682,10.3999712,Piazza dei Cavalieri; Via San Frediano,2
+46,43.7220093,10.3983839,Piazza dell'Arcivescovado; Via Ferdinando Capponi,2
+47,43.7222385,10.3977108,Piazza dell'Arcivescovado; Via Don Gaetano Boschi,2

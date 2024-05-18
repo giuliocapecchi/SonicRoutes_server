@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f4f4f4;
+}
+
+body {
+    background-image: url('/static/mainpage_background.png');    
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 3vh;
+    background-color: var(--background-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 2vh;
+    font-size: xxx-large;
+}
+
+p {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: larger;
+}
+
+a {
+    display: block;
+    width: 20vh; 
+    height: auto;
+    margin: 30px auto;
+    padding: 15px; 
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease;
+    font-size: large;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Adding a subtle shadow */
+
+}
+
+a:hover {
+    background-color: #0056b3; 
+}

@@ -1,0 +1,154 @@
+index,latitude,longitude,street_name,street_counter
+0,43.7155503,10.4016837,Ponte di Mezzo; Lungarno Galileo Galilei; Lungarno Gambacorti; Lungarno Gambacorti,4
+1,43.7156025,10.3949766,Ponte Solferino; Lungarno Antonio Pacinotti; Lungarno Ranieri Simonelli; Piazza Solferino,4
+2,43.7158105,10.3955213,Lungarno Antonio Pacinotti; Via del Buongusto; Lungarno Antonio Pacinotti,3
+3,43.7158011,10.4003727,Lungarno Gambacorti; Lungarno Gambacorti; Via Pietro Toselli,3
+4,43.7158286,10.3996151,Via delle Belle Donne; Lungarno Gambacorti; Lungarno Gambacorti,3
+5,43.7147231,10.3957059,Via Francesco Crispi; Lungarno Sidney Sonnino; Ponte Solferino; Lungarno Gambacorti; Lungarno Gambacorti,5
+6,43.7211779,10.3914214,Via Giunta Pisano; Via Bonanno Pisano,2
+7,43.7221479,10.3882131,Via Diotisalvi; Via Andrea Pisano; Via Giunta Pisano,3
+8,43.7229513,10.3982212,Via Cardinale Pietro Maffi; Via San Ranierino; Via Cardinale Pietro Maffi,3
+9,43.7228801,10.3985253,Via Cardinale Pietro Maffi; Via Ugo Camozzo; Via Cardinale Pietro Maffi,3
+10,43.71338,10.3888137,Via Bonanno Pisano; Lungarno Giacomo Leopardi; Piazza di Terzanaia,3
+11,43.715621, 10.387824,Via Bonanno Pisano; Via dei Macelli,2
+12,43.7164088,10.3882581,Via Bonanno Pisano; Via dei Macelli,2
+13,43.7181759,10.3894504,Via Rustichello da Pisa; Via Turino Vanni; Via Bonanno Pisano; Via Bonanno Pisano; Via Pietro da Pisa,5
+14,43.7228292,10.3922295,Via G. Battista Niccolini; Via Andrea Pisano; Via Bonanno Pisano,3
+15,43.7228368,10.3895119,Via Andrea Pisano; Via Vecchia Barbaricina,2
+16,43.7228354,10.4017621,Largo del Parlascio; Via Luigi Bianchi; Via del Brennero; Via Contessa Matilde; Via Contessa Matilde,5
+17,43.7241928,10.402379,Via Luigi Bianchi; Via Santo Stefano,2
+18,43.7245985,10.4024017,Via Luigi Bianchi; Via Giuseppe Cesare Abba,2
+19,43.7163779,10.3947648,Via Roma; Via Enrico Fermi; Piazza Solferino; Via Roma; Via Enrico Fermi,5
+20,43.7236889,10.3919032,Via G. Battista Niccolini; Via Vecchia Barbaricina; Via Carlo Salomone Cammeo,3
+21,43.7196742,10.4021804,Via Giosuè Carducci; Via San Lorenzo; Via Canto del Nicchio,3
+22,43.7214562,10.4021771,Via Giosuè Carducci; Via Santa Caterina; Via Carlo Fedeli,3
+23,43.7219085,10.4021025,Largo del Parlascio; Largo del Parlascio; Via Carlo Fedeli,3
+24,43.7221886,10.401703,Largo del Parlascio; Largo del Parlascio; Via Cardinale Pietro Maffi,3
+25,43.7240033,10.397229,Via Piave; Via Contessa Matilde; Via Contessa Matilde,3
+26,43.7157697,10.3988833,Via Giuseppe Mazzini; Lungarno Gambacorti; Lungarno Gambacorti,3
+27,43.7147344,10.3988625,Via La Maddalena; Via Giuseppe Mazzini,2
+28,43.7140192,10.398755,Via Giuseppe Mazzini; Via Alberto Mario,2
+29,43.7250113,10.391233,Via Marinello Nelli; Rotatoria Lorenzo Poggi; Via Pietrasantina; Viale delle Cascine; Via Carlo Salomone Cammeo; Via Contessa Matilde,6
+30,43.7225026,10.3984423,Via Ugo Camozzo; Piazza dell'Arcivescovado,2
+31,43.7217743,10.3997097,Via Ferdinando Capponi; Via San Tommaso; Via Ferdinando Capponi,3
+32,43.721923,10.399224,Via Ferdinando Capponi; Via Uguccione della Faggiola; Via Ferdinando Capponi,3
+33,43.7212777,10.4003564,Via dei Martiri; Via San Giuseppe; Via Ferdinando Capponi,3
+34,43.7198717,10.3996002,Via dei Martiri; Via Dalmazia,2
+35,43.7177108,10.3998677,Piazza San Frediano; Via Curtatone e Montanara; Via Domenico Cavalca,3
+36,43.7181135,10.3998918,Piazza San Frediano; Via San Frediano; Via Tavoleria,3
+37,43.7240077,10.3992421,Via Antonio Rosmini; Via Santo Stefano; Via Santo Stefano,3
+38,43.7154022,10.3945081,Lungarno Ranieri Simonelli; Via Volturno; Lungarno Ranieri Simonelli,3
+39,43.7170206,10.3916516,Via Nicola Pisano; Via Rustichello da Pisa; Via Enrico Fermi; Via Nicola Pisano,4
+40,43.7165557,10.3915297,Via Nicola Pisano; Via Volturno,2
+41,43.714059, 10.391151,Via Nicola Pisano; Lungarno Ranieri Simonelli; Lungarno Ranieri Simonelli,3
+42,43.7162818,10.4021489,Lungarno Antonio Pacinotti; Ponte di Mezzo; Lungarno Mediceo,3
+43,43.7144795,10.4021165,Via Franceschi; Via San Martino; Via del Moro; Via Kinzica dei Sismondi,4
+44,43.7139052,10.4017466,Via Kinzica dei Sismondi; Via San Bernardo; Via San Bernardo,3
+45,43.7197737,10.3956139,Via Paolo Savi; Via Roma; Via Roma,3
+46,43.7198919,10.3929772,Via Paolo Savi; Via Nicola Pisano,2
+47,43.7181988,10.3925435,Via Risorgimento; Via Risorgimento; Via Nicola Pisano; Via Nicola Pisano,4
+48,43.7238789,10.4013326,Via Santo Stefano; Via Sant'Ansano,2
+49,43.720987,10.3886822,Via Cimabue; Via Diotisalvi; Via Diotisalvi,3
+50,43.7196471,10.3879154,Via Cimabue; Via Carlo Francesco Gabba,2
+51,43.7193640, 10.3888430,Via Francesco Traini; Via Carlo Francesco Gabba,2
+52,43.7198206,10.3989136,Via dei Mille; Via Corsica; Via Uguccione della Faggiola; Piazza Francesco Buonamici,4
+53,43.7199116,10.3977601,Via dei Mille; Piazza Felice Cavallotti; Piazza Felice Cavallotti,3
+55,43.7139872,10.3971365,Via Alberto Mario; Via San Paolo; Via Sant'Antonio,3
+56,43.7140844,10.3977181,Via Alberto Mario; Vicolo San Cosimo; Via Camilla Del Lante,3
+57,43.7141077,10.3980147,Via Alberto Mario; Vicolo delle Conce,2
+58,43.7141139,10.3982709,Via Alberto Mario; Vicolo dell'Annunziata,2
+59,43.7166398,10.3998939,Via Curtatone e Montanara; Lungarno Antonio Pacinotti; Lungarno Antonio Pacinotti,3
+60,43.7207076,10.3896235,Largo Lucio Lazzarino; Via Diotisalvi; Via Diotisalvi; Via Francesco Traini,4
+62,43.7190822,10.4007174,Via Ulisse Dini; Piazza dei Cavalieri,2
+63,43.7183748,10.4015048,Via Ulisse Dini; Piazza San Felice,2
+64,43.718232,10.4018044,Via Ulisse Dini; Piazza Giovan Battista Donati,2
+65,43.7195462,10.3999770,Via Corsica; Piazza dei Cavalieri,2
+66,43.7256525,10.3906496,Via Mino Rosi; Via Marinello Nelli,2
+67,43.7196868,10.4018689,Via Consoli del Mare; Via Canto del Nicchio; Via Santa Apollonia,3
+68,43.7193552,10.4003227,Via Consoli del Mare; Piazza dei Cavalieri,2
+69,43.7178518,10.4018389,Piazza Giovan Battista Donati; Piazza Sant'Omobono,2
+70,43.718127,10.3969295,Via Alessandro Volta; Via Santa Maria,2
+71,43.7185764,10.3954069,Via Alessandro Volta; Via Derna; Via Roma,3
+72,43.7213169,10.4019478,Via San Giuseppe; Via Santa Apollonia,2
+73,43.7193247,10.3929429,Via Derna; Via Nicola Pisano,2
+74,43.7152091,10.4010139,Via Garofani; Via Pietro Toselli; Via Pietro Toselli,3
+75,43.7143622,10.4004438,Via Garofani; Piazza dei Grilletti,2
+76,43.7144221,10.4001763,Via dell'Occhio; Piazza dei Grilletti,2
+77,43.715441,10.4006405,Via dell'Occhio; Via Pietro Toselli; Via Pietro Toselli,3
+78,43.7140585,10.4011719,Via San Bernardo; Via della Foglia; Vicolo dell'Oro; Via Empanada,4
+80,43.7137774,10.4021925,Via San Bernardo; Vicolo Rosselmini; Vicolo Borghese,3
+81,43.7143129,10.4024901,Vicolo Rosselmini; Via San Martino,2
+82,43.7184888,10.3882776,Via Turino Vanni; Via Spinello Aretino,2
+83,43.7201818,10.3990435,Via Dalmazia; Via Uguccione della Faggiola,2
+84,43.7159922,10.3927926,Via Volturno; Via San Vito,2
+85,43.7149487,10.3936246,Via San Vito; Lungarno Ranieri Simonelli; Lungarno Ranieri Simonelli,3
+86,43.7172173,10.4011256,Via Porton Rosso; Via Domenico Cavalca,2
+87,43.7174903,10.4007603,Vicolo del Tidi; Via Quarantotti; Via Domenico Cavalca; Via Santa Margherita,4
+88,43.7215349,10.3957813,Via Angelo Galli Tassi; Via Roma,2
+89,43.7215057,10.3966777,Via Angelo Galli Tassi; Via Porta Buozzi,2
+90,43.7198467,10.396716,Via Porta Buozzi; Via Luca Ghini,2
+91,43.7198819,10.3973556,Via Luca Ghini; Via Santa Maria; Piazza Felice Cavallotti,3
+92,43.7208932,10.3978034,Piazza Felice Cavallotti; Via Don Gaetano Boschi; Via Giacomo Leopardi,3
+93,43.7180247,10.39365,Via Risorgimento; Via Magenta,2
+94,43.71779,10.3951959,Via Risorgimento; Via Roma; Via Roma,3
+95,43.7170109,10.3933401,Via Magenta; Via Trieste,2
+96,43.7165899,10.396422,Via San Niccola; Via Santa Maria; Via San Nicola; Via Trento,4
+97,43.7167786,10.3956664,Via Trento; Via Ricucchi,2
+98,43.7168523,10.39526,Via Trento; Via Santa Lucia,2
+99,43.7169278,10.3949365,Via Trento; Via Trieste; Via Roma,3
+100,43.717472,10.3919227,Via Trieste; Via Nicola Pisano,2
+101,43.7161419,10.3952414,Via Santa Lucia; Piazza Vittorio Locchi; Via del Buongusto,3
+102,43.717876,10.4007659,Via Santa Margherita; Via Tavoleria,2
+103,43.7179668,10.4005045,Via del Castelletto; Via Tavoleria,3
+104,43.7178101,10.4010112,Via Quarantotti; Via del Castelletto; Via Tavoleria,3
+105,43.7176171,10.4016837,Via Tavoleria; Piazza Sant'Omobono,2
+106,43.7136976,10.3899272,Ponte della Cittadella; Piazza di Terzanaia; Lungarno Ranieri Simonelli; Rotatoria Piero Fioretti,4
+108,43.7137546,10.3958697,Via del Galloro; Via San Paolo,2
+109,43.7144254,10.3955704,Via del Galloro; Piazza Aurelio Saffi,2
+110,43.7136029,10.3952831,Via Carabottaia; Via San Paolo; Via San Paolo; Via Porta Dolfi,4
+111,43.7143259,10.3948894,Via Porta Dolfi; Lungarno Sidney Sonnino; Lungarno Sidney Sonnino,3
+112,43.7135287,10.3950472,Via Balduinetti; Via San Paolo,2
+113,43.7142242,10.3946734,Lungarno Sidney Sonnino; Via Balduinetti,2
+114,43.713107,10.3935777,Piazza San Paolo a Ripa d'Arno; Via San Paolo,2
+115,43.7134857,10.3932634,Piazza San Paolo a Ripa d'Arno; Lungarno Sidney Sonnino; Lungarno Sidney Sonnino; Piazza San Paolo a Ripa d'Arno,4
+116,43.7139388,10.3968286,Via San Paolo; Via Borgundio,2
+117,43.7138861,10.3964708,Via San Paolo; Via San Paolo; Via dei Somari,3
+118,43.7138206,10.3961585,Via San Paolo; Via Francesco Crispi; Via San Paolo; Via Francesco Crispi,4
+119,43.7147596,10.3976168,Via La Maddalena; Vicolo San Cosimo; Via Camilla Del Lante,3
+120,43.7147739,10.3980333,Via delle Conce; Via La Maddalena; Vicolo delle Conce; Via La Maddalena,4
+121,43.715567,10.3979147,Via delle Conce; Lungarno Gambacorti; Lungarno Gambacorti,3
+122,43.7147773,10.3983352,Via La Maddalena; Vicolo dell'Annunziata; Vicolo Ricciardi,3
+123,43.71478,10.3985469,Via Mecherini; Via La Maddalena,2
+124,43.715746,10.39856295,Via Mecherini; Lungarno Gambacorti; Lungarno Gambacorti,3
+125,43.714612,10.3954692,Lungarno Sidney Sonnino; Piazza Aurelio Saffi,2
+126,43.71494,10.3994507,Piazza dei Facchini; Via delle Belle Donne,2
+127,43.7153082,10.4001725,Piazza dei Facchini; Galleria Luciano Chiti,2
+128,43.722343,10.401046,Via San Tommaso; Via Cardinale Pietro Maffi; Via Cardinale Pietro Maffi,3
+129,43.7194963,10.3987961,Via Pasquale Paoli; Piazza Francesco Buonamici,2
+130,43.7163187,10.3974748,Piazza Francesco Carrara; Lungarno Antonio Pacinotti; Lungarno Antonio Pacinotti,3
+131,43.7166222,10.4002481,Lungarno Antonio Pacinotti; Lungarno Antonio Pacinotti; Vicolo del Tidi,2
+132,43.7153998,10.4021415,Via del Moro; Lungarno Galileo Galilei,2
+133,43.715532,10.4002761,Via Pietro Toselli; Galleria Luciano Chiti,3
+135,43.7156532,10.3982661,Vicolo Ricciardi; Lungarno Gambacorti; Lungarno Gambacorti,3
+136,43.715194,10.3968328,Lungarno Gambacorti; Via Sant'Antonio; Lungarno Gambacorti,3
+137,43.7235875,10.3985304,Via San Ranierino; Via Contessa Matilde; Via Contessa Matilde,3
+138,43.7189718,10.3899712,Via Bonanno Pisano; Via Bonanno Pisano; Via Carlo Francesco Gabba; Via Risorgimento,4
+139,43.7145502,10.3962007,Via dei Somari; Via La Maddalena,2
+140,43.7146889,10.3969861,Via La Maddalena; Via Sant'Antonio; Via La Maddalena,3
+141,43.7146116,10.3965151,Via La Maddalena; Via Borgundio,2
+142,43.7144783,10.3958279,Via La Maddalena; Via Francesco Crispi; Piazza Aurelio Saffi; Via Francesco Crispi,4
+143,43.7167129,10.3973467,Piazza Francesco Carrara; Via San Nicola,2
+144,43.7203357,10.3908775,Via Diotisalvi; Via Bonanno Pisano,2
+145,43.7161352,10.3966029,Via Santa Maria; Lungarno Antonio Pacinotti; Lungarno Antonio Pacinotti,3
+146,43.7190682,10.3999712,Via San Frediano; Piazza dei Cavalieri,2
+147,43.7220093,10.3983839,Via Ferdinando Capponi; Piazza dell'Arcivescovado,2
+148,43.7223336,10.3979114,Via Don Gaetano Boschi; Piazza dell'Arcivescovado,2
+149,43.7211679,10.3880796,Via Diotisalvi; Via Ape al Bocconcino,2
+150,43.712376, 10.391163, Ponte della Cittadella; Lungarno Sidney Sonnino,2
+151,43.714896, 10.399991, Piazza dei Facchini; Piazza dei Facchini,2
+152,43.720877, 10.3990833, Via Giacomo Leopardi; Via Uguccione della Faggiola; Via Uguccione della Faggiola,3
+153,43.7234938,10.3989486, Via Contessa Matilde; Via Contessa Matilde; Via Santo Stefano,3
+154,43.7147395,10.4016867, Via Empanada; Via San Martino; Via Pietro Toselli, 3
+155,43.7225588,10.4017027, Largo del Parlascio; Largo del Parlascio; Largo del Parlascio, 3
+156,43.7225430,10.4022058, Largo del Parlascio; Largo del Parlascio, 2 
+
