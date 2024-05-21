@@ -139,61 +139,16 @@ def upload_json():
         {'endCrossingId': 43, 'measurements': 28, 'amplitude': 196.0, 'startCrossingId': 22}
         """
 
-        json_file = "data/data.json"
-        saved_data = []
-
-        # crea il file se non esiste
-        if not os.path.exists(json_file):
-            with open(json_file, 'w') as file:
-                json.dump([], file)
-        else:
-            with open(json_file, 'r') as file:
-                saved_data = json.load(file)
-
-        startCrossingId = data['startCrossingId']
-        endCrossingId = data['endCrossingId']
-        amplitude = data['amplitude']
-        numberOfMeasurements = data['measurements']
-
-        if(startCrossingId > endCrossingId):
-            startCrossingId, endCrossingId = endCrossingId, startCrossingId
-
-        amplitude = amplitude / numberOfMeasurements # probably should be done client side
-
-        # Find the index of the existing entry, if any
-        index = next((i for i, entry in enumerate(saved_data) if entry['startCrossingId'] == startCrossingId and entry['endCrossingId'] == endCrossingId), None)
-
-        if index is not None:
-            # Update existing entry
-            count = saved_data[index]['count'] + 1
-            previous_amplitude = saved_data[index]['amplitude']
-            new_amplitude = (previous_amplitude * (count-1) + amplitude) / (count)
-            saved_data[index]['amplitude'] = new_amplitude
-            saved_data[index]['count'] = count
-        else:
-            count=1
-            # Add new entry
-            saved_data.append({
-                'startCrossingId': startCrossingId,
-                'endCrossingId': endCrossingId,
-                'count': 1,
-                'amplitude': amplitude
-            })
-
-        # Write data to JSON file
-        with open(json_file, 'w') as file:
-            json.dump(saved_data, file, indent=4)
-
         graphml_file_path = 'data/grafo_completo.graphml'
         # Aggiorna il file GraphML
-        update_graphml(data, count ,graphml_file_path)
+        update_graphml(data ,graphml_file_path)
 
         return jsonify({"message": "Data saved successfully"}), 200
     else:
         return jsonify({"error": "Request body must be JSON"}), 400
 
 
-def update_graphml(data, count, file_path='data/grafo_completo.graphml'):
+def update_graphml(data, file_path='data/grafo_completo.graphml'):
     tree = ET.parse(file_path)
     root = tree.getroot()
     remove_namespace(root)
@@ -203,26 +158,27 @@ def update_graphml(data, count, file_path='data/grafo_completo.graphml'):
     amplitude = data['amplitude']
     numberOfMeasurements = data['measurements']
     amplitude = amplitude / numberOfMeasurements  # Calcolo dell'ampiezza media
-    if(start_id > end_id):
-        start_id, end_id = end_id, start_id
     #print(start_id, end_id)
 
     updated = False
 
+    print("start_id : ", start_id,"\n end_id : ", end_id)
+
     for edge in root.findall('.//edge'):
-        if edge.get('source') == str(start_id) and edge.get('target') == str(end_id):
-            for data_elem in edge.findall('data'):
-                if data_elem.get('key') == 'weight':
-                    current_amplitude = float(data_elem.text)
-                    new_amplitude = (current_amplitude * count + amplitude) / (count + 1)  # Media delle ampiezze
-                    data_elem.text = str(new_amplitude)
-                    updated = True
-                if data_elem.get('key') == 'count':
-                    data_elem.text = str(count)
-                    updated = True
-                    break
+        if (edge.get('source') == str(start_id) and edge.get('target') == str(end_id)) or (edge.get('source') == str(end_id) and edge.get('target') == str(start_id)):
+            # prendo count
+            current_count = int(edge.findall('data')[1].text)
+            print("current_count: ",current_count)
+            edge.findall('data')[1].text = str(current_count + 1)
+            # prebdo amplitude
+            current_amplitude = float(edge.findall('data')[0].text)
+            new_amplitude = (current_amplitude * current_count + amplitude) / (current_count + 1)  # Media delle ampiezze
+            edge.findall('data')[0].text = str(new_amplitude)
+            print("new_amplitude:",new_amplitude)
+            updated = True
 
     if not updated:
+        print("edge not present. Updating graphml")
         new_edge = ET.SubElement(root.find('.//graph'), 'edge', source=str(start_id), target=str(end_id))
         ET.SubElement(new_edge, 'data', key='weight').text = str(amplitude)
 
@@ -386,22 +342,5 @@ def remove_namespace(elem):
     return elem
 
 
-def read_json(file_path='data/data.json'):
-    with open(file_path, 'r') as file:
-        data = json.load(file)
-    return data
-
-
 if __name__ == '__main__':
     app.run(host='10.1.1.22', port=5000, debug = True)
-
-    #CODICE ESEGUITO (ALL'OCCORRENZA) PER SPOSTARE I VALORI DEL FILE JSON NEL FILE GRAPHML
-    """json_file_path = 'data/data.json'
-    graphml_file_path = 'data/grafo_completo.graphml'
-
-    # Leggi i dati dal file JSON
-    json_data = read_json(json_file_path)
-
-    # Aggiorna il file GraphML
-    setup_graphml(json_data, graphml_file_path)
-    print("Il file GraphML è stato aggiornato con i valori del JSON.")"""
