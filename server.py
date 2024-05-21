@@ -18,7 +18,7 @@ GOOGLE_MAPS_API_KEY = config.api_key
 def computeOldRoute():
     if request.is_json:
         data = request.get_json()
-        print(data)
+        #print(data)
         mindist = -1.0
         minIndex1 = 0
         checkpoints = pd.read_csv('data/pisa.csv')
@@ -44,7 +44,7 @@ def computeOldRoute():
         path.insert(0,(data['point1']['latitude'], data['point1']['longitude']))
         path.append((data['point2']['latitude'], data['point2']['longitude']))
 
-        print(path)
+        #print(path)
         
         return jsonify({"path": path}), 200
     else:
