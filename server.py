@@ -304,7 +304,7 @@ def find_best_path(graph_file, start_node_id, end_node_id, data):
             print("errore snap")
             return None  # Se lo snap non riesce, restituisci None
 
-    print("path:", path)
+    #print("path:", path)
     return path
 
 def snap_to_road(latitude1, longitude1, latitude2, longitude2, path):
