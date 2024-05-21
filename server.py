@@ -6,7 +6,6 @@ import networkx as nx
 import xml.etree.ElementTree as ET
 import csv
 import requests
-import googlemaps
 from flask import Flask, request, jsonify
 import config
 
