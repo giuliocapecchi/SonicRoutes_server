@@ -205,7 +205,7 @@ def update_graphml(data, count, file_path='data/grafo_completo.graphml'):
     amplitude = amplitude / numberOfMeasurements  # Calcolo dell'ampiezza media
     if(start_id > end_id):
         start_id, end_id = end_id, start_id
-    print(start_id, end_id)
+    #print(start_id, end_id)
 
     updated = False
 
