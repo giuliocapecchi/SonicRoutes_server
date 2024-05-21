@@ -44,7 +44,7 @@ def computeOldRoute():
         path.insert(0,(data['point1']['latitude'], data['point1']['longitude']))
         path.append((data['point2']['latitude'], data['point2']['longitude']))
 
-        #print(path)
+        print(path)
         
         return jsonify({"path": path}), 200
     else:
