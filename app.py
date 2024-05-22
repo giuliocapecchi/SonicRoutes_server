@@ -51,7 +51,7 @@ def mappa_count():
             # Crea il segmento stradale sulla mappa con il popup
             folium.PolyLine(locations=[[start_lat, start_lon], [end_lat, end_lon]], color=colore, weight=5, popup=popup_text).add_to(mappa)
     
-    for index, checkpoint in checkpoints.iterrows():
+    for _, checkpoint in checkpoints.iterrows():
         latitudine = checkpoint['latitude']
         longitudine = checkpoint['longitude']
         street_name = checkpoint['street_name']
@@ -96,7 +96,7 @@ def mappa_rumore():
         start_lon = graph.nodes[source]['longitude']
         end_lat = graph.nodes[target]['latitude']
         end_lon = graph.nodes[target]['longitude']
-        noise = data['weight']
+        noise = round(data['weight'],3)
         
         # Calcola il colore in base al rumore
         colore = colormap(noise)
@@ -105,12 +105,14 @@ def mappa_rumore():
         popup_text = f"Average: {noise}"
         folium.PolyLine(locations=[[start_lat, start_lon], [end_lat, end_lon]], color=colore, weight=5, popup=popup_text).add_to(mappa)
     
-    for index, checkpoint in checkpoints.iterrows():
+    for _, checkpoint in checkpoints.iterrows():
         latitudine = checkpoint['latitude']
         longitudine = checkpoint['longitude']
         street_name = checkpoint['street_name']
+        id = checkpoint["index"]
+
         # Aggiungi un marker per ogni checkpoint
-        folium.Marker(location=[latitudine, longitudine], popup=street_name).add_to(mappa)
+        folium.Marker(location=[latitudine, longitudine], popup=f"{id}, {street_name}").add_to(mappa)
 
     # Aggiungi la legenda alla mappa
     colormap.add_to(mappa)
@@ -127,50 +129,6 @@ def mappa_rumore():
     
     return render_template('mappa_rumori.html')
 
-
-def calculate_graph_metrics(graph_file):
-    G = build_graph(graph_file)
-    
-    num_nodes = G.number_of_nodes()
-    num_edges = G.number_of_edges()
-    
-    density = nx.density(G)
-    degrees = nx.degree(G) #the result is a tuple
-    list_degrees = []
-    for _, degree in degrees:
-        list_degrees.append(degree) #the second element of the tuple is the degree
-    avg_degree = statistics.mean(list_degrees)
-    median_degree = statistics.median(list_degrees)
-    assortativity_degree = nx.degree_assortativity_coefficient(G)
-    clustering_coeffs = nx.clustering(G).values()
-    avg_clustering_coeff = statistics.mean(clustering_coeffs)
-    median_clustering_coeff = statistics.median(clustering_coeffs)
-    
-    strengths = nx.degree(G, weight="weight")
-    list_strengths = []
-    for _, strength in strengths:
-        list_strengths.append(strength) #the second element of the tuple is the degree
-    avg_strength = statistics.mean(list_strengths)
-    median_strength = statistics.median(list_strengths)
-    assortativity_strength = nx.degree_assortativity_coefficient(G, weight='weight')
-    clustering_coeffs_weighted = nx.clustering(G, weight='weight').values()
-    avg_clustering_coeff_weighted = statistics.mean(clustering_coeffs_weighted)
-    median_clustering_coeff_weighted = statistics.median(clustering_coeffs_weighted)    
-    return {
-        "num_nodes": num_nodes,
-        "num_edges": num_edges,
-        "density": density,
-        "avg_degree": avg_degree,
-        "median_degree": median_degree,
-        "assortativity_degree": assortativity_degree,
-        "avg_clustering_coeff": avg_clustering_coeff,
-        "median_clustering_coeff": median_clustering_coeff,
-        "avg_strength": avg_strength,
-        "median_strength": median_strength,
-        "assortativity_strength": assortativity_strength,
-        "avg_clustering_coeff_weighted": avg_clustering_coeff_weighted,
-        "median_clustering_coeff_weighted": median_clustering_coeff_weighted
-    }
 
 def build_graph(graph_file):
     tree = ET.parse(graph_file)
@@ -226,10 +184,73 @@ def remove_namespace(elem):
     return elem
 
 
+def calculate_graph_metrics(graph_file):
+    G = build_graph(graph_file)
+    
+    num_nodes = G.number_of_nodes()
+    num_edges = G.number_of_edges()
+    
+    density = round(nx.density(G), 3)
+    degrees = nx.degree(G) # the result is a tuple
+    list_degrees = [degree for _, degree in degrees]
+    avg_degree = round(statistics.mean(list_degrees), 3)
+    median_degree = round(statistics.median(list_degrees), 3)
+    assortativity_degree = round(nx.degree_assortativity_coefficient(G), 3)
+    clustering_coeffs = nx.clustering(G).values()
+    avg_clustering_coeff = round(statistics.mean(clustering_coeffs), 3)
+    median_clustering_coeff = round(statistics.median(clustering_coeffs), 3)
+
+    # for 'weight' label
+    strengths = nx.degree(G, weight="weight")
+    list_strengths = [strength for _, strength in strengths]
+    avg_weigth_strength = round(statistics.mean(list_strengths), 3)
+    median_weigth_strength = round(statistics.median(list_strengths), 3)
+    assortativity_weigth_strength = round(nx.degree_assortativity_coefficient(G, weight='weight'), 3)
+    clustering_coeffs_weight_weighted = nx.clustering(G, weight='weight').values()
+    avg_clustering_coeff_weigth_weighted = round(statistics.mean(clustering_coeffs_weight_weighted), 3)
+    median_clustering_coeff_weigth_weighted = round(statistics.median(clustering_coeffs_weight_weighted), 3)
+
+    # for 'count' label
+    count_strengths = nx.degree(G, weight="count")
+    list_count_strengths = [strength for _, strength in count_strengths]
+    avg_count_strength = round(statistics.mean(list_count_strengths), 3)
+    median_count_strength = round(statistics.median(list_count_strengths), 3)
+    assortativity_count_strength = round(nx.degree_assortativity_coefficient(G, weight='count'), 3)
+    clustering_coeffs_count_weighted = nx.clustering(G, weight='count').values()
+    avg_clustering_coeff_count_weighted = round(statistics.mean(clustering_coeffs_count_weighted), 3)
+    median_clustering_coeff_count_weighted = round(statistics.median(clustering_coeffs_count_weighted), 3)
+
+    
+    return {
+        "num_nodes": num_nodes,
+        "num_edges": num_edges,
+        "density": density,
+        "avg_degree": avg_degree,
+        "median_degree": median_degree,
+        "assortativity_degree": assortativity_degree,
+        "avg_clustering_coeff": avg_clustering_coeff,
+        "median_clustering_coeff": median_clustering_coeff,
+
+        "avg_strength": avg_weigth_strength,
+        "median_strength": median_weigth_strength,
+        "assortativity_strength": assortativity_weigth_strength,
+        "avg_clustering_coeff_weigth_weighted": avg_clustering_coeff_weigth_weighted,
+        "median_clustering_coeff_weigth_weighted": median_clustering_coeff_weigth_weighted,
+
+        "avg_count_strength": avg_count_strength,
+        "median_count_strength": median_count_strength,
+        "assortativity_count_strength": assortativity_count_strength,
+        "avg_clustering_coeff_count_weighted": avg_clustering_coeff_count_weighted,
+        "median_clustering_coeff_count_weighted": median_clustering_coeff_count_weighted
+    
+    }
+
+
 @app.route('/metrics')
 def metrics():
     graph_file = "data/grafo_completo.graphml"
     graph_metrics = calculate_graph_metrics(graph_file)
+    print(graph_metrics)
     return render_template('metrics.html', **graph_metrics)
 
 

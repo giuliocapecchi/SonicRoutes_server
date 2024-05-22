@@ -52,9 +52,24 @@ a {
     transition: background-color 0.3s ease;
     font-size: large;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Adding a subtle shadow */
-
 }
 
 a:hover {
     background-color: #0056b3; 
+}
+
+.metrics-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metrics-column {
+    flex: 1;
+    padding: 20px;
+}
+
+h2{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: larger;
 }

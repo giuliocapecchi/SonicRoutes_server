@@ -16,12 +16,33 @@
         <p>Degree assortativity: {{ assortativity_degree }}</p>
         <p>Average local clustering coefficient: {{ avg_clustering_coeff }}</p>
         <p>Median local clustering coefficient: {{ median_clustering_coeff }}</p>
-        <p>Average strength: {{ avg_strength }}</p>
-        <p>Median strength: {{ median_strength }}</p>
-        <p>Strength assortativity: {{ assortativity_strength }}</p>
-        <p>Average local clustering coefficient (weighted): {{ avg_clustering_coeff_weighted }}</p>
-        <p>Median local clustering coefficient (weighted): {{ median_clustering_coeff_weighted }}</p>
+
+        <hr>
+
+        <div class="metrics-container">
+            <div class="metrics-column">
+                <h2>Weight Metrics</h2>
+                <p>Average strength: {{ avg_strength }}</p>
+                <p>Median strength: {{ median_strength }}</p>
+                <p>Strength assortativity: {{ assortativity_strength }}</p>
+                <p>Average local clustering coefficient: {{ avg_clustering_coeff_weigth_weighted }}</p>
+                <p>Median local clustering coefficient: {{ median_clustering_coeff_weigth_weighted }}</p>
+            </div>
+            <div class="metrics-column">
+                <h2>Count Metrics</h2>
+                <p>Average strength: {{ avg_count_strength }}</p>
+                <p>Median strength: {{ median_count_strength }}</p>
+                <p>Strength assortativity: {{ assortativity_count_strength }}</p>
+                <p>Average local clustering coefficient: {{ avg_clustering_coeff_count_weighted }}</p>
+                <p>Median local clustering coefficient: {{ median_clustering_coeff_count_weighted }}</p>
+            </div>
+        </div>
+        
         <a href="/" class="btn">Back to Homepage</a>
     </div>
+
+    <style>
+       
+    </style>
 </body>
 </html>
