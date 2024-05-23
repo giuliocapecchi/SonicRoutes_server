@@ -256,4 +256,4 @@ def metrics():
 
 if __name__ == '__main__':
     checkpoints = pd.read_csv('data/pisa.csv')
-    app.run(host='10.1.1.22', port=5001, debug=True)
+    app.run(host='localhost', port=5001, debug=True)
