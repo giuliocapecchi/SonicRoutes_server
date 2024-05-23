@@ -342,4 +342,4 @@ def remove_namespace(elem):
 
 
 if __name__ == '__main__':
-    app.run(host='10.1.1.22', port=5000, debug = True)
+    app.run(host=config.ip_address, port=5000, debug = True)

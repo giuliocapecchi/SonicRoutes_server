@@ -9,6 +9,7 @@ import pandas as pd
 import networkx as nx
 import xml.etree.ElementTree as ET
 from flask import Flask
+import config
 
 
 app = Flask(__name__)
@@ -256,4 +257,4 @@ def metrics():
 
 if __name__ == '__main__':
     checkpoints = pd.read_csv('data/pisa.csv')
-    app.run(host='10.1.1.22', port=5001, debug=True)
+    app.run(host=config.ip_address, port=5001, debug=True)
