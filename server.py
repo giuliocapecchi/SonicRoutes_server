@@ -13,7 +13,7 @@ app = Flask(__name__)
 GOOGLE_MAPS_API_URL = 'https://roads.googleapis.com/v1/snapToRoads'
 GOOGLE_MAPS_API_KEY = config.api_key
 
-@app.route('/oldGetRoute', methods=['POST'])
+@app.route('/getRoute', methods=['POST'])
 def computeOldRoute():
     if request.is_json:
         data = request.get_json()
@@ -31,7 +31,7 @@ def computeOldRoute():
 
         mindist2 = -1.0
         minIndex2 = 0
-        for index, checkpoint in checkpoints.iterrows():
+        for _, checkpoint in checkpoints.iterrows():
             if mindist2 == -1.0:
                 mindist2 = haversine(data['point2']['latitude'], data['point2']['longitude'], checkpoint['latitude'], checkpoint['longitude'])
             else:
@@ -55,39 +55,6 @@ def old_find_best_path(graph_file, start_node_id, end_node_id):
     #print("old best path ids: ",best_path_ids,"\n")
     best_path_coords = [(graph.nodes[node]['latitude'], graph.nodes[node]['longitude']) for node in best_path_ids]
     return best_path_coords
-
-# FINE ROBA VECCHIA
-    
-@app.route('/getRoute', methods=['POST'])
-def computeRoute():
-    if request.is_json:
-        data = request.get_json()
-        mindist = -1.0
-        minIndex1 = 0
-        checkpoints = pd.read_csv('data/pisa.csv')
-        for index, checkpoint in checkpoints.iterrows():
-            if mindist == -1.0:
-                mindist = haversine(data['point1']['latitude'], data['point1']['longitude'], checkpoint['latitude'], checkpoint['longitude'])
-            else:
-                if haversine(data['point1']['latitude'], data['point1']['longitude'], checkpoint['latitude'], checkpoint['longitude']) < mindist:
-                    mindist = haversine(data['point1']['latitude'], data['point1']['longitude'], checkpoint['latitude'], checkpoint['longitude'])
-                    minIndex1 = checkpoint['index']
-
-        mindist2 = -1.0
-        minIndex2 = 0
-        for index, checkpoint in checkpoints.iterrows():
-            if mindist2 == -1.0:
-                mindist2 = haversine(data['point2']['latitude'], data['point2']['longitude'], checkpoint['latitude'], checkpoint['longitude'])
-            else:
-                if haversine(data['point2']['latitude'], data['point2']['longitude'], checkpoint['latitude'], checkpoint['longitude']) < mindist2:
-                    mindist2 = haversine(data['point2']['latitude'], data['point2']['longitude'], checkpoint['latitude'], checkpoint['longitude'])
-                    minIndex2 = checkpoint['index']
-
-        path = find_best_path('data/grafo_completo.graphml', minIndex1, minIndex2, data)
-        
-        return jsonify({"path": path}), 200
-    else:
-        return jsonify({"error": "Request body must be JSON"}), 400
 
 
 @app.route('/getCrossingCoordinates/<int:crossing_id>', methods=['GET'])

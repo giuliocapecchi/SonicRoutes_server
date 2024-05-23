@@ -2,3 +2,4 @@ config.py
 data/*
 templates/mappa_count.html
 templates/mappa_rumori.html
+__pycache__/config.cpython-311.pyc
