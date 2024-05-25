@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d9acb4af8744f4a07d337e1d67ec06a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2d9acb4af8744f4a07d337e1d67ec06a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2d9acb4af8744f4a07d337e1d67ec06a = L.map(
+                "map_2d9acb4af8744f4a07d337e1d67ec06a",
+                {
+                    center: [43.7211779, 10.3914214],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_71f821d8690e3e20319470db71707cb4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var marker_09923de2c0b837ceca96ca5be2dce390 = L.marker(
+                [43.7211779, 10.3914214],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_c82aa23fe67951fa9cadd6aabdf17146 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_09923de2c0b837ceca96ca5be2dce390.setIcon(icon_c82aa23fe67951fa9cadd6aabdf17146);
+        
+    
+        var popup_142c1d7f105cebacd63cc68176ec0e26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a09cc06a118add10be5a0d6af0c70d7d = $(`<div id="html_a09cc06a118add10be5a0d6af0c70d7d" style="width: 100.0%; height: 100.0%;">Latitude: 43.7211779, Longitude: 10.3914214, Street Name: Via Giunta Pisano, Via Bonanno Pisano</div>`)[0];
+                popup_142c1d7f105cebacd63cc68176ec0e26.setContent(html_a09cc06a118add10be5a0d6af0c70d7d);
+            
+        
+
+        marker_09923de2c0b837ceca96ca5be2dce390.bindPopup(popup_142c1d7f105cebacd63cc68176ec0e26)
+        ;
+
+        
+    
+    
+            var marker_d01a819e64ca03e432c17e0ebebe1114 = L.marker(
+                [43.7221479, 10.3882131],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_a7dcaf097b64c937a402d9993e0090ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d01a819e64ca03e432c17e0ebebe1114.setIcon(icon_a7dcaf097b64c937a402d9993e0090ba);
+        
+    
+        var popup_b9eb96f10695fb77cb93e0aa731b97d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c503834ac5ef507d4f800dc6ccf1ddb5 = $(`<div id="html_c503834ac5ef507d4f800dc6ccf1ddb5" style="width: 100.0%; height: 100.0%;">Latitude: 43.7221479, Longitude: 10.3882131, Street Name: Via Giunta Pisano, Via Diotisalvi, Via Andrea Pisano</div>`)[0];
+                popup_b9eb96f10695fb77cb93e0aa731b97d4.setContent(html_c503834ac5ef507d4f800dc6ccf1ddb5);
+            
+        
+
+        marker_d01a819e64ca03e432c17e0ebebe1114.bindPopup(popup_b9eb96f10695fb77cb93e0aa731b97d4)
+        ;
+
+        
+    
+    
+            var marker_7f42cfa134f7e0b0ab9615cb0896268f = L.marker(
+                [43.7229513, 10.3982212],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_0403c8f47f47a27093d21666690f0b11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7f42cfa134f7e0b0ab9615cb0896268f.setIcon(icon_0403c8f47f47a27093d21666690f0b11);
+        
+    
+        var popup_dd41e9ab2639f32b205e006e10c49791 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fab3ac384fb49dfa5606bf8d83521448 = $(`<div id="html_fab3ac384fb49dfa5606bf8d83521448" style="width: 100.0%; height: 100.0%;">Latitude: 43.7229513, Longitude: 10.3982212, Street Name: Via Ugo Camozzo, Via Cardinale Pietro Maffi, Via San Ranierino</div>`)[0];
+                popup_dd41e9ab2639f32b205e006e10c49791.setContent(html_fab3ac384fb49dfa5606bf8d83521448);
+            
+        
+
+        marker_7f42cfa134f7e0b0ab9615cb0896268f.bindPopup(popup_dd41e9ab2639f32b205e006e10c49791)
+        ;
+
+        
+    
+    
+            var marker_9bd49713a9ec2fb1970e2cd7d0138fa0 = L.marker(
+                [43.7164088, 10.3882581],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_a61e7c12048fade924a767f219c8ccbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9bd49713a9ec2fb1970e2cd7d0138fa0.setIcon(icon_a61e7c12048fade924a767f219c8ccbd);
+        
+    
+        var popup_d3a1cd00c615e8f0832b6f849df7b399 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ed7eef0b19e86b2465de4a5223f61d6 = $(`<div id="html_4ed7eef0b19e86b2465de4a5223f61d6" style="width: 100.0%; height: 100.0%;">Latitude: 43.7164088, Longitude: 10.3882581, Street Name: Via Bonanno Pisano, Via dei Macelli</div>`)[0];
+                popup_d3a1cd00c615e8f0832b6f849df7b399.setContent(html_4ed7eef0b19e86b2465de4a5223f61d6);
+            
+        
+
+        marker_9bd49713a9ec2fb1970e2cd7d0138fa0.bindPopup(popup_d3a1cd00c615e8f0832b6f849df7b399)
+        ;
+
+        
+    
+    
+            var marker_8cc039218e125ef7f53790a696645353 = L.marker(
+                [43.7181759, 10.3894504],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_de90f9ba9a6c4a2bcfdc6aedf9cdc5c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8cc039218e125ef7f53790a696645353.setIcon(icon_de90f9ba9a6c4a2bcfdc6aedf9cdc5c8);
+        
+    
+        var popup_3732d3f9d33f8287675d5fe8c977b5b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20302735b3a006254ce22094af925968 = $(`<div id="html_20302735b3a006254ce22094af925968" style="width: 100.0%; height: 100.0%;">Latitude: 43.7181759, Longitude: 10.3894504, Street Name: Via Turino Vanni, Via Bonanno Pisano, Via Rustichello da Pisa, Via Pietro da Pisa</div>`)[0];
+                popup_3732d3f9d33f8287675d5fe8c977b5b2.setContent(html_20302735b3a006254ce22094af925968);
+            
+        
+
+        marker_8cc039218e125ef7f53790a696645353.bindPopup(popup_3732d3f9d33f8287675d5fe8c977b5b2)
+        ;
+
+        
+    
+    
+            var marker_e655fb880df0cd9a3676f946e20012c5 = L.marker(
+                [43.7228292, 10.3922295],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_3af80710ee90f1e3a9c7a1d25214af62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e655fb880df0cd9a3676f946e20012c5.setIcon(icon_3af80710ee90f1e3a9c7a1d25214af62);
+        
+    
+        var popup_47a647b02043b91e1cc6dfaf76c6473f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_409fdcdaf83766e263ff54273d9bef32 = $(`<div id="html_409fdcdaf83766e263ff54273d9bef32" style="width: 100.0%; height: 100.0%;">Latitude: 43.7228292, Longitude: 10.3922295, Street Name: Via Andrea Pisano, Via Bonanno Pisano, Via G. Battista Niccolini</div>`)[0];
+                popup_47a647b02043b91e1cc6dfaf76c6473f.setContent(html_409fdcdaf83766e263ff54273d9bef32);
+            
+        
+
+        marker_e655fb880df0cd9a3676f946e20012c5.bindPopup(popup_47a647b02043b91e1cc6dfaf76c6473f)
+        ;
+
+        
+    
+    
+            var marker_76507bdbe7a719accebabe1f86e1af9c = L.marker(
+                [43.722951, 10.3897496],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_8c4e733c65a6ba4ffedb9778217bd20a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_76507bdbe7a719accebabe1f86e1af9c.setIcon(icon_8c4e733c65a6ba4ffedb9778217bd20a);
+        
+    
+        var popup_0968b2115a3178513d9fc12523bfa441 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cf2a9aeff2e458c2b37b390d22e4ebc = $(`<div id="html_7cf2a9aeff2e458c2b37b390d22e4ebc" style="width: 100.0%; height: 100.0%;">Latitude: 43.722951, Longitude: 10.3897496, Street Name: N/A, Via Andrea Pisano, Via Vecchia Barbaricina</div>`)[0];
+                popup_0968b2115a3178513d9fc12523bfa441.setContent(html_7cf2a9aeff2e458c2b37b390d22e4ebc);
+            
+        
+
+        marker_76507bdbe7a719accebabe1f86e1af9c.bindPopup(popup_0968b2115a3178513d9fc12523bfa441)
+        ;
+
+        
+    
+    
+            var marker_754a09fde813e17a23fd0ad53d5509ff = L.marker(
+                [43.7225026, 10.3984423],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_292f47fbe2ebdc9ccc848bfa54153d64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_754a09fde813e17a23fd0ad53d5509ff.setIcon(icon_292f47fbe2ebdc9ccc848bfa54153d64);
+        
+    
+        var popup_87a652b954ef1528732c0a0af18665ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c2e56711f133c5a87e18443b0c1c7d3 = $(`<div id="html_8c2e56711f133c5a87e18443b0c1c7d3" style="width: 100.0%; height: 100.0%;">Latitude: 43.7225026, Longitude: 10.3984423, Street Name: Via Ugo Camozzo, Piazza dell'Arcivescovado</div>`)[0];
+                popup_87a652b954ef1528732c0a0af18665ff.setContent(html_8c2e56711f133c5a87e18443b0c1c7d3);
+            
+        
+
+        marker_754a09fde813e17a23fd0ad53d5509ff.bindPopup(popup_87a652b954ef1528732c0a0af18665ff)
+        ;
+
+        
+    
+    
+            var marker_fa3c32b65f7a3b3910fad06f631df759 = L.marker(
+                [43.721923, 10.399224],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_101a8f9922bef4b0feb17550e656c0ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fa3c32b65f7a3b3910fad06f631df759.setIcon(icon_101a8f9922bef4b0feb17550e656c0ea);
+        
+    
+        var popup_5da90d04bd48eed3beca8a5cb92e506e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f044ff8442e35b540db4507ca771405 = $(`<div id="html_0f044ff8442e35b540db4507ca771405" style="width: 100.0%; height: 100.0%;">Latitude: 43.721923, Longitude: 10.399224, Street Name: Via San Tommaso, Via Ferdinando Capponi, Via Uguccione della Faggiola</div>`)[0];
+                popup_5da90d04bd48eed3beca8a5cb92e506e.setContent(html_0f044ff8442e35b540db4507ca771405);
+            
+        
+
+        marker_fa3c32b65f7a3b3910fad06f631df759.bindPopup(popup_5da90d04bd48eed3beca8a5cb92e506e)
+        ;
+
+        
+    
+    
+            var marker_7c094b3551ccb6e7e3316df3c8f372e5 = L.marker(
+                [43.7212777, 10.4003564],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_87e51af34bcd04cde3f667968e73de74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7c094b3551ccb6e7e3316df3c8f372e5.setIcon(icon_87e51af34bcd04cde3f667968e73de74);
+        
+    
+        var popup_d71078013b88bfa3ce346065ef97a352 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb56584b0705163c0181536c5473046b = $(`<div id="html_eb56584b0705163c0181536c5473046b" style="width: 100.0%; height: 100.0%;">Latitude: 43.7212777, Longitude: 10.4003564, Street Name: Via dei Martiri, Via Ferdinando Capponi</div>`)[0];
+                popup_d71078013b88bfa3ce346065ef97a352.setContent(html_eb56584b0705163c0181536c5473046b);
+            
+        
+
+        marker_7c094b3551ccb6e7e3316df3c8f372e5.bindPopup(popup_d71078013b88bfa3ce346065ef97a352)
+        ;
+
+        
+    
+    
+            var marker_921cb6927dec3433fa947acd6390e5cd = L.marker(
+                [43.7198717, 10.3996002],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_e629eb9ee64088f1d8ff65b278d99167 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_921cb6927dec3433fa947acd6390e5cd.setIcon(icon_e629eb9ee64088f1d8ff65b278d99167);
+        
+    
+        var popup_05b48cdbbd05f98123009418fcb98474 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d68050668034bc85621b3980a8b9f8a = $(`<div id="html_7d68050668034bc85621b3980a8b9f8a" style="width: 100.0%; height: 100.0%;">Latitude: 43.7198717, Longitude: 10.3996002, Street Name: Via dei Martiri, Via Dalmazia, Piazza dei Cavalieri, Via Corsica</div>`)[0];
+                popup_05b48cdbbd05f98123009418fcb98474.setContent(html_7d68050668034bc85621b3980a8b9f8a);
+            
+        
+
+        marker_921cb6927dec3433fa947acd6390e5cd.bindPopup(popup_05b48cdbbd05f98123009418fcb98474)
+        ;
+
+        
+    
+    
+            var marker_18c152f5740b415c2cb260e15e228dcc = L.marker(
+                [43.7177108, 10.3998677],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_36210d012a3d823b850c0e2ea0b1bbed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_18c152f5740b415c2cb260e15e228dcc.setIcon(icon_36210d012a3d823b850c0e2ea0b1bbed);
+        
+    
+        var popup_e4530ac5e219406e0baf187993854f39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8236b9ca3cdda810e6e2ec83dc77c9f5 = $(`<div id="html_8236b9ca3cdda810e6e2ec83dc77c9f5" style="width: 100.0%; height: 100.0%;">Latitude: 43.7177108, Longitude: 10.3998677, Street Name: Via Tavoleria, Piazza San Frediano, Via Domenico Cavalca, Via San Frediano, Via Curtatone e Montanara</div>`)[0];
+                popup_e4530ac5e219406e0baf187993854f39.setContent(html_8236b9ca3cdda810e6e2ec83dc77c9f5);
+            
+        
+
+        marker_18c152f5740b415c2cb260e15e228dcc.bindPopup(popup_e4530ac5e219406e0baf187993854f39)
+        ;
+
+        
+    
+    
+            var marker_ddbcb6de50345c1003f1c8437e8e5d37 = L.marker(
+                [43.7170206, 10.3916516],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_4a2b8649929b7a0ec735fa774bd13cbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ddbcb6de50345c1003f1c8437e8e5d37.setIcon(icon_4a2b8649929b7a0ec735fa774bd13cbf);
+        
+    
+        var popup_5cc0c904abcadab56f399858f2a5654a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df804a87dc4e98a1a0889e6a5c662a67 = $(`<div id="html_df804a87dc4e98a1a0889e6a5c662a67" style="width: 100.0%; height: 100.0%;">Latitude: 43.7170206, Longitude: 10.3916516, Street Name: Via Nicola Pisano, Via Enrico Fermi, Via Rustichello da Pisa</div>`)[0];
+                popup_5cc0c904abcadab56f399858f2a5654a.setContent(html_df804a87dc4e98a1a0889e6a5c662a67);
+            
+        
+
+        marker_ddbcb6de50345c1003f1c8437e8e5d37.bindPopup(popup_5cc0c904abcadab56f399858f2a5654a)
+        ;
+
+        
+    
+    
+            var marker_0f11b6bd79a273cd1703d86023df44b4 = L.marker(
+                [43.7165557, 10.3915297],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_4d6200cac1f7fa04bf525d1f51eaa964 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0f11b6bd79a273cd1703d86023df44b4.setIcon(icon_4d6200cac1f7fa04bf525d1f51eaa964);
+        
+    
+        var popup_2dea02c5b8e2be9be7c6126a1a734590 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ee5d6c0d3de8a66bcd5316fea1cbae3 = $(`<div id="html_9ee5d6c0d3de8a66bcd5316fea1cbae3" style="width: 100.0%; height: 100.0%;">Latitude: 43.7165557, Longitude: 10.3915297, Street Name: Via Nicola Pisano, Via Volturno</div>`)[0];
+                popup_2dea02c5b8e2be9be7c6126a1a734590.setContent(html_9ee5d6c0d3de8a66bcd5316fea1cbae3);
+            
+        
+
+        marker_0f11b6bd79a273cd1703d86023df44b4.bindPopup(popup_2dea02c5b8e2be9be7c6126a1a734590)
+        ;
+
+        
+    
+    
+            var marker_79228dfe671286df9e160d2e0402edbd = L.marker(
+                [43.7197737, 10.3956139],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_2e32993aacbb6d3fe32a4e33ea597b81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_79228dfe671286df9e160d2e0402edbd.setIcon(icon_2e32993aacbb6d3fe32a4e33ea597b81);
+        
+    
+        var popup_b59468b43e9e11854a71c63dfcc9d353 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eccc1d1b8b0e7a98f6416494663b1b81 = $(`<div id="html_eccc1d1b8b0e7a98f6416494663b1b81" style="width: 100.0%; height: 100.0%;">Latitude: 43.7197737, Longitude: 10.3956139, Street Name: Via Roma, Via Paolo Savi</div>`)[0];
+                popup_b59468b43e9e11854a71c63dfcc9d353.setContent(html_eccc1d1b8b0e7a98f6416494663b1b81);
+            
+        
+
+        marker_79228dfe671286df9e160d2e0402edbd.bindPopup(popup_b59468b43e9e11854a71c63dfcc9d353)
+        ;
+
+        
+    
+    
+            var marker_e31dff00a7b9cce679dc2d853aa7a6f2 = L.marker(
+                [43.7198919, 10.3929772],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_666f1c0fad522ea4fefb8728875bb7f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e31dff00a7b9cce679dc2d853aa7a6f2.setIcon(icon_666f1c0fad522ea4fefb8728875bb7f8);
+        
+    
+        var popup_4ba33c156ff62c91e5341ea901bd0f2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c043936f9db5035b3f75f75063ce60d6 = $(`<div id="html_c043936f9db5035b3f75f75063ce60d6" style="width: 100.0%; height: 100.0%;">Latitude: 43.7198919, Longitude: 10.3929772, Street Name: Via Nicola Pisano, Via Paolo Savi</div>`)[0];
+                popup_4ba33c156ff62c91e5341ea901bd0f2c.setContent(html_c043936f9db5035b3f75f75063ce60d6);
+            
+        
+
+        marker_e31dff00a7b9cce679dc2d853aa7a6f2.bindPopup(popup_4ba33c156ff62c91e5341ea901bd0f2c)
+        ;
+
+        
+    
+    
+            var marker_4a2bc1eb6edbc68bc6167caf8a8dde86 = L.marker(
+                [43.7181988, 10.3925435],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_ad98fce52b627b05460cd4867ae8cb24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4a2bc1eb6edbc68bc6167caf8a8dde86.setIcon(icon_ad98fce52b627b05460cd4867ae8cb24);
+        
+    
+        var popup_456c3e66eb7321463be1fff460382c75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b8f45733f00d29783f631428daf42d0 = $(`<div id="html_5b8f45733f00d29783f631428daf42d0" style="width: 100.0%; height: 100.0%;">Latitude: 43.7181988, Longitude: 10.3925435, Street Name: Via Nicola Pisano, Via Risorgimento</div>`)[0];
+                popup_456c3e66eb7321463be1fff460382c75.setContent(html_5b8f45733f00d29783f631428daf42d0);
+            
+        
+
+        marker_4a2bc1eb6edbc68bc6167caf8a8dde86.bindPopup(popup_456c3e66eb7321463be1fff460382c75)
+        ;
+
+        
+    
+    
+            var marker_c04fc49d65efa960980469186720ea59 = L.marker(
+                [43.720987, 10.3886822],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_f533a5b224449e1794848366a3ec06ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c04fc49d65efa960980469186720ea59.setIcon(icon_f533a5b224449e1794848366a3ec06ff);
+        
+    
+        var popup_5e958e0090efd6f2cc79a72a983a06be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afe9c6fabaedaa964627a575ffd2df93 = $(`<div id="html_afe9c6fabaedaa964627a575ffd2df93" style="width: 100.0%; height: 100.0%;">Latitude: 43.720987, Longitude: 10.3886822, Street Name: Via Cimabue, Via Diotisalvi</div>`)[0];
+                popup_5e958e0090efd6f2cc79a72a983a06be.setContent(html_afe9c6fabaedaa964627a575ffd2df93);
+            
+        
+
+        marker_c04fc49d65efa960980469186720ea59.bindPopup(popup_5e958e0090efd6f2cc79a72a983a06be)
+        ;
+
+        
+    
+    
+            var marker_7d541f1234985945e474ca0a2e3b23e1 = L.marker(
+                [43.7196471, 10.3879154],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_ea728917e8fb171422dfffea27a81d04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7d541f1234985945e474ca0a2e3b23e1.setIcon(icon_ea728917e8fb171422dfffea27a81d04);
+        
+    
+        var popup_c255479070bfda38c16f95363f82f5b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baa9bbfb50c39780858d49547c247a13 = $(`<div id="html_baa9bbfb50c39780858d49547c247a13" style="width: 100.0%; height: 100.0%;">Latitude: 43.7196471, Longitude: 10.3879154, Street Name: Via Cimabue, Via Carlo Francesco Gabba</div>`)[0];
+                popup_c255479070bfda38c16f95363f82f5b4.setContent(html_baa9bbfb50c39780858d49547c247a13);
+            
+        
+
+        marker_7d541f1234985945e474ca0a2e3b23e1.bindPopup(popup_c255479070bfda38c16f95363f82f5b4)
+        ;
+
+        
+    
+    
+            var marker_33a16131946eb2eabcb59ed0672df7ad = L.marker(
+                [43.7198206, 10.3989136],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_93d15a5cf262a95f16131b9672b7aec9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_33a16131946eb2eabcb59ed0672df7ad.setIcon(icon_93d15a5cf262a95f16131b9672b7aec9);
+        
+    
+        var popup_80e5b360354b9d44fc849e1bba78c426 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_318a6707268a812c4ed2b3ea1a85a37c = $(`<div id="html_318a6707268a812c4ed2b3ea1a85a37c" style="width: 100.0%; height: 100.0%;">Latitude: 43.7198206, Longitude: 10.3989136, Street Name: Via Pasquale Paoli, Piazza Francesco Buonamici, Via Uguccione della Faggiola, Via Dalmazia, Via Corsica, Via dei Mille</div>`)[0];
+                popup_80e5b360354b9d44fc849e1bba78c426.setContent(html_318a6707268a812c4ed2b3ea1a85a37c);
+            
+        
+
+        marker_33a16131946eb2eabcb59ed0672df7ad.bindPopup(popup_80e5b360354b9d44fc849e1bba78c426)
+        ;
+
+        
+    
+    
+            var marker_292f2f9b445e00766bc34a3183e01dc8 = L.marker(
+                [43.7198819, 10.3973556],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_9af1c128a7a194aae05ae1359d5ad083 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_292f2f9b445e00766bc34a3183e01dc8.setIcon(icon_9af1c128a7a194aae05ae1359d5ad083);
+        
+    
+        var popup_df74de545fe4d5196d6d5943f1fd9293 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0786d6e5d68ef15849b0e9849f93ecf = $(`<div id="html_b0786d6e5d68ef15849b0e9849f93ecf" style="width: 100.0%; height: 100.0%;">Latitude: 43.7198819, Longitude: 10.3973556, Street Name: Via Luca Ghini, Via Don Gaetano Boschi, Piazza Felice Cavallotti, Via Santa Maria, Via dei Mille</div>`)[0];
+                popup_df74de545fe4d5196d6d5943f1fd9293.setContent(html_b0786d6e5d68ef15849b0e9849f93ecf);
+            
+        
+
+        marker_292f2f9b445e00766bc34a3183e01dc8.bindPopup(popup_df74de545fe4d5196d6d5943f1fd9293)
+        ;
+
+        
+    
+    
+            var marker_378de4ec2d7490f6de2c5b64f7d88e61 = L.marker(
+                [43.7166398, 10.3998939],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_d10784613d851554825ba137efc8ad52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_378de4ec2d7490f6de2c5b64f7d88e61.setIcon(icon_d10784613d851554825ba137efc8ad52);
+        
+    
+        var popup_61f3c4cfc54b78f1f34432ab4aba42ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8dd1bd047a4f901a79cdcc8c9626e9e = $(`<div id="html_e8dd1bd047a4f901a79cdcc8c9626e9e" style="width: 100.0%; height: 100.0%;">Latitude: 43.7166398, Longitude: 10.3998939, Street Name: Via Curtatone e Montanara, Lungarno Antonio Pacinotti</div>`)[0];
+                popup_61f3c4cfc54b78f1f34432ab4aba42ad.setContent(html_e8dd1bd047a4f901a79cdcc8c9626e9e);
+            
+        
+
+        marker_378de4ec2d7490f6de2c5b64f7d88e61.bindPopup(popup_61f3c4cfc54b78f1f34432ab4aba42ad)
+        ;
+
+        
+    
+    
+            var marker_b390ceaea4cf673f71402fc69d01c3b0 = L.marker(
+                [43.7205101, 10.3895106],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_90894c8facd115778d53162e09a8ae41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b390ceaea4cf673f71402fc69d01c3b0.setIcon(icon_90894c8facd115778d53162e09a8ae41);
+        
+    
+        var popup_45431bdbbda8d071281a6617b2913cb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c980bc8b2247b93e61f83220c518135d = $(`<div id="html_c980bc8b2247b93e61f83220c518135d" style="width: 100.0%; height: 100.0%;">Latitude: 43.7205101, Longitude: 10.3895106, Street Name: Via Diotisalvi, Via Francesco Traini, Largo Lucio Lazzarino</div>`)[0];
+                popup_45431bdbbda8d071281a6617b2913cb5.setContent(html_c980bc8b2247b93e61f83220c518135d);
+            
+        
+
+        marker_b390ceaea4cf673f71402fc69d01c3b0.bindPopup(popup_45431bdbbda8d071281a6617b2913cb5)
+        ;
+
+        
+    
+    
+            var marker_f52db8b18e1f644fd26bda1e708359fd = L.marker(
+                [43.718127, 10.3969295],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_d39ff0b46ec26ac584b4e4de7ff5a896 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f52db8b18e1f644fd26bda1e708359fd.setIcon(icon_d39ff0b46ec26ac584b4e4de7ff5a896);
+        
+    
+        var popup_6c1858e381eaf87d94846a5f7dd10548 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94704c6cb517bcbd64b30d1774fe2dbc = $(`<div id="html_94704c6cb517bcbd64b30d1774fe2dbc" style="width: 100.0%; height: 100.0%;">Latitude: 43.718127, Longitude: 10.3969295, Street Name: Via Santa Maria, Via Alessandro Volta</div>`)[0];
+                popup_6c1858e381eaf87d94846a5f7dd10548.setContent(html_94704c6cb517bcbd64b30d1774fe2dbc);
+            
+        
+
+        marker_f52db8b18e1f644fd26bda1e708359fd.bindPopup(popup_6c1858e381eaf87d94846a5f7dd10548)
+        ;
+
+        
+    
+    
+            var marker_e066c3643aa603d163e09583a7bc62d9 = L.marker(
+                [43.7185764, 10.3954069],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_d0479b1669cd33a3abb6182537192de4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e066c3643aa603d163e09583a7bc62d9.setIcon(icon_d0479b1669cd33a3abb6182537192de4);
+        
+    
+        var popup_6b09f576854cdb08e9bc48c7b350ebda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc1d86db1b62480c540654209e11b05f = $(`<div id="html_cc1d86db1b62480c540654209e11b05f" style="width: 100.0%; height: 100.0%;">Latitude: 43.7185764, Longitude: 10.3954069, Street Name: Via Roma, Via Derna, Via Alessandro Volta</div>`)[0];
+                popup_6b09f576854cdb08e9bc48c7b350ebda.setContent(html_cc1d86db1b62480c540654209e11b05f);
+            
+        
+
+        marker_e066c3643aa603d163e09583a7bc62d9.bindPopup(popup_6b09f576854cdb08e9bc48c7b350ebda)
+        ;
+
+        
+    
+    
+            var marker_ef6bef2006e35cd412a48e89cd75fb4c = L.marker(
+                [43.7193247, 10.3929429],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_839c8f04ee916815090c9d8b9d3630a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ef6bef2006e35cd412a48e89cd75fb4c.setIcon(icon_839c8f04ee916815090c9d8b9d3630a2);
+        
+    
+        var popup_236f15b6884825bb523642a7a0fa8001 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90efbd7d080bc1273af02aa01e7396c3 = $(`<div id="html_90efbd7d080bc1273af02aa01e7396c3" style="width: 100.0%; height: 100.0%;">Latitude: 43.7193247, Longitude: 10.3929429, Street Name: Via Derna, Via Nicola Pisano</div>`)[0];
+                popup_236f15b6884825bb523642a7a0fa8001.setContent(html_90efbd7d080bc1273af02aa01e7396c3);
+            
+        
+
+        marker_ef6bef2006e35cd412a48e89cd75fb4c.bindPopup(popup_236f15b6884825bb523642a7a0fa8001)
+        ;
+
+        
+    
+    
+            var marker_93e99c6b3740ceb21f320c14809a0179 = L.marker(
+                [43.7184888, 10.3882776],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_cfb9847c3d119f718513a6abf553a88d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_93e99c6b3740ceb21f320c14809a0179.setIcon(icon_cfb9847c3d119f718513a6abf553a88d);
+        
+    
+        var popup_9b4fb2123a4886e2fdc8c66406c471f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fc5ea1338c6b9321c64a8102582b75f = $(`<div id="html_7fc5ea1338c6b9321c64a8102582b75f" style="width: 100.0%; height: 100.0%;">Latitude: 43.7184888, Longitude: 10.3882776, Street Name: Via Turino Vanni, Via Spinello Aretino</div>`)[0];
+                popup_9b4fb2123a4886e2fdc8c66406c471f5.setContent(html_7fc5ea1338c6b9321c64a8102582b75f);
+            
+        
+
+        marker_93e99c6b3740ceb21f320c14809a0179.bindPopup(popup_9b4fb2123a4886e2fdc8c66406c471f5)
+        ;
+
+        
+    
+    
+            var marker_44bc31914afbc5fd90f3565f491d3e88 = L.marker(
+                [43.7166748, 10.3970962],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_41bfa51a4214e4baaa251363b73c93da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_44bc31914afbc5fd90f3565f491d3e88.setIcon(icon_41bfa51a4214e4baaa251363b73c93da);
+        
+    
+        var popup_b996ea018fa95c1fb35ec69c427e84ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_324ef45639ad57df2d72186c4a20b5e0 = $(`<div id="html_324ef45639ad57df2d72186c4a20b5e0" style="width: 100.0%; height: 100.0%;">Latitude: 43.7166748, Longitude: 10.3970962, Street Name: Piazza Francesco Carrara, Lungarno Antonio Pacinotti, N/A, Via San Niccola, Via San Nicola</div>`)[0];
+                popup_b996ea018fa95c1fb35ec69c427e84ea.setContent(html_324ef45639ad57df2d72186c4a20b5e0);
+            
+        
+
+        marker_44bc31914afbc5fd90f3565f491d3e88.bindPopup(popup_b996ea018fa95c1fb35ec69c427e84ea)
+        ;
+
+        
+    
+    
+            var marker_49adfd974e749b6eab309fd41732e9c9 = L.marker(
+                [43.7215349, 10.3957813],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_7e085a352abc3ad69c6f71012014ca94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_49adfd974e749b6eab309fd41732e9c9.setIcon(icon_7e085a352abc3ad69c6f71012014ca94);
+        
+    
+        var popup_810db7ccb660ea29ff128f1c97a81a37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f14a8d1b44ce594cffdf5cc11cf5470 = $(`<div id="html_4f14a8d1b44ce594cffdf5cc11cf5470" style="width: 100.0%; height: 100.0%;">Latitude: 43.7215349, Longitude: 10.3957813, Street Name: Via Roma, Via Angelo Galli Tassi</div>`)[0];
+                popup_810db7ccb660ea29ff128f1c97a81a37.setContent(html_4f14a8d1b44ce594cffdf5cc11cf5470);
+            
+        
+
+        marker_49adfd974e749b6eab309fd41732e9c9.bindPopup(popup_810db7ccb660ea29ff128f1c97a81a37)
+        ;
+
+        
+    
+    
+            var marker_5fb42f199edb8293ca597facd6db2b56 = L.marker(
+                [43.7215057, 10.3966777],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_0c7034811dd0eb2c7eac1fb72719c692 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5fb42f199edb8293ca597facd6db2b56.setIcon(icon_0c7034811dd0eb2c7eac1fb72719c692);
+        
+    
+        var popup_d6f76c8b163bff04445d1dd9b353c763 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ace4ee76ed51b840249c5e93c7acf73 = $(`<div id="html_6ace4ee76ed51b840249c5e93c7acf73" style="width: 100.0%; height: 100.0%;">Latitude: 43.7215057, Longitude: 10.3966777, Street Name: Via Porta Buozzi, Via Angelo Galli Tassi</div>`)[0];
+                popup_d6f76c8b163bff04445d1dd9b353c763.setContent(html_6ace4ee76ed51b840249c5e93c7acf73);
+            
+        
+
+        marker_5fb42f199edb8293ca597facd6db2b56.bindPopup(popup_d6f76c8b163bff04445d1dd9b353c763)
+        ;
+
+        
+    
+    
+            var marker_ce5b857df0d767d85380c9cb6cabf47d = L.marker(
+                [43.7198467, 10.396716],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_7b6abe6045f71378367253de80915552 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ce5b857df0d767d85380c9cb6cabf47d.setIcon(icon_7b6abe6045f71378367253de80915552);
+        
+    
+        var popup_a09168271e95c6123ab196508a88ae62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6af1b7aa2025ecc8be0c241fe4aec30c = $(`<div id="html_6af1b7aa2025ecc8be0c241fe4aec30c" style="width: 100.0%; height: 100.0%;">Latitude: 43.7198467, Longitude: 10.396716, Street Name: Via Porta Buozzi, Via Luca Ghini</div>`)[0];
+                popup_a09168271e95c6123ab196508a88ae62.setContent(html_6af1b7aa2025ecc8be0c241fe4aec30c);
+            
+        
+
+        marker_ce5b857df0d767d85380c9cb6cabf47d.bindPopup(popup_a09168271e95c6123ab196508a88ae62)
+        ;
+
+        
+    
+    
+            var marker_79716a9ed75fa49e4e05c6d22847f73b = L.marker(
+                [43.7180247, 10.39365],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_537e68d40162aef416f44554f3b67cce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_79716a9ed75fa49e4e05c6d22847f73b.setIcon(icon_537e68d40162aef416f44554f3b67cce);
+        
+    
+        var popup_b7206684949f23f0c55c56db4b0129c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd70570fb0f278c15cb8a63fd2ab032a = $(`<div id="html_bd70570fb0f278c15cb8a63fd2ab032a" style="width: 100.0%; height: 100.0%;">Latitude: 43.7180247, Longitude: 10.39365, Street Name: Via Risorgimento, Via Magenta</div>`)[0];
+                popup_b7206684949f23f0c55c56db4b0129c7.setContent(html_bd70570fb0f278c15cb8a63fd2ab032a);
+            
+        
+
+        marker_79716a9ed75fa49e4e05c6d22847f73b.bindPopup(popup_b7206684949f23f0c55c56db4b0129c7)
+        ;
+
+        
+    
+    
+            var marker_be5b2ca205ead1329bd5a5b470d01fd7 = L.marker(
+                [43.71779, 10.3951959],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_475014f65f19e5cbdf4865068fc6106e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_be5b2ca205ead1329bd5a5b470d01fd7.setIcon(icon_475014f65f19e5cbdf4865068fc6106e);
+        
+    
+        var popup_f8cb811d38109b775e941a1c89daf3ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d70e8881e4618f48f462e1a89452737 = $(`<div id="html_5d70e8881e4618f48f462e1a89452737" style="width: 100.0%; height: 100.0%;">Latitude: 43.71779, Longitude: 10.3951959, Street Name: Via Roma, Via Risorgimento</div>`)[0];
+                popup_f8cb811d38109b775e941a1c89daf3ca.setContent(html_5d70e8881e4618f48f462e1a89452737);
+            
+        
+
+        marker_be5b2ca205ead1329bd5a5b470d01fd7.bindPopup(popup_f8cb811d38109b775e941a1c89daf3ca)
+        ;
+
+        
+    
+    
+            var marker_d8a7192666b81a29af210de141d17089 = L.marker(
+                [43.7170109, 10.3933401],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_bef4b3d41bfdb95eb2622315f6caef36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d8a7192666b81a29af210de141d17089.setIcon(icon_bef4b3d41bfdb95eb2622315f6caef36);
+        
+    
+        var popup_50e4617bef47b2635a89d50307ee2060 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8988e53be0b0339dc7f45619113ccb81 = $(`<div id="html_8988e53be0b0339dc7f45619113ccb81" style="width: 100.0%; height: 100.0%;">Latitude: 43.7170109, Longitude: 10.3933401, Street Name: Via Trieste, Via Magenta</div>`)[0];
+                popup_50e4617bef47b2635a89d50307ee2060.setContent(html_8988e53be0b0339dc7f45619113ccb81);
+            
+        
+
+        marker_d8a7192666b81a29af210de141d17089.bindPopup(popup_50e4617bef47b2635a89d50307ee2060)
+        ;
+
+        
+    
+    
+            var marker_ec004d7302052cd3cf560be6ccfb8cb5 = L.marker(
+                [43.7166791, 10.3963901],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_8fef1c0707ba1ea3b737d3b63d78c75b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ec004d7302052cd3cf560be6ccfb8cb5.setIcon(icon_8fef1c0707ba1ea3b737d3b63d78c75b);
+        
+    
+        var popup_fa5aa2fe596840cdbaa2c4b537dd2c18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_568df200f1a0bfc0ddfe1ab98d622640 = $(`<div id="html_568df200f1a0bfc0ddfe1ab98d622640" style="width: 100.0%; height: 100.0%;">Latitude: 43.7166791, Longitude: 10.3963901, Street Name: Via Trento, Via San Niccola, Via Santa Maria</div>`)[0];
+                popup_fa5aa2fe596840cdbaa2c4b537dd2c18.setContent(html_568df200f1a0bfc0ddfe1ab98d622640);
+            
+        
+
+        marker_ec004d7302052cd3cf560be6ccfb8cb5.bindPopup(popup_fa5aa2fe596840cdbaa2c4b537dd2c18)
+        ;
+
+        
+    
+    
+            var marker_920c738e4377723c1a17f9ad73109db1 = L.marker(
+                [43.7168523, 10.39526],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_2a897a3f0d0fde37687dd987318bae91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_920c738e4377723c1a17f9ad73109db1.setIcon(icon_2a897a3f0d0fde37687dd987318bae91);
+        
+    
+        var popup_8aa06ae10156fdadd879a87c4f2adb0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9ae207146056f71f3afe0d011a5baeb = $(`<div id="html_c9ae207146056f71f3afe0d011a5baeb" style="width: 100.0%; height: 100.0%;">Latitude: 43.7168523, Longitude: 10.39526, Street Name: Via Santa Lucia, Via Trento, Via Ricucchi</div>`)[0];
+                popup_8aa06ae10156fdadd879a87c4f2adb0c.setContent(html_c9ae207146056f71f3afe0d011a5baeb);
+            
+        
+
+        marker_920c738e4377723c1a17f9ad73109db1.bindPopup(popup_8aa06ae10156fdadd879a87c4f2adb0c)
+        ;
+
+        
+    
+    
+            var marker_537863343d470d8d3ce376ce880afa1d = L.marker(
+                [43.7169278, 10.3949365],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_0d941118ef8063ebe1da38130ca21cff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_537863343d470d8d3ce376ce880afa1d.setIcon(icon_0d941118ef8063ebe1da38130ca21cff);
+        
+    
+        var popup_929744adf03791363d6e7882825d30b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24c540a3fef3c2a208292a4d24e45ce7 = $(`<div id="html_24c540a3fef3c2a208292a4d24e45ce7" style="width: 100.0%; height: 100.0%;">Latitude: 43.7169278, Longitude: 10.3949365, Street Name: Via Trieste, Via Trento, Via Roma</div>`)[0];
+                popup_929744adf03791363d6e7882825d30b5.setContent(html_24c540a3fef3c2a208292a4d24e45ce7);
+            
+        
+
+        marker_537863343d470d8d3ce376ce880afa1d.bindPopup(popup_929744adf03791363d6e7882825d30b5)
+        ;
+
+        
+    
+    
+            var marker_ee85b68c4148e6ed4f6dff98832bfad4 = L.marker(
+                [43.717472, 10.3919227],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_6fcd2f6b89006c4241bf89fa49156cee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ee85b68c4148e6ed4f6dff98832bfad4.setIcon(icon_6fcd2f6b89006c4241bf89fa49156cee);
+        
+    
+        var popup_0b41be12015e0739c4a06fbd976fac50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_841ed1a27e4887c13f8a6d4ca101ac73 = $(`<div id="html_841ed1a27e4887c13f8a6d4ca101ac73" style="width: 100.0%; height: 100.0%;">Latitude: 43.717472, Longitude: 10.3919227, Street Name: Via Trieste, Via Nicola Pisano</div>`)[0];
+                popup_0b41be12015e0739c4a06fbd976fac50.setContent(html_841ed1a27e4887c13f8a6d4ca101ac73);
+            
+        
+
+        marker_ee85b68c4148e6ed4f6dff98832bfad4.bindPopup(popup_0b41be12015e0739c4a06fbd976fac50)
+        ;
+
+        
+    
+    
+            var marker_38a95512fa1afe753959bf691d0c6a2a = L.marker(
+                [43.7163698, 10.3945476],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_09f9d4b3ed8541b8484543728472e135 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_38a95512fa1afe753959bf691d0c6a2a.setIcon(icon_09f9d4b3ed8541b8484543728472e135);
+        
+    
+        var popup_3f083f8d30a1a73e8b61f84a24a55a1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_179d85eedefea69280db789b70f1ca3d = $(`<div id="html_179d85eedefea69280db789b70f1ca3d" style="width: 100.0%; height: 100.0%;">Latitude: 43.7163698, Longitude: 10.3945476, Street Name: Via Roma, Via Enrico Fermi</div>`)[0];
+                popup_3f083f8d30a1a73e8b61f84a24a55a1f.setContent(html_179d85eedefea69280db789b70f1ca3d);
+            
+        
+
+        marker_38a95512fa1afe753959bf691d0c6a2a.bindPopup(popup_3f083f8d30a1a73e8b61f84a24a55a1f)
+        ;
+
+        
+    
+    
+            var marker_e538689aa954632ad42e97eb97f21876 = L.marker(
+                [43.7176731, 10.3978318],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_3c34c14e1bdd76612253a9518d99b45e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e538689aa954632ad42e97eb97f21876.setIcon(icon_3c34c14e1bdd76612253a9518d99b45e);
+        
+    
+        var popup_b3f9c2b8a13d274b5caa79ca350b7920 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71d010edf126ae1a2db2d42383042fc6 = $(`<div id="html_71d010edf126ae1a2db2d42383042fc6" style="width: 100.0%; height: 100.0%;">Latitude: 43.7176731, Longitude: 10.3978318, Street Name: Piazza San Giorgio, Via del Collegio Ricci, Via La Pergola</div>`)[0];
+                popup_b3f9c2b8a13d274b5caa79ca350b7920.setContent(html_71d010edf126ae1a2db2d42383042fc6);
+            
+        
+
+        marker_e538689aa954632ad42e97eb97f21876.bindPopup(popup_b3f9c2b8a13d274b5caa79ca350b7920)
+        ;
+
+        
+    
+    
+            var marker_a0565d0baaf5f21d87a6d6b22dcf15f0 = L.marker(
+                [43.722343, 10.401046],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_ae3c208c8199e70f467d450b76527f92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a0565d0baaf5f21d87a6d6b22dcf15f0.setIcon(icon_ae3c208c8199e70f467d450b76527f92);
+        
+    
+        var popup_b36fd0adff23a9fd2482b84c65664964 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b06d03a3c4b7f9e70173065cc8787af = $(`<div id="html_4b06d03a3c4b7f9e70173065cc8787af" style="width: 100.0%; height: 100.0%;">Latitude: 43.722343, Longitude: 10.401046, Street Name: Via San Tommaso, Via Cardinale Pietro Maffi</div>`)[0];
+                popup_b36fd0adff23a9fd2482b84c65664964.setContent(html_4b06d03a3c4b7f9e70173065cc8787af);
+            
+        
+
+        marker_a0565d0baaf5f21d87a6d6b22dcf15f0.bindPopup(popup_b36fd0adff23a9fd2482b84c65664964)
+        ;
+
+        
+    
+    
+            var marker_c9714bec9fb5eb0f50671d52348625b3 = L.marker(
+                [43.7193253, 10.388812],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_edbc2370716be4a031355a41baf73c3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c9714bec9fb5eb0f50671d52348625b3.setIcon(icon_edbc2370716be4a031355a41baf73c3d);
+        
+    
+        var popup_4c37693943fc6b2c4ddc137d58c635fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f380eb80e1b2180cab4fc9289863d3f0 = $(`<div id="html_f380eb80e1b2180cab4fc9289863d3f0" style="width: 100.0%; height: 100.0%;">Latitude: 43.7193253, Longitude: 10.388812, Street Name: Via Francesco Traini, Via Carlo Francesco Gabba</div>`)[0];
+                popup_4c37693943fc6b2c4ddc137d58c635fa.setContent(html_f380eb80e1b2180cab4fc9289863d3f0);
+            
+        
+
+        marker_c9714bec9fb5eb0f50671d52348625b3.bindPopup(popup_4c37693943fc6b2c4ddc137d58c635fa)
+        ;
+
+        
+    
+    
+            var marker_0b0434d0a9ccf2338ee372e8ec0cbdf6 = L.marker(
+                [43.7189718, 10.3899712],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_787f56f0aefe2cfe8d00c5aff5d5d784 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0b0434d0a9ccf2338ee372e8ec0cbdf6.setIcon(icon_787f56f0aefe2cfe8d00c5aff5d5d784);
+        
+    
+        var popup_44ceb034df2d0f59d292497b355a6342 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8d751f486e916b97e29317f9680c7a9 = $(`<div id="html_e8d751f486e916b97e29317f9680c7a9" style="width: 100.0%; height: 100.0%;">Latitude: 43.7189718, Longitude: 10.3899712, Street Name: Via Bonanno Pisano, Via Risorgimento, Via Carlo Francesco Gabba</div>`)[0];
+                popup_44ceb034df2d0f59d292497b355a6342.setContent(html_e8d751f486e916b97e29317f9680c7a9);
+            
+        
+
+        marker_0b0434d0a9ccf2338ee372e8ec0cbdf6.bindPopup(popup_44ceb034df2d0f59d292497b355a6342)
+        ;
+
+        
+    
+    
+            var marker_d56123a002c852a2798c8668c7b3bfb5 = L.marker(
+                [43.7203357, 10.3908775],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_30b3637303268be3bcb90fd43c59d6d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d56123a002c852a2798c8668c7b3bfb5.setIcon(icon_30b3637303268be3bcb90fd43c59d6d6);
+        
+    
+        var popup_4081a28c6f958ad1bdc9e0bee57bd785 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e13984413c7d5a5bdad68fdcbe7a07c1 = $(`<div id="html_e13984413c7d5a5bdad68fdcbe7a07c1" style="width: 100.0%; height: 100.0%;">Latitude: 43.7203357, Longitude: 10.3908775, Street Name: Via Diotisalvi, Via Bonanno Pisano</div>`)[0];
+                popup_4081a28c6f958ad1bdc9e0bee57bd785.setContent(html_e13984413c7d5a5bdad68fdcbe7a07c1);
+            
+        
+
+        marker_d56123a002c852a2798c8668c7b3bfb5.bindPopup(popup_4081a28c6f958ad1bdc9e0bee57bd785)
+        ;
+
+        
+    
+    
+            var marker_b56a07b4fc9fa68a2f43627a80679a41 = L.marker(
+                [43.7161352, 10.3966029],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_aa0d5af67a53ff7324e0f8f5c17d184d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b56a07b4fc9fa68a2f43627a80679a41.setIcon(icon_aa0d5af67a53ff7324e0f8f5c17d184d);
+        
+    
+        var popup_a310519ef186c206138d3710e0e409d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fab0150262a09ee61c0021489575717a = $(`<div id="html_fab0150262a09ee61c0021489575717a" style="width: 100.0%; height: 100.0%;">Latitude: 43.7161352, Longitude: 10.3966029, Street Name: Via Santa Maria, Lungarno Antonio Pacinotti</div>`)[0];
+                popup_a310519ef186c206138d3710e0e409d6.setContent(html_fab0150262a09ee61c0021489575717a);
+            
+        
+
+        marker_b56a07b4fc9fa68a2f43627a80679a41.bindPopup(popup_a310519ef186c206138d3710e0e409d6)
+        ;
+
+        
+    
+    
+            var marker_1b85ea2a02eefc1a0c2c6fb4ffffdb25 = L.marker(
+                [43.7190682, 10.3999712],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_40657590ff84658684ea50574fa46995 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1b85ea2a02eefc1a0c2c6fb4ffffdb25.setIcon(icon_40657590ff84658684ea50574fa46995);
+        
+    
+        var popup_7d7f3a1a27b034c74f653200d367d49b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10a71192a39412e7db79dea719e8eb16 = $(`<div id="html_10a71192a39412e7db79dea719e8eb16" style="width: 100.0%; height: 100.0%;">Latitude: 43.7190682, Longitude: 10.3999712, Street Name: Piazza dei Cavalieri, Via San Frediano</div>`)[0];
+                popup_7d7f3a1a27b034c74f653200d367d49b.setContent(html_10a71192a39412e7db79dea719e8eb16);
+            
+        
+
+        marker_1b85ea2a02eefc1a0c2c6fb4ffffdb25.bindPopup(popup_7d7f3a1a27b034c74f653200d367d49b)
+        ;
+
+        
+    
+    
+            var marker_9dd4c8810624d4c6381bc2956ebd6797 = L.marker(
+                [43.7220093, 10.3983839],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_49b9747403fbeb648712c3c8e2a88db9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9dd4c8810624d4c6381bc2956ebd6797.setIcon(icon_49b9747403fbeb648712c3c8e2a88db9);
+        
+    
+        var popup_a9247cb0a14ae896b3f8b644ac719764 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c37ffd34c04ade61dc12e6ca5930450 = $(`<div id="html_8c37ffd34c04ade61dc12e6ca5930450" style="width: 100.0%; height: 100.0%;">Latitude: 43.7220093, Longitude: 10.3983839, Street Name: Piazza dell'Arcivescovado, Via Ferdinando Capponi</div>`)[0];
+                popup_a9247cb0a14ae896b3f8b644ac719764.setContent(html_8c37ffd34c04ade61dc12e6ca5930450);
+            
+        
+
+        marker_9dd4c8810624d4c6381bc2956ebd6797.bindPopup(popup_a9247cb0a14ae896b3f8b644ac719764)
+        ;
+
+        
+    
+    
+            var marker_32196e20504a814c2ea4ba2567ddd4c8 = L.marker(
+                [43.7222385, 10.3977108],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_abbf7af4bd685f732c1f58d77f9fee00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_32196e20504a814c2ea4ba2567ddd4c8.setIcon(icon_abbf7af4bd685f732c1f58d77f9fee00);
+        
+    
+        var popup_f53149756178fc59d3ca33f2232e7607 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b40929b602dce08787a9fb961a636b64 = $(`<div id="html_b40929b602dce08787a9fb961a636b64" style="width: 100.0%; height: 100.0%;">Latitude: 43.7222385, Longitude: 10.3977108, Street Name: Piazza dell'Arcivescovado, Via Don Gaetano Boschi</div>`)[0];
+                popup_f53149756178fc59d3ca33f2232e7607.setContent(html_b40929b602dce08787a9fb961a636b64);
+            
+        
+
+        marker_32196e20504a814c2ea4ba2567ddd4c8.bindPopup(popup_f53149756178fc59d3ca33f2232e7607)
+        ;
+
+        
+    
+    
+            var marker_aaf6db0596bcf0babc332ba020dfa99c = L.marker(
+                [43.7168523, 10.39526],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_3f00056a405f6b9cbea984248e3f0be3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aaf6db0596bcf0babc332ba020dfa99c.setIcon(icon_3f00056a405f6b9cbea984248e3f0be3);
+        
+    
+            var marker_3aa6cf9947918400ec077b5a973b3696 = L.marker(
+                [43.7169278, 10.3949365],
+                {}
+            ).addTo(map_2d9acb4af8744f4a07d337e1d67ec06a);
+        
+    
+            var icon_50ca4c3ead2ab93e5d1ed3dc331614a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3aa6cf9947918400ec077b5a973b3696.setIcon(icon_50ca4c3ead2ab93e5d1ed3dc331614a0);
+        
+</script>
+</html>
