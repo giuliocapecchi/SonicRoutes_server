@@ -1,0 +1,566 @@
+<graphml schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<key id="d5" for="edge" attr.name="count" attr.type="integer" />
+<key id="d4" for="edge" attr.name="weight" attr.type="double" />
+<key id="d3" for="node" attr.name="street_counter" attr.type="integer" />
+<key id="d2" for="node" attr.name="street_name" attr.type="string" />
+<key id="d1" for="node" attr.name="longitude" attr.type="double" />
+<key id="d0" for="node" attr.name="latitude" attr.type="double" />
+<graph edgedefault="undirected">
+<node id="0">
+  <data key="d0">43.7211779</data>
+  <data key="d1">10.3914214</data>
+  <data key="d2">Via Giunta Pisano; Via Bonanno Pisano</data>
+  <data key="d3">2</data>
+</node>
+<node id="1">
+  <data key="d0">43.7221479</data>
+  <data key="d1">10.3882131</data>
+  <data key="d2">Via Giunta Pisano; Via Diotisalvi; Via Andrea Pisano</data>
+  <data key="d3">3</data>
+</node>
+<node id="2">
+  <data key="d0">43.7229513</data>
+  <data key="d1">10.3982212</data>
+  <data key="d2">Via Ugo Camozzo; Via Cardinale Pietro Maffi; Via San Ranierino</data>
+  <data key="d3">3</data>
+</node>
+<node id="3">
+  <data key="d0">43.7164088</data>
+  <data key="d1">10.3882581</data>
+  <data key="d2">Via Bonanno Pisano; Via dei Macelli</data>
+  <data key="d3">2</data>
+</node>
+<node id="4">
+  <data key="d0">43.7181759</data>
+  <data key="d1">10.3894504</data>
+  <data key="d2">Via Turino Vanni; Via Bonanno Pisano; Via Rustichello da Pisa; Via Pietro da Pisa</data>
+  <data key="d3">4</data>
+</node>
+<node id="5">
+  <data key="d0">43.7228292</data>
+  <data key="d1">10.3922295</data>
+  <data key="d2">Via Andrea Pisano; Via Bonanno Pisano; Via G. Battista Niccolini</data>
+  <data key="d3">3</data>
+</node>
+<node id="6">
+  <data key="d0">43.722951</data>
+  <data key="d1">10.3897496</data>
+  <data key="d2">N/A; Via Andrea Pisano; Via Vecchia Barbaricina</data>
+  <data key="d3">3</data>
+</node>
+<node id="7">
+  <data key="d0">43.7225026</data>
+  <data key="d1">10.3984423</data>
+  <data key="d2">Via Ugo Camozzo; Piazza dell'Arcivescovado</data>
+  <data key="d3">2</data>
+</node>
+<node id="8">
+  <data key="d0">43.721923</data>
+  <data key="d1">10.399224</data>
+  <data key="d2">Via San Tommaso; Via Ferdinando Capponi; Via Uguccione della Faggiola</data>
+  <data key="d3">3</data>
+</node>
+<node id="9">
+  <data key="d0">43.7212777</data>
+  <data key="d1">10.4003564</data>
+  <data key="d2">Via dei Martiri; Via Ferdinando Capponi; Via San Tommaso</data>
+  <data key="d3">3</data>
+</node>
+<node id="10">
+  <data key="d0">43.7198717</data>
+  <data key="d1">10.3996002</data>
+  <data key="d2">Via dei Martiri; Via Dalmazia; Piazza dei Cavalieri; Via Corsica; Via Uguccione della Faggiola</data>
+  <data key="d3">5</data>
+</node>
+<node id="11">
+  <data key="d0">43.7177108</data>
+  <data key="d1">10.3998677</data>
+  <data key="d2">Via Tavoleria; Piazza San Frediano; Via Domenico Cavalca; Via San Frediano; Via Curtatone e Montanara; Piazza Dante</data>
+  <data key="d3">6</data>
+</node>
+<node id="12">
+  <data key="d0">43.7170206</data>
+  <data key="d1">10.3916516</data>
+  <data key="d2">Via Nicola Pisano; Via Enrico Fermi; Via Rustichello da Pisa</data>
+  <data key="d3">3</data>
+</node>
+<node id="13">
+  <data key="d0">43.7165557</data>
+  <data key="d1">10.3915297</data>
+  <data key="d2">Via Nicola Pisano; Via Volturno</data>
+  <data key="d3">2</data>
+</node>
+<node id="14">
+  <data key="d0">43.7197737</data>
+  <data key="d1">10.3956139</data>
+  <data key="d2">Via Roma; Via Paolo Savi</data>
+  <data key="d3">2</data>
+</node>
+<node id="15">
+  <data key="d0">43.7198919</data>
+  <data key="d1">10.3929772</data>
+  <data key="d2">Via Nicola Pisano; Via Paolo Savi</data>
+  <data key="d3">2</data>
+</node>
+<node id="16">
+  <data key="d0">43.7181988</data>
+  <data key="d1">10.3925435</data>
+  <data key="d2">Via Nicola Pisano; Via Risorgimento</data>
+  <data key="d3">2</data>
+</node>
+<node id="17">
+  <data key="d0">43.720987</data>
+  <data key="d1">10.3886822</data>
+  <data key="d2">Via Cimabue; Via Diotisalvi</data>
+  <data key="d3">2</data>
+</node>
+<node id="18">
+  <data key="d0">43.7196471</data>
+  <data key="d1">10.3879154</data>
+  <data key="d2">Via Cimabue; Via Carlo Francesco Gabba</data>
+  <data key="d3">2</data>
+</node>
+<node id="19">
+  <data key="d0">43.7198206</data>
+  <data key="d1">10.3989136</data>
+  <data key="d2">Via Pasquale Paoli; Piazza Francesco Buonamici; Via Uguccione della Faggiola; Via Dalmazia; Via Corsica; Via dei Mille</data>
+  <data key="d3">6</data>
+</node>
+<node id="20">
+  <data key="d0">43.7198819</data>
+  <data key="d1">10.3973556</data>
+  <data key="d2">Via Luca Ghini; Via Don Gaetano Boschi; Piazza Felice Cavallotti; Via Santa Maria; Via dei Mille</data>
+  <data key="d3">5</data>
+</node>
+<node id="21">
+  <data key="d0">43.7166398</data>
+  <data key="d1">10.3998939</data>
+  <data key="d2">Via Curtatone e Montanara; Lungarno Antonio Pacinotti</data>
+  <data key="d3">2</data>
+</node>
+<node id="22">
+  <data key="d0">43.7205101</data>
+  <data key="d1">10.3895106</data>
+  <data key="d2">Via Diotisalvi; Via Francesco Traini; Largo Lucio Lazzarino</data>
+  <data key="d3">3</data>
+</node>
+<node id="23">
+  <data key="d0">43.718127</data>
+  <data key="d1">10.3969295</data>
+  <data key="d2">Via Santa Maria; Via Alessandro Volta; Via L'Arancio</data>
+  <data key="d3">3</data>
+</node>
+<node id="24">
+  <data key="d0">43.7185764</data>
+  <data key="d1">10.3954069</data>
+  <data key="d2">Via Roma; Via Derna; Via Alessandro Volta</data>
+  <data key="d3">3</data>
+</node>
+<node id="25">
+  <data key="d0">43.7193247</data>
+  <data key="d1">10.3929429</data>
+  <data key="d2">Via Derna; Via Nicola Pisano</data>
+  <data key="d3">2</data>
+</node>
+<node id="26">
+  <data key="d0">43.7184888</data>
+  <data key="d1">10.3882776</data>
+  <data key="d2">Via Turino Vanni; Via Spinello Aretino</data>
+  <data key="d3">2</data>
+</node>
+<node id="27">
+  <data key="d0">43.7166748</data>
+  <data key="d1">10.3970962</data>
+  <data key="d2">Piazza Francesco Carrara; Lungarno Antonio Pacinotti; N/A; Via San Niccola; Via San Nicola</data>
+  <data key="d3">5</data>
+</node>
+<node id="28">
+  <data key="d0">43.7215349</data>
+  <data key="d1">10.3957813</data>
+  <data key="d2">Via Roma; Via Angelo Galli Tassi</data>
+  <data key="d3">2</data>
+</node>
+<node id="29">
+  <data key="d0">43.7215057</data>
+  <data key="d1">10.3966777</data>
+  <data key="d2">Via Porta Buozzi; Via Angelo Galli Tassi</data>
+  <data key="d3">2</data>
+</node>
+<node id="30">
+  <data key="d0">43.7198467</data>
+  <data key="d1">10.396716</data>
+  <data key="d2">Via Porta Buozzi; Via Luca Ghini</data>
+  <data key="d3">2</data>
+</node>
+<node id="31">
+  <data key="d0">43.7180247</data>
+  <data key="d1">10.39365</data>
+  <data key="d2">Via Risorgimento; Via Magenta</data>
+  <data key="d3">2</data>
+</node>
+<node id="32">
+  <data key="d0">43.71779</data>
+  <data key="d1">10.3951959</data>
+  <data key="d2">Via Roma; Via Risorgimento</data>
+  <data key="d3">2</data>
+</node>
+<node id="33">
+  <data key="d0">43.7170109</data>
+  <data key="d1">10.3933401</data>
+  <data key="d2">Via Trieste; Via Magenta</data>
+  <data key="d3">2</data>
+</node>
+<node id="34">
+  <data key="d0">43.7166791</data>
+  <data key="d1">10.3963901</data>
+  <data key="d2">Via Trento; Via San Niccola; Via Santa Maria</data>
+  <data key="d3">3</data>
+</node>
+<node id="35">
+  <data key="d0">43.7168523</data>
+  <data key="d1">10.39526</data>
+  <data key="d2">Via Santa Lucia; Via Trento; Via Ricucchi</data>
+  <data key="d3">3</data>
+</node>
+<node id="36">
+  <data key="d0">43.7169278</data>
+  <data key="d1">10.3949365</data>
+  <data key="d2">Via Trieste; Via Trento; Via Roma</data>
+  <data key="d3">3</data>
+</node>
+<node id="37">
+  <data key="d0">43.717472</data>
+  <data key="d1">10.3919227</data>
+  <data key="d2">Via Trieste; Via Nicola Pisano</data>
+  <data key="d3">2</data>
+</node>
+<node id="38">
+  <data key="d0">43.7163698</data>
+  <data key="d1">10.3945476</data>
+  <data key="d2">Via Roma; Via Enrico Fermi; Lungarno Antonio Pacinotti</data>
+  <data key="d3">3</data>
+</node>
+<node id="39">
+  <data key="d0">43.7176731</data>
+  <data key="d1">10.3978318</data>
+  <data key="d2">Piazza San Giorgio; Via L'Arancio; Via La Pergola; Piazza Dante</data>
+  <data key="d3">4</data>
+</node>
+<node id="40">
+  <data key="d0">43.722343</data>
+  <data key="d1">10.401046</data>
+  <data key="d2">Via San Tommaso; Via Cardinale Pietro Maffi</data>
+  <data key="d3">2</data>
+</node>
+<node id="41">
+  <data key="d0">43.7193253</data>
+  <data key="d1">10.388812</data>
+  <data key="d2">Via Francesco Traini; Via Carlo Francesco Gabba</data>
+  <data key="d3">2</data>
+</node>
+<node id="42">
+  <data key="d0">43.7189718</data>
+  <data key="d1">10.3899712</data>
+  <data key="d2">Via Bonanno Pisano; Via Risorgimento; Via Carlo Francesco Gabba</data>
+  <data key="d3">3</data>
+</node>
+<node id="43">
+  <data key="d0">43.7203357</data>
+  <data key="d1">10.3908775</data>
+  <data key="d2">Via Diotisalvi; Via Bonanno Pisano</data>
+  <data key="d3">2</data>
+</node>
+<node id="44">
+  <data key="d0">43.7161352</data>
+  <data key="d1">10.3966029</data>
+  <data key="d2">Via Santa Maria; Lungarno Antonio Pacinotti</data>
+  <data key="d3">2</data>
+</node>
+<node id="45">
+  <data key="d0">43.7190682</data>
+  <data key="d1">10.3999712</data>
+  <data key="d2">Piazza dei Cavalieri; Via San Frediano</data>
+  <data key="d3">2</data>
+</node>
+<node id="46">
+  <data key="d0">43.7220093</data>
+  <data key="d1">10.3983839</data>
+  <data key="d2">Piazza dell'Arcivescovado; Via Ferdinando Capponi</data>
+  <data key="d3">2</data>
+</node>
+<node id="47">
+  <data key="d0">43.7222385</data>
+  <data key="d1">10.3977108</data>
+  <data key="d2">Piazza dell'Arcivescovado; Via Don Gaetano Boschi</data>
+  <data key="d3">2</data>
+</node>
+<edge source="0" target="1">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="0" target="5">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="0" target="43">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="1" target="6">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="1" target="17">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="2" target="7">
+    <data key="d4">36.333333333333336</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="2" target="40">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="3" target="4">
+    <data key="d4">7.0</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="4" target="12">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="4" target="26">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="4" target="42">
+    <data key="d4">1555.9285714285713</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="5" target="6">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="7" target="47">
+    <data key="d4">15.7</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="8" target="9">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="8" target="10">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="8" target="19">
+    <data key="d4">54.857142857142854</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="8" target="46">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="9" target="10">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="9" target="40">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="10" target="19">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="10" target="45">
+    <data key="d4">925.75</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="11" target="21">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="11" target="39">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="11" target="45">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="12" target="13">
+    <data key="d4">5497.125</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="12" target="37">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="12" target="38">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="14" target="15">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="14" target="24">
+    <data key="d4">4239.598819527811</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="14" target="28">
+    <data key="d4">521.6105078394995</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="15" target="25">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="16" target="25">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="16" target="31">
+    <data key="d4">1140.2222222222222</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="16" target="37">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="16" target="42">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="17" target="18">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="17" target="22">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="18" target="41">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="19" target="20">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="20" target="23">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="20" target="30">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="20" target="47">
+    <data key="d4">34.11538461538461</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="21" target="27">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="21" target="44">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="22" target="41">
+    <data key="d4">42.857142857142854</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="22" target="43">
+    <data key="d4">33.004629629629626</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="23" target="24">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="23" target="34">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="23" target="39">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="24" target="25">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="24" target="32">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="27" target="34">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="28" target="29">
+    <data key="d4">25.166666666666664</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="29" target="30">
+    <data key="d4">42.17857142857143</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="31" target="32">
+    <data key="d4">359.3333333333333</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="31" target="33">
+    <data key="d4">899.0</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="32" target="36">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="33" target="36">
+    <data key="d4">8.5</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="33" target="37">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="34" target="35">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="34" target="44">
+    <data key="d4">22.0</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="35" target="36">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="36" target="38">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="38" target="44">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="41" target="42">
+    <data key="d4">17.333333333333332</data>
+    <data key="d5">1</data>
+</edge>
+<edge source="42" target="43">
+    <data key="d4">11423.166666666666</data>
+    <data key="d5">2</data>
+</edge>
+<edge source="46" target="47">
+    <data key="d4">1</data>
+    <data key="d5">1</data>
+</edge>
+</graph>
+</graphml>
