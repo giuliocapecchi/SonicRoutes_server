@@ -76,18 +76,25 @@ def mappa_count():
     
     return render_template('mappa_count.html')
 
+def get_edge_color(weight):
+    if weight > 5000:
+        return 'red'
+    else:
+        return colormap(weight)
+    
+colormap = LinearColormap(['green', 'yellow', 'red'], vmin=0, vmax=5000, caption='Noise')
+
+def get_edge_color(weight):
+    if weight > 5000:
+        return 'red'
+    else:
+        return colormap(weight)
+
 @app.route('/mappa_rumori')
 def mappa_rumore():
     checkpoints = pd.read_csv('data/pisa.csv')
 
     graph = build_graph('data/grafo_completo.graphml')
-    
-    # Estrai il massimo rumor medio
-    max_noise = max(data['weight'] for _, _, data in graph.edges(data=True))
-    
-    # Crea una colormap che va da verde a rosso basata sul massimo conteggio
-    colormap = LinearColormap(['green', 'yellow', 'red'], vmin=0, vmax=max_noise, caption='Noise')
-    
     # Crea la mappa
     mappa = folium.Map(location=[43.7175, 10.3942], zoom_start=16)
     
@@ -98,9 +105,7 @@ def mappa_rumore():
         end_lat = graph.nodes[target]['latitude']
         end_lon = graph.nodes[target]['longitude']
         noise = round(data['weight'],3)
-        
-        # Calcola il colore in base al rumore
-        colore = colormap(noise)
+        colore = get_edge_color(noise)
         
         # Crea il segmento stradale sulla mappa
         popup_text = f"Average: {noise}"
