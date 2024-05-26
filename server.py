@@ -206,28 +206,6 @@ def build_graph(graph_file):
                     print(f"Missing weight for edge from {source} to {target}")
     return graph
 
-def find_best_path(graph_file, start_node_id, end_node_id, data):
-    graph = build_graph(graph_file)
-    best_path_ids = nx.astar_path(graph, start_node_id, end_node_id, weight='weight')
-    path=[]
-    starting_point = (data['point1']['latitude'], data['point1']['longitude'])
-    end_node = (graph.nodes[best_path_ids[0]]['latitude'], graph.nodes[best_path_ids[0]]['longitude'])
-    snapped_points = snap_to_road(starting_point[0], starting_point[1],end_node[0], end_node[1], path)
-
-    for i in range(len(best_path_ids) - 1):
-        start_node = (graph.nodes[best_path_ids[i]]['latitude'], graph.nodes[best_path_ids[i]]['longitude'])
-        end_node = (graph.nodes[best_path_ids[i + 1]]['latitude'], graph.nodes[best_path_ids[i + 1]]['longitude'])
-
-        # Snap dei punti della route
-        snapped_points = snap_to_road(start_node[0], start_node[1],end_node[0], end_node[1], path)
-
-        if snapped_points is None:
-            print("errore snap")
-            return None  # Se lo snap non riesce, restituisci None
-
-    #print("path:", path)
-    return path
-
 def snap_to_road(latitude1, longitude1, latitude2, longitude2, path):
     params = {
         'path': f'{latitude1},{longitude1}|{latitude2},{longitude2}',
