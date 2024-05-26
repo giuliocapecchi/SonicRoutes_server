@@ -1,5 +1,5 @@
 import statistics
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template
 import pandas as pd
 import folium
 from branca.colormap import LinearColormap
