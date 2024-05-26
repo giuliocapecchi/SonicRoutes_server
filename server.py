@@ -48,10 +48,15 @@ def computeRoute():
     else:
         return jsonify({"error": "Request body must be JSON"}), 400
 
+def heuristic_euclidean_distance(node1, node2, graph):
+    x1, y1 = graph.nodes[node1]['latitude'], graph.nodes[node1]['longitude']
+    x2, y2 = graph.nodes[node2]['latitude'], graph.nodes[node2]['longitude']
+    return math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+
 def find_best_path(graph_file, start_node_id, end_node_id):
     graph = build_graph(graph_file)
-    best_path_ids = nx.astar_path(graph, start_node_id, end_node_id, weight='weight')
-    #print("best path ids: ",best_path_ids,"\n")
+    heuristic = lambda u, v: heuristic_euclidean_distance(u, v, graph)
+    best_path_ids = nx.astar_path(graph, start_node_id, end_node_id, heuristic=heuristic, weight='weight')
     best_path_coords = [(graph.nodes[node]['latitude'], graph.nodes[node]['longitude']) for node in best_path_ids]
     return best_path_coords
 
