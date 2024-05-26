@@ -14,7 +14,7 @@ GOOGLE_MAPS_API_URL = 'https://roads.googleapis.com/v1/snapToRoads'
 GOOGLE_MAPS_API_KEY = config.api_key
 
 @app.route('/getRoute', methods=['POST'])
-def computeOldRoute():
+def computeRoute():
     if request.is_json:
         data = request.get_json()
         #print(data)
@@ -39,7 +39,7 @@ def computeOldRoute():
                     mindist2 = haversine(data['point2']['latitude'], data['point2']['longitude'], checkpoint['latitude'], checkpoint['longitude'])
                     minIndex2 = checkpoint['index']
 
-        path = old_find_best_path('data/grafo_completo.graphml', minIndex1, minIndex2)
+        path = find_best_path('data/grafo_completo.graphml', minIndex1, minIndex2)
         path.insert(0,(data['point1']['latitude'], data['point1']['longitude']))
     
         #print(path)
@@ -48,10 +48,10 @@ def computeOldRoute():
     else:
         return jsonify({"error": "Request body must be JSON"}), 400
 
-def old_find_best_path(graph_file, start_node_id, end_node_id):
+def find_best_path(graph_file, start_node_id, end_node_id):
     graph = build_graph(graph_file)
     best_path_ids = nx.astar_path(graph, start_node_id, end_node_id, weight='weight')
-    #print("old best path ids: ",best_path_ids,"\n")
+    #print("best path ids: ",best_path_ids,"\n")
     best_path_coords = [(graph.nodes[node]['latitude'], graph.nodes[node]['longitude']) for node in best_path_ids]
     return best_path_coords
 
