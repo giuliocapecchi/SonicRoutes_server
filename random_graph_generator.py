@@ -1,5 +1,4 @@
 import xml.etree.ElementTree as ET
-from flask import Flask, request, jsonify
 import random
 
 def remove_namespace(elem):
@@ -27,6 +26,6 @@ for edge in root.findall('.//edge'):
     print(edge.findall('data')[1].text)
 
     # prendo amplitude
-    edge.findall('data')[0].text = str(random.uniform(0, 10000))
+    edge.findall('data')[0].text = str(random.uniform(0, 6000))
 
 tree.write(file_path)

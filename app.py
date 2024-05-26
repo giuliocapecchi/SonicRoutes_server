@@ -29,7 +29,7 @@ def mappa_count():
     max_count = max(data['count'] for _, _, data in graph.edges(data=True) if 'count' in data)
     
     # Crea una colormap che va da verde a rosso basata sul massimo conteggio
-    colormap = LinearColormap(['green', 'yellow', 'red'], vmin=0, vmax=max_count, caption='Count dei Rumori')
+    colormap = LinearColormap(['green', 'yellow', 'red'], vmin=0, vmax=max_count, caption='Count')
     
     # Crea la mappa
     mappa = folium.Map(location=[43.7175, 10.3942], zoom_start=16)
